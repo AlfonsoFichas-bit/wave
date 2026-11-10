@@ -24,5 +24,5 @@
 
 ## 5. Verification & Testing
 
-- [ ] 5.1 Write unit tests for `CosmicTheme` presets and mesh generation buffers, verifying test passes via `./gradlew testDebugUnitTest`.
-- [ ] 5.2 Assemble and install the debug build on the connected device (`./gradlew installDebug`), verifying smooth 60/120 FPS animation and theme switching.
+- [x] 5.1 Write unit tests for `CosmicTheme` presets and mesh generation buffers, verifying test passes via `./gradlew testDebugUnitTest`.
+- [x] 5.2 Assemble and install the debug build on the connected device (`./gradlew installDebug`), verifying smooth 60/120 FPS animation and theme switching.
