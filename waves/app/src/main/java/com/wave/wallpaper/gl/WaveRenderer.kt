@@ -19,6 +19,10 @@ class WaveRenderer(
 ) : GLSurfaceView.Renderer {
 
     var theme: WaveTheme = initialTheme
+        set(value) {
+            field = value
+            requestRenderCallback()
+        }
 
     private var programBg = 0
     private var programLine = 0
