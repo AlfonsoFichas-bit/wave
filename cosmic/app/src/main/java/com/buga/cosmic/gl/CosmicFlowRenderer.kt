@@ -3,6 +3,7 @@ package com.buga.cosmic.gl
 import android.content.Context
 import android.opengl.GLES20
 import android.opengl.GLSurfaceView
+import com.buga.cosmic.theme.CosmicTheme
 import javax.microedition.khronos.egl.EGLConfig
 import javax.microedition.khronos.opengles.GL10
 
@@ -11,18 +12,29 @@ class CosmicFlowRenderer(private val context: Context) : GLSurfaceView.Renderer 
     private val mesh = CosmicMesh(48, 48)
     private val matrixState = CosmicMatrixState()
 
+    @Volatile
+    private var currentTheme: CosmicTheme = CosmicTheme.DEFAULT
+
+    @Volatile
+    private var currentBpm: Float = 120f
+
+    @Volatile
+    private var currentAmplitude: Float = 1.0f
+
     private var backgroundProgramId = 0
     private var flowProgramId = 0
 
     private var bgPositionHandle = 0
-    private var bgTimeHandle = 0
-    private var bgResolutionHandle = 0
+    private var bgTimeHeightScaleColorXOffsetHandle = 0
+    private var bgPrimaryColorHandle = 0
 
     private var flowMVPMatrixHandle = 0
     private var flowPositionHandle = 0
     private var flowTimeNoiseColorHandle = 0
     private var flowNoisePos01Handle = 0
     private var flowNoiseTextureHandle = 0
+    private var flowPrimaryColorHandle = 0
+    private var flowSecondaryColorHandle = 0
 
     private var noiseTextureId = 0
 
@@ -34,9 +46,9 @@ class CosmicFlowRenderer(private val context: Context) : GLSurfaceView.Renderer 
         val bgFragmentShader = CosmicShaderUtil.loadShaderFromAssets(context, "cosmic/background_fragment.glsl", GLES20.GL_FRAGMENT_SHADER)
         backgroundProgramId = CosmicShaderUtil.createProgram(bgVertexShader, bgFragmentShader)
 
-        bgPositionHandle = GLES20.glGetAttribLocation(backgroundProgramId, "aPosition")
-        bgTimeHandle = GLES20.glGetUniformLocation(backgroundProgramId, "uTime")
-        bgResolutionHandle = GLES20.glGetUniformLocation(backgroundProgramId, "uResolution")
+        bgPositionHandle = GLES20.glGetAttribLocation(backgroundProgramId, "vPosition")
+        bgTimeHeightScaleColorXOffsetHandle = GLES20.glGetUniformLocation(backgroundProgramId, "u_Time_HeightScale_Color_XOffset")
+        bgPrimaryColorHandle = GLES20.glGetUniformLocation(backgroundProgramId, "u_PrimaryColor")
 
         // Load flow shader
         val flowVertexShader = CosmicShaderUtil.loadShaderFromAssets(context, "cosmic/flow_vertex.glsl", GLES20.GL_VERTEX_SHADER)
@@ -48,6 +60,8 @@ class CosmicFlowRenderer(private val context: Context) : GLSurfaceView.Renderer 
         flowTimeNoiseColorHandle = GLES20.glGetUniformLocation(flowProgramId, "u_Time_NoiseScale_Color")
         flowNoisePos01Handle = GLES20.glGetUniformLocation(flowProgramId, "u_NoisePos01")
         flowNoiseTextureHandle = GLES20.glGetUniformLocation(flowProgramId, "sTexture")
+        flowPrimaryColorHandle = GLES20.glGetUniformLocation(flowProgramId, "u_PrimaryColor")
+        flowSecondaryColorHandle = GLES20.glGetUniformLocation(flowProgramId, "u_SecondaryColor")
 
         // Load texture
         noiseTextureId = CosmicShaderUtil.loadTexture(context, "cosmic/noise.png")
@@ -63,7 +77,8 @@ class CosmicFlowRenderer(private val context: Context) : GLSurfaceView.Renderer 
     override fun onDrawFrame(gl: GL10?) {
         GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT or GLES20.GL_DEPTH_BUFFER_BIT)
 
-        val time = (System.currentTimeMillis() - startTime) / 1000.0f
+        val speedMultiplier = currentBpm / 120f
+        val time = ((System.currentTimeMillis() - startTime) / 1000.0f) * speedMultiplier
 
         // 1. Draw Background
         GLES20.glUseProgram(backgroundProgramId)
@@ -74,9 +89,13 @@ class CosmicFlowRenderer(private val context: Context) : GLSurfaceView.Renderer 
         GLES20.glVertexAttribPointer(bgPositionHandle, 4, GLES20.GL_FLOAT, false, 4 * 4, mesh.vertexBuffer)
         GLES20.glEnableVertexAttribArray(bgPositionHandle)
 
-        // Assuming background shader needs time and resolution
-        if (bgTimeHandle >= 0) GLES20.glUniform1f(bgTimeHandle, time)
-        if (bgResolutionHandle >= 0) GLES20.glUniform2f(bgResolutionHandle, 1f, 1f) // Pass actual res if needed
+        // Update background uniforms
+        if (bgTimeHeightScaleColorXOffsetHandle >= 0) {
+            GLES20.glUniform4f(bgTimeHeightScaleColorXOffsetHandle, time, 1.0f, 0.0f, matrixState.currentParallaxOffset)
+        }
+        if (bgPrimaryColorHandle >= 0) {
+            GLES20.glUniform3fv(bgPrimaryColorHandle, 1, currentTheme.primaryColor, 0)
+        }
 
         // Just draw a full screen quad if possible, here using a part of the mesh
         // Note: The mesh goes from -1 to 1, so drawing it without MVP matrix will fill the screen!
@@ -91,10 +110,14 @@ class CosmicFlowRenderer(private val context: Context) : GLSurfaceView.Renderer 
         GLES20.glUniformMatrix4fv(flowMVPMatrixHandle, 1, false, matrixState.mvpMatrix, 0)
 
         // u_Time_NoiseScale_Color: vec3(time, noiseScale, colorRatio)
-        GLES20.glUniform3f(flowTimeNoiseColorHandle, time, 1.0f, 0.5f)
+        GLES20.glUniform3f(flowTimeNoiseColorHandle, time, currentAmplitude, 0.5f)
 
         // u_NoisePos01: continuous displacement for noise
         GLES20.glUniform2f(flowNoisePos01Handle, time * 0.1f, time * 0.05f)
+
+        // Set theme colors
+        GLES20.glUniform3fv(flowPrimaryColorHandle, 1, currentTheme.primaryColor, 0)
+        GLES20.glUniform3fv(flowSecondaryColorHandle, 1, currentTheme.secondaryColor, 0)
 
         // Bind noise texture
         GLES20.glActiveTexture(GLES20.GL_TEXTURE0)
@@ -117,5 +140,17 @@ class CosmicFlowRenderer(private val context: Context) : GLSurfaceView.Renderer 
 
     fun setParallaxOffset(offset: Float) {
         matrixState.updateParallax(offset)
+    }
+
+    fun setTheme(theme: CosmicTheme) {
+        currentTheme = theme
+    }
+
+    fun setBpm(bpm: Float) {
+        currentBpm = bpm
+    }
+
+    fun setAmplitude(amplitude: Float) {
+        currentAmplitude = amplitude
     }
 }

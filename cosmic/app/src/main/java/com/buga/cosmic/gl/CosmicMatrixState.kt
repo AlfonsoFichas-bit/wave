@@ -12,7 +12,8 @@ class CosmicMatrixState {
 
     private val tempMatrix = FloatArray(16)
 
-    private var currentParallaxOffset = 0f
+    var currentParallaxOffset = 0f
+        private set
 
     init {
         Matrix.setIdentityM(modelMatrix, 0)

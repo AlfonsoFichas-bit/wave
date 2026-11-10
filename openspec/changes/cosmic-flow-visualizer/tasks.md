@@ -13,14 +13,14 @@
 
 ## 3. Theme & Color Palette System
 
-- [ ] 3.1 Implement `CosmicTheme` data class and define the 7 classic presets: Amethyst, Turquoise, Emerald, Sapphire, Gold, Silk, and Ruby.
-- [ ] 3.2 Wire theme uniforms into `CosmicFlowRenderer` so switching themes dynamically alters background colors and flow tint without recreating GL programs.
+- [x] 3.1 Implement `CosmicTheme` data class and define the 7 classic presets: Amethyst, Turquoise, Emerald, Sapphire, Gold, Silk, and Ruby.
+- [x] 3.2 Wire theme uniforms into `CosmicFlowRenderer` so switching themes dynamically alters background colors and flow tint without recreating GL programs.
 
 ## 4. Jetpack Compose Visualizer & Showcase UI
 
-- [ ] 4.1 Create `@Composable fun CosmicFlowVisualizer` wrapping the OpenGL renderer inside `AndroidView` with proper lifecycle management (`onResume`/`onPause`).
-- [ ] 4.2 Add `bpm` (tempo speed factor) and `amplitude` (turbulence intensity) parameters to `CosmicFlowVisualizer` for future music player synchronization.
-- [ ] 4.3 Build a Material 3 showcase screen displaying the live 3D Cosmic Flow visualizer, gesture drag/tilt controls, and a palette selector.
+- [x] 4.1 Create `@Composable fun CosmicFlowVisualizer` wrapping the OpenGL renderer inside `AndroidView` with proper lifecycle management (`onResume`/`onPause`).
+- [x] 4.2 Add `bpm` (tempo speed factor) and `amplitude` (turbulence intensity) parameters to `CosmicFlowVisualizer` for future music player synchronization.
+- [x] 4.3 Build a Material 3 showcase screen displaying the live 3D Cosmic Flow visualizer, gesture drag/tilt controls, and a palette selector.
 
 ## 5. Verification & Testing
 
