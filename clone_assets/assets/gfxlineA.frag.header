@@ -1,4 +1,0 @@
-varying vec2 ld;
-varying float l1n;
-varying vec2 ild;
-varying float linewidth;
