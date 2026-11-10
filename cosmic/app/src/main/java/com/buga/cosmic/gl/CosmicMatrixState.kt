@@ -18,6 +18,10 @@ class CosmicMatrixState {
     init {
         Matrix.setIdentityM(modelMatrix, 0)
 
+        // Scale the model so the edges extend way past the screen boundaries
+        // This ensures the ribbons go from extreme edge to extreme edge.
+        Matrix.scaleM(modelMatrix, 0, 3.5f, 3.5f, 1.0f)
+
         // Tilt the model slightly to simulate flying perspective
         Matrix.rotateM(modelMatrix, 0, 15f, 1f, 0f, 0f)
     }
@@ -33,9 +37,10 @@ class CosmicMatrixState {
 
     fun updateView() {
         // Camera setup
+        // Slightly pulled back Z to comfortably see the scaled up mesh but close enough to fill the view
         Matrix.setLookAtM(
             viewMatrix, 0,
-            0f, -1.5f, 2.2f, // Eye
+            0f, -1.5f, 3.0f, // Eye
             0f, 0f, 0f,      // Center
             0f, 1f, 0f       // Up
         )

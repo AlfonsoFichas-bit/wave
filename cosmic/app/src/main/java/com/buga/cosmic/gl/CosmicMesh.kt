@@ -9,7 +9,6 @@ import java.nio.ShortBuffer
 class CosmicMesh(private val resolutionX: Int = 48, private val resolutionY: Int = 48) {
 
     val vertexBuffer: FloatBuffer
-    val texCoordBuffer: FloatBuffer
     val indexBuffer: ShortBuffer
     val indexCount: Int
 
@@ -18,25 +17,18 @@ class CosmicMesh(private val resolutionX: Int = 48, private val resolutionY: Int
         // vec4 for position: x, y, z=0.0, w=1.0
         val numVertices = resolutionX * resolutionY
         val vertexData = FloatArray(numVertices * 4)
-        val texCoordData = FloatArray(numVertices * 2)
 
         var vertexIndex = 0
-        var texCoordIndex = 0
         for (y in 0 until resolutionY) {
             for (x in 0 until resolutionX) {
                 // Map from [0, resolution-1] to [-1.0, 1.0]
-                val u = x.toFloat() / (resolutionX - 1)
-                val v = y.toFloat() / (resolutionY - 1)
-                val xPos = u * 2.0f - 1.0f
-                val yPos = v * 2.0f - 1.0f
+                val xPos = (x.toFloat() / (resolutionX - 1)) * 2.0f - 1.0f
+                val yPos = (y.toFloat() / (resolutionY - 1)) * 2.0f - 1.0f
 
                 vertexData[vertexIndex++] = xPos
                 vertexData[vertexIndex++] = yPos
                 vertexData[vertexIndex++] = 0.0f // z
                 vertexData[vertexIndex++] = 1.0f // w
-
-                texCoordData[texCoordIndex++] = u
-                texCoordData[texCoordIndex++] = 1.0f - v
             }
         }
 
@@ -45,12 +37,6 @@ class CosmicMesh(private val resolutionX: Int = 48, private val resolutionY: Int
             .asFloatBuffer()
         vertexBuffer.put(vertexData)
         vertexBuffer.position(0)
-
-        texCoordBuffer = ByteBuffer.allocateDirect(texCoordData.size * 4)
-            .order(ByteOrder.nativeOrder())
-            .asFloatBuffer()
-        texCoordBuffer.put(texCoordData)
-        texCoordBuffer.position(0)
 
         // Create indices for GL_TRIANGLES
         // For a grid of (resolutionX) by (resolutionY) vertices,
