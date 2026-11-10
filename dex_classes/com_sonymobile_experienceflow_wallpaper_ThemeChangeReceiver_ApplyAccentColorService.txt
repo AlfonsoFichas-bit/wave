@@ -1,0 +1,53 @@
+Class #42            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/wallpaper/ThemeChangeReceiver$ApplyAccentColorService;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Landroid/app/IntentService;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ThemeChangeReceiver$ApplyAccentColorService;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 6 16-bit code units
+00832c:                                        |[00832c] com.sonymobile.experienceflow.wallpaper.ThemeChangeReceiver$ApplyAccentColorService.<init>:()V
+00833c: 1a00 0602                              |0000: const-string v0, "applyAccentColorService" // string@0206
+008340: 7020 0e00 0100                         |0002: invoke-direct {v1, v0}, Landroid/app/IntentService;.<init>:(Ljava/lang/String;)V // method@000e
+008346: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=72
+        0x0005 line=73
+      locals        :
+        0x0000 - 0x0006 reg=1 this Lcom/sonymobile/experienceflow/wallpaper/ThemeChangeReceiver$ApplyAccentColorService;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ThemeChangeReceiver$ApplyAccentColorService;)
+      name          : 'onHandleIntent'
+      type          : '(Landroid/content/Intent;)V'
+      access        : 0x0004 (PROTECTED)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 1
+      insns size    : 8 16-bit code units
+008348:                                        |[008348] com.sonymobile.experienceflow.wallpaper.ThemeChangeReceiver$ApplyAccentColorService.onHandleIntent:(Landroid/content/Intent;)V
+008358: 6e10 7801 0100                         |0000: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/wallpaper/ThemeChangeReceiver$ApplyAccentColorService;.getApplicationContext:()Landroid/content/Context; // method@0178
+00835e: 0c00                                   |0003: move-result-object v0
+008360: 7110 7b01 0000                         |0004: invoke-static {v0}, Lcom/sonymobile/experienceflow/wallpaper/ThemeChangeReceiver;.getThemeWallpaperColor:(Landroid/content/Context;)I // method@017b
+008366: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=77
+        0x0007 line=78
+      locals        :
+        0x0000 - 0x0008 reg=1 this Lcom/sonymobile/experienceflow/wallpaper/ThemeChangeReceiver$ApplyAccentColorService;
+        0x0000 - 0x0008 reg=2 intent Landroid/content/Intent;
+
+  source_file_idx   : 431 (ThemeChangeReceiver.java)
+

@@ -1,0 +1,29 @@
+Class #46            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow2/Manifest;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow2/Manifest;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+0084c8:                                        |[0084c8] com.sonymobile.experienceflow2.Manifest.<init>:()V
+0084d8: 7010 0002 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+0084de: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=10
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/experienceflow2/Manifest;
+
+  Virtual methods   -
+  source_file_idx   : 388 (Manifest.java)
+

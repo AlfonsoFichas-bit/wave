@@ -1,0 +1,9 @@
+varying vec2 ld;
+varying vec2 ild;
+
+varying float l1n;
+varying float loc;
+varying float len;
+varying vec4 c1;
+varying vec4 c2;
+varying float linewidth;

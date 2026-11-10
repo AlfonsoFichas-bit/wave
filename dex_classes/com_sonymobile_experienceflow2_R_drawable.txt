@@ -1,0 +1,109 @@
+Class #48            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow2/R$drawable;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'aquabluewallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837504
+    #1              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'blackwallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837505
+    #2              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'bluewallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837506
+    #3              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'copperwallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837507
+    #4              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'graywallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837508
+    #5              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'greenwallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837509
+    #6              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'ic_launcher'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837510
+    #7              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'ic_wallpaper'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837511
+    #8              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'orangewallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837512
+    #9              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'purplewallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837513
+    #10              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'redwallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837514
+    #11              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'rosewallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837515
+    #12              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'seagreenwallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837516
+    #13              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'verizonredwallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837517
+    #14              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'warmsilverwallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837518
+    #15              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : 'xperiawallpaper_preview'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2130837519
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow2/R$drawable;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+0084f8:                                        |[0084f8] com.sonymobile.experienceflow2.R$drawable.<init>:()V
+008508: 7010 0002 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+00850e: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=13
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/experienceflow2/R$drawable;
+
+  Virtual methods   -
+  source_file_idx   : 399 (R.java)
+

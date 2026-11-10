@@ -1,0 +1,64 @@
+Class #37            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/wallpaper/LockscreenApiConstants;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/LockscreenApiConstants;)
+      name          : 'INTENT_FILTER_INJECT_DEPENDENCIES'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "com.sonymobile.experienceflow2.intent.action.INJECT_DEPENDENCIES"
+    #1              : (in Lcom/sonymobile/experienceflow/wallpaper/LockscreenApiConstants;)
+      name          : 'LOCKSCREEN_WALLPAPER_COMMAND_ACCELERATE'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "com.sonymobile.lockscreen.wallpaper.command.ACCELERATE"
+    #2              : (in Lcom/sonymobile/experienceflow/wallpaper/LockscreenApiConstants;)
+      name          : 'LOCKSCREEN_WALLPAPER_COMMAND_POINTER_DOWN'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "com.sonymobile.lockscreen.wallpaper.command.POINTER_DOWN"
+    #3              : (in Lcom/sonymobile/experienceflow/wallpaper/LockscreenApiConstants;)
+      name          : 'LOCKSCREEN_WALLPAPER_COMMAND_POINTER_MOVE'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "com.sonymobile.lockscreen.wallpaper.command.POINTER_MOVE"
+    #4              : (in Lcom/sonymobile/experienceflow/wallpaper/LockscreenApiConstants;)
+      name          : 'LOCKSCREEN_WALLPAPER_COMMAND_POINTER_UP'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "com.sonymobile.lockscreen.wallpaper.command.POINTER_UP"
+    #5              : (in Lcom/sonymobile/experienceflow/wallpaper/LockscreenApiConstants;)
+      name          : 'LOCKSCREEN_WALLPAPER_MAX_ACCELERATE_VALUE'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 10000
+    #6              : (in Lcom/sonymobile/experienceflow/wallpaper/LockscreenApiConstants;)
+      name          : 'PERMISSION_INJECT_DEPENDENCIES'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "com.sonymobile.experienceflow2.permission.INJECT_DEPENDENCIES"
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/LockscreenApiConstants;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+008198:                                        |[008198] com.sonymobile.experienceflow.wallpaper.LockscreenApiConstants.<init>:()V
+0081a8: 7010 0002 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+0081ae: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=14
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/LockscreenApiConstants;
+
+  Virtual methods   -
+  source_file_idx   : 384 (LockscreenApiConstants.java)
+

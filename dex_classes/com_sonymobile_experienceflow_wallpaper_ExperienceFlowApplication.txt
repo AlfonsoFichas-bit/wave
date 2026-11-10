@@ -1,0 +1,29 @@
+Class #26            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowApplication;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Landroid/app/Application;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowApplication;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+0077f8:                                        |[0077f8] com.sonymobile.experienceflow.wallpaper.ExperienceFlowApplication.<init>:()V
+007808: 7010 0b00 0000                         |0000: invoke-direct {v0}, Landroid/app/Application;.<init>:()V // method@000b
+00780e: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=9
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowApplication;
+
+  Virtual methods   -
+  source_file_idx   : 82 (ExperienceFlowApplication.java)
+

@@ -1,0 +1,220 @@
+Class #16            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/util/BitmapUtil;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/sonymobile/experienceflow/util/BitmapUtil;)
+      name          : 'sUnscaledOption'
+      type          : 'Landroid/graphics/BitmapFactory$Options;'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/util/BitmapUtil;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10008 (STATIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 0
+      outs          : 1
+      insns size    : 13 16-bit code units
+006640:                                        |[006640] com.sonymobile.experienceflow.util.BitmapUtil.<clinit>:()V
+006650: 2200 2300                              |0000: new-instance v0, Landroid/graphics/BitmapFactory$Options; // type@0023
+006654: 7010 3900 0000                         |0002: invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;.<init>:()V // method@0039
+00665a: 6900 3900                              |0005: sput-object v0, Lcom/sonymobile/experienceflow/util/BitmapUtil;.sUnscaledOption:Landroid/graphics/BitmapFactory$Options; // field@0039
+00665e: 6200 3900                              |0007: sget-object v0, Lcom/sonymobile/experienceflow/util/BitmapUtil;.sUnscaledOption:Landroid/graphics/BitmapFactory$Options; // field@0039
+006662: 1201                                   |0009: const/4 v1, #int 0 // #0
+006664: 5c01 0600                              |000a: iput-boolean v1, v0, Landroid/graphics/BitmapFactory$Options;.inScaled:Z // field@0006
+006668: 0e00                                   |000c: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=33
+        0x0007 line=34
+        0x000c line=35
+      locals        :
+
+    #1              : (in Lcom/sonymobile/experienceflow/util/BitmapUtil;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+00666c:                                        |[00666c] com.sonymobile.experienceflow.util.BitmapUtil.<init>:()V
+00667c: 7010 0002 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+006682: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=29
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/experienceflow/util/BitmapUtil;
+
+    #2              : (in Lcom/sonymobile/experienceflow/util/BitmapUtil;)
+      name          : 'calculateInSampleSize'
+      type          : '(Landroid/graphics/BitmapFactory$Options;II)I'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 19
+      ins           : 3
+      outs          : 0
+      insns size    : 64 16-bit code units
+006684:                                        |[006684] com.sonymobile.experienceflow.util.BitmapUtil.calculateInSampleSize:(Landroid/graphics/BitmapFactory$Options;II)I
+006694: 0800 1000                              |0000: move-object/from16 v0, v16
+006698: 5204 0700                              |0002: iget v4, v0, Landroid/graphics/BitmapFactory$Options;.outHeight:I // field@0007
+00669c: 0800 1000                              |0004: move-object/from16 v0, v16
+0066a0: 520a 0800                              |0006: iget v10, v0, Landroid/graphics/BitmapFactory$Options;.outWidth:I // field@0008
+0066a4: 1215                                   |0008: const/4 v5, #int 1 // #1
+0066a6: 0200 1200                              |0009: move/from16 v0, v18
+0066aa: 3604 0600                              |000b: if-gt v4, v0, 0011 // +0006
+0066ae: 0200 1100                              |000d: move/from16 v0, v17
+0066b2: 370a 3000                              |000f: if-le v10, v0, 003f // +0030
+0066b6: db02 0402                              |0011: div-int/lit8 v2, v4, #int 2 // #02
+0066ba: db03 0a02                              |0013: div-int/lit8 v3, v10, #int 2 // #02
+0066be: 930b 0205                              |0015: div-int v11, v2, v5
+0066c2: 0200 1200                              |0017: move/from16 v0, v18
+0066c6: 370b 0b00                              |0019: if-le v11, v0, 0024 // +000b
+0066ca: 930b 0305                              |001b: div-int v11, v3, v5
+0066ce: 0200 1100                              |001d: move/from16 v0, v17
+0066d2: 370b 0500                              |001f: if-le v11, v0, 0024 // +0005
+0066d6: da05 0502                              |0021: mul-int/lit8 v5, v5, #int 2 // #02
+0066da: 28f2                                   |0023: goto 0015 // -000e
+0066dc: 81ac                                   |0024: int-to-long v12, v10
+0066de: 814e                                   |0025: int-to-long v14, v4
+0066e0: bdec                                   |0026: mul-long/2addr v12, v14
+0066e2: 815e                                   |0027: int-to-long v14, v5
+0066e4: 9e06 0c0e                              |0028: div-long v6, v12, v14
+0066e8: 160c 0200                              |002a: const-wide/16 v12, #int 2 // #2
+0066ec: 0200 1100                              |002c: move/from16 v0, v17
+0066f0: 810e                                   |002e: int-to-long v14, v0
+0066f2: bdec                                   |002f: mul-long/2addr v12, v14
+0066f4: 0200 1200                              |0030: move/from16 v0, v18
+0066f8: 810e                                   |0032: int-to-long v14, v0
+0066fa: 9d08 0c0e                              |0033: mul-long v8, v12, v14
+0066fe: 310b 0608                              |0035: cmp-long v11, v6, v8
+006702: 3d0b 0800                              |0037: if-lez v11, 003f // +0008
+006706: da05 0502                              |0039: mul-int/lit8 v5, v5, #int 2 // #02
+00670a: 160c 0200                              |003b: const-wide/16 v12, #int 2 // #2
+00670e: bec6                                   |003d: div-long/2addr v6, v12
+006710: 28f7                                   |003e: goto 0035 // -0009
+006712: 0f05                                   |003f: return v5
+      catches       : (none)
+      positions     :
+        0x0000 line=61
+        0x0004 line=62
+        0x0008 line=63
+        0x0009 line=65
+        0x0011 line=67
+        0x0013 line=68
+        0x0015 line=73
+        0x0021 line=75
+        0x0024 line=84
+        0x002a line=87
+        0x0035 line=89
+        0x0039 line=90
+        0x003b line=91
+        0x003f line=94
+      locals        :
+        0x0013 - 0x003f reg=2 halfHeight I
+        0x0015 - 0x003f reg=3 halfWidth I
+        0x002a - 0x003f reg=6 totalPixels J
+        0x0035 - 0x003f reg=8 totalReqPixelsCap J
+        0x0004 - 0x0040 reg=4 height I
+        0x0009 - 0x0040 reg=5 inSampleSize I
+        0x0008 - 0x0040 reg=10 width I
+        0x0000 - 0x0040 reg=16 options Landroid/graphics/BitmapFactory$Options;
+        0x0000 - 0x0040 reg=17 reqWidth I
+        0x0000 - 0x0040 reg=18 reqHeight I
+
+    #3              : (in Lcom/sonymobile/experienceflow/util/BitmapUtil;)
+      name          : 'create'
+      type          : '(I)Landroid/graphics/Bitmap;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 5
+      ins           : 1
+      outs          : 3
+      insns size    : 14 16-bit code units
+006714:                                        |[006714] com.sonymobile.experienceflow.util.BitmapUtil.create:(I)Landroid/graphics/Bitmap;
+006724: 1303 1000                              |0000: const/16 v3, #int 16 // #10
+006728: 1301 1000                              |0002: const/16 v1, #int 16 // #10
+00672c: 6202 0300                              |0004: sget-object v2, Landroid/graphics/Bitmap$Config;.ARGB_8888:Landroid/graphics/Bitmap$Config; // field@0003
+006730: 7130 3700 3302                         |0006: invoke-static {v3, v3, v2}, Landroid/graphics/Bitmap;.createBitmap:(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap; // method@0037
+006736: 0c00                                   |0009: move-result-object v0
+006738: 6e20 3800 4000                         |000a: invoke-virtual {v0, v4}, Landroid/graphics/Bitmap;.eraseColor:(I)V // method@0038
+00673e: 1100                                   |000d: return-object v0
+      catches       : (none)
+      positions     :
+        0x0002 line=42
+        0x0004 line=43
+        0x000a line=44
+        0x000d line=45
+      locals        :
+        0x000a - 0x000e reg=0 bitmap Landroid/graphics/Bitmap;
+        0x0004 - 0x000e reg=1 size I
+        0x0000 - 0x000e reg=4 color I
+
+    #4              : (in Lcom/sonymobile/experienceflow/util/BitmapUtil;)
+      name          : 'getOption'
+      type          : '(Ljava/io/InputStream;II)Landroid/graphics/BitmapFactory$Options;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 5
+      ins           : 3
+      outs          : 3
+      insns size    : 22 16-bit code units
+006740:                                        |[006740] com.sonymobile.experienceflow.util.BitmapUtil.getOption:(Ljava/io/InputStream;II)Landroid/graphics/BitmapFactory$Options;
+006750: 2200 2300                              |0000: new-instance v0, Landroid/graphics/BitmapFactory$Options; // type@0023
+006754: 7010 3900 0000                         |0002: invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;.<init>:()V // method@0039
+00675a: 1211                                   |0005: const/4 v1, #int 1 // #1
+00675c: 5c01 0400                              |0006: iput-boolean v1, v0, Landroid/graphics/BitmapFactory$Options;.inJustDecodeBounds:Z // field@0004
+006760: 1201                                   |0008: const/4 v1, #int 0 // #0
+006762: 7130 3c00 1200                         |0009: invoke-static {v2, v1, v0}, Landroid/graphics/BitmapFactory;.decodeStream:(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap; // method@003c
+006768: 7130 f100 3004                         |000c: invoke-static {v0, v3, v4}, Lcom/sonymobile/experienceflow/util/BitmapUtil;.calculateInSampleSize:(Landroid/graphics/BitmapFactory$Options;II)I // method@00f1
+00676e: 0a01                                   |000f: move-result v1
+006770: 5901 0500                              |0010: iput v1, v0, Landroid/graphics/BitmapFactory$Options;.inSampleSize:I // field@0005
+006774: 1201                                   |0012: const/4 v1, #int 0 // #0
+006776: 5c01 0400                              |0013: iput-boolean v1, v0, Landroid/graphics/BitmapFactory$Options;.inJustDecodeBounds:Z // field@0004
+00677a: 1100                                   |0015: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=50
+        0x0005 line=51
+        0x0008 line=52
+        0x000c line=53
+        0x0012 line=54
+        0x0015 line=55
+      locals        :
+        0x0005 - 0x0016 reg=0 options Landroid/graphics/BitmapFactory$Options;
+        0x0000 - 0x0016 reg=2 is Ljava/io/InputStream;
+        0x0000 - 0x0016 reg=3 reqWidth I
+        0x0000 - 0x0016 reg=4 reqHeight I
+
+    #5              : (in Lcom/sonymobile/experienceflow/util/BitmapUtil;)
+      name          : 'getUnscaledBitmap'
+      type          : '(Landroid/content/Context;I)Landroid/graphics/Bitmap;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 3
+      insns size    : 11 16-bit code units
+00677c:                                        |[00677c] com.sonymobile.experienceflow.util.BitmapUtil.getUnscaledBitmap:(Landroid/content/Context;I)Landroid/graphics/Bitmap;
+00678c: 6e10 1b00 0200                         |0000: invoke-virtual {v2}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@001b
+006792: 0c00                                   |0003: move-result-object v0
+006794: 6201 3900                              |0004: sget-object v1, Lcom/sonymobile/experienceflow/util/BitmapUtil;.sUnscaledOption:Landroid/graphics/BitmapFactory$Options; // field@0039
+006798: 7130 3a00 3001                         |0006: invoke-static {v0, v3, v1}, Landroid/graphics/BitmapFactory;.decodeResource:(Landroid/content/res/Resources;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap; // method@003a
+00679e: 0c00                                   |0009: move-result-object v0
+0067a0: 1100                                   |000a: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=38
+      locals        :
+        0x0000 - 0x000b reg=2 context Landroid/content/Context;
+        0x0000 - 0x000b reg=3 resId I
+
+  Virtual methods   -
+  source_file_idx   : 42 (BitmapUtil.java)
+

@@ -1,0 +1,119 @@
+Class #1            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;'
+  Access flags      : 0x0401 (PUBLIC ABSTRACT)
+  Superclass        : 'Landroid/opengl/GLSurfaceView;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;)
+      name          : 'mRenderer'
+      type          : 'Landroid/opengl/GLSurfaceView$Renderer;'
+      access        : 0x0004 (PROTECTED)
+    #1              : (in Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;)
+      name          : 'this$1'
+      type          : 'Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;)
+      name          : '<init>'
+      type          : '(Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine;Landroid/content/Context;)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 10
+      ins           : 3
+      outs          : 7
+      insns size    : 53 16-bit code units
+005d6c:                                        |[005d6c] com.sonymobile.experienceflow.gles.GLWallpaperService$GLEngine$WallpaperGLSurfaceView.<init>:(Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine;Landroid/content/Context;)V
+005d7c: 1301 0800                              |0000: const/16 v1, #int 8 // #8
+005d80: 1204                                   |0002: const/4 v4, #int 0 // #0
+005d82: 5b78 1000                              |0003: iput-object v8, v7, Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;.this$1:Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine; // field@0010
+005d86: 7020 4100 9700                         |0005: invoke-direct {v7, v9}, Landroid/opengl/GLSurfaceView;.<init>:(Landroid/content/Context;)V // method@0041
+005d8c: 1220                                   |0008: const/4 v0, #int 2 // #2
+005d8e: 6e20 7c00 0700                         |0009: invoke-virtual {v7, v0}, Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;.setEGLContextClientVersion:(I)V // method@007c
+005d94: 0770                                   |000c: move-object v0, v7
+005d96: 0112                                   |000d: move v2, v1
+005d98: 0113                                   |000e: move v3, v1
+005d9a: 0145                                   |000f: move v5, v4
+005d9c: 0146                                   |0010: move v6, v4
+005d9e: 7407 7b00 0000                         |0011: invoke-virtual/range {v0, v1, v2, v3, v4, v5, v6}, Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;.setEGLConfigChooser:(IIIIII)V // method@007b
+005da4: 6e10 7700 0700                         |0014: invoke-virtual {v7}, Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;.getHolder:()Landroid/view/SurfaceHolder; // method@0077
+005daa: 0c00                                   |0017: move-result-object v0
+005dac: 1231                                   |0018: const/4 v1, #int 3 // #3
+005dae: 7220 6800 1000                         |0019: invoke-interface {v0, v1}, Landroid/view/SurfaceHolder;.setFormat:(I)V // method@0068
+005db4: 1210                                   |001c: const/4 v0, #int 1 // #1
+005db6: 6e20 7d00 0700                         |001d: invoke-virtual {v7, v0}, Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;.setPreserveEGLContextOnPause:(Z)V // method@007d
+005dbc: 5480 1300                              |0020: iget-object v0, v8, Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine;.this$0:Lcom/sonymobile/experienceflow/gles/GLWallpaperService; // field@0013
+005dc0: 6e10 8c00 0000                         |0022: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/gles/GLWallpaperService;.getBaseContext:()Landroid/content/Context; // method@008c
+005dc6: 0c00                                   |0025: move-result-object v0
+005dc8: 6e30 7600 0707                         |0026: invoke-virtual {v7, v0, v7}, Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;.createRenderer:(Landroid/content/Context;Landroid/opengl/GLSurfaceView;)Landroid/opengl/GLSurfaceView$Renderer; // method@0076
+005dce: 0c00                                   |0029: move-result-object v0
+005dd0: 5b70 0f00                              |002a: iput-object v0, v7, Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;.mRenderer:Landroid/opengl/GLSurfaceView$Renderer; // field@000f
+005dd4: 5470 0f00                              |002c: iget-object v0, v7, Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;.mRenderer:Landroid/opengl/GLSurfaceView$Renderer; // field@000f
+005dd8: 6e20 7f00 0700                         |002e: invoke-virtual {v7, v0}, Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;.setRenderer:(Landroid/opengl/GLSurfaceView$Renderer;)V // method@007f
+005dde: 6e20 7e00 4700                         |0031: invoke-virtual {v7, v4}, Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;.setRenderMode:(I)V // method@007e
+005de4: 0e00                                   |0034: return-void
+      catches       : (none)
+      positions     :
+        0x0003 line=71
+        0x0005 line=72
+        0x0008 line=73
+        0x0011 line=74
+        0x0014 line=75
+        0x001c line=76
+        0x0020 line=78
+        0x002c line=79
+        0x0031 line=81
+        0x0034 line=82
+      locals        :
+        0x0000 - 0x0035 reg=7 this Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;
+        0x0000 - 0x0035 reg=8 this$1 Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine;
+        0x0000 - 0x0035 reg=9 context Landroid/content/Context;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;)
+      name          : 'createRenderer'
+      type          : '(Landroid/content/Context;Landroid/opengl/GLSurfaceView;)Landroid/opengl/GLSurfaceView$Renderer;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #1              : (in Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;)
+      name          : 'getHolder'
+      type          : '()Landroid/view/SurfaceHolder;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 7 16-bit code units
+005de8:                                        |[005de8] com.sonymobile.experienceflow.gles.GLWallpaperService$GLEngine$WallpaperGLSurfaceView.getHolder:()Landroid/view/SurfaceHolder;
+005df8: 5410 1000                              |0000: iget-object v0, v1, Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;.this$1:Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine; // field@0010
+005dfc: 6e10 8300 0000                         |0002: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine;.getSurfaceHolder:()Landroid/view/SurfaceHolder; // method@0083
+005e02: 0c00                                   |0005: move-result-object v0
+005e04: 1100                                   |0006: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=88
+      locals        :
+        0x0000 - 0x0007 reg=1 this Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;
+
+    #2              : (in Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;)
+      name          : 'onDestroy'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+005e08:                                        |[005e08] com.sonymobile.experienceflow.gles.GLWallpaperService$GLEngine$WallpaperGLSurfaceView.onDestroy:()V
+005e18: 6f10 4300 0000                         |0000: invoke-super {v0}, Landroid/opengl/GLSurfaceView;.onDetachedFromWindow:()V // method@0043
+005e1e: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=92
+        0x0003 line=93
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/experienceflow/gles/GLWallpaperService$GLEngine$WallpaperGLSurfaceView;
+
+  source_file_idx   : 104 (GLWallpaperService.java)
+

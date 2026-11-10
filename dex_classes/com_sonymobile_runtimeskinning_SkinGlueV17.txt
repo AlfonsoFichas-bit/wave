@@ -1,0 +1,571 @@
+Class #73            -
+  Class descriptor  : 'Lcom/sonymobile/runtimeskinning/SkinGlueV17;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Lcom/sonymobile/runtimeskinning/SkinGlue;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'mFieldConfigSkinPackage'
+      type          : 'Ljava/lang/reflect/Field;'
+      access        : 0x0002 (PRIVATE)
+    #1              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'mFieldIsSkin'
+      type          : 'Ljava/lang/reflect/Field;'
+      access        : 0x0002 (PRIVATE)
+    #2              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'mFieldOverlayTarget'
+      type          : 'Ljava/lang/reflect/Field;'
+      access        : 0x0002 (PRIVATE)
+    #3              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'mFieldSkinPackageSeq'
+      type          : 'Ljava/lang/reflect/Field;'
+      access        : 0x0002 (PRIVATE)
+    #4              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'mMethodGetRuntimeSkin'
+      type          : 'Ljava/lang/reflect/Method;'
+      access        : 0x0002 (PRIVATE)
+    #5              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'mMethodSetRuntimeSkin'
+      type          : 'Ljava/lang/reflect/Method;'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+009ef4:                                        |[009ef4] com.sonymobile.runtimeskinning.SkinGlueV17.<init>:()V
+009f04: 7010 0002 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+009f0a: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=36
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/runtimeskinning/SkinGlueV17;
+
+    #1              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'init'
+      type          : '()Z'
+      access        : 0x20002 (PRIVATE DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 9
+      ins           : 1
+      outs          : 4
+      insns size    : 161 16-bit code units
+009f0c:                                        |[009f0c] com.sonymobile.runtimeskinning.SkinGlueV17.init:()Z
+009f1c: 1210                                   |0000: const/4 v0, #int 1 // #1
+009f1e: 1201                                   |0001: const/4 v1, #int 0 // #0
+009f20: 1d08                                   |0002: monitor-enter v8
+009f22: 5482 dc00                              |0003: iget-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldIsSkin:Ljava/lang/reflect/Field; // field@00dc
+009f26: 3902 0e00                              |0005: if-nez v2, 0013 // +000e
+009f2a: 1c02 1a00                              |0007: const-class v2, Landroid/content/pm/PackageInfo; // type@001a
+009f2e: 1a03 0d03                              |0009: const-string v3, "isSkin" // string@030d
+009f32: 6204 e600                              |000b: sget-object v4, Ljava/lang/Boolean;.TYPE:Ljava/lang/Class; // field@00e6
+009f36: 7130 9101 3204                         |000d: invoke-static {v2, v3, v4}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.getField:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Field; // method@0191
+009f3c: 0c02                                   |0010: move-result-object v2
+009f3e: 5b82 dc00                              |0011: iput-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldIsSkin:Ljava/lang/reflect/Field; // field@00dc
+009f42: 5482 dd00                              |0013: iget-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldOverlayTarget:Ljava/lang/reflect/Field; // field@00dd
+009f46: 3902 0e00                              |0015: if-nez v2, 0023 // +000e
+009f4a: 1c02 1a00                              |0017: const-class v2, Landroid/content/pm/PackageInfo; // type@001a
+009f4e: 1a03 8a03                              |0019: const-string v3, "overlayTarget" // string@038a
+009f52: 1c04 b800                              |001b: const-class v4, Ljava/lang/String; // type@00b8
+009f56: 7130 9101 3204                         |001d: invoke-static {v2, v3, v4}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.getField:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Field; // method@0191
+009f5c: 0c02                                   |0020: move-result-object v2
+009f5e: 5b82 dd00                              |0021: iput-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldOverlayTarget:Ljava/lang/reflect/Field; // field@00dd
+009f62: 5482 de00                              |0023: iget-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldSkinPackageSeq:Ljava/lang/reflect/Field; // field@00de
+009f66: 3902 0e00                              |0025: if-nez v2, 0033 // +000e
+009f6a: 1c02 1e00                              |0027: const-class v2, Landroid/content/res/Configuration; // type@001e
+009f6e: 1a03 0504                              |0029: const-string v3, "skinPackageSeq" // string@0405
+009f72: 6204 e700                              |002b: sget-object v4, Ljava/lang/Integer;.TYPE:Ljava/lang/Class; // field@00e7
+009f76: 7130 9101 3204                         |002d: invoke-static {v2, v3, v4}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.getField:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Field; // method@0191
+009f7c: 0c02                                   |0030: move-result-object v2
+009f7e: 5b82 de00                              |0031: iput-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldSkinPackageSeq:Ljava/lang/reflect/Field; // field@00de
+009f82: 5482 db00                              |0033: iget-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldConfigSkinPackage:Ljava/lang/reflect/Field; // field@00db
+009f86: 3902 0e00                              |0035: if-nez v2, 0043 // +000e
+009f8a: 1c02 1700                              |0037: const-class v2, Landroid/content/pm/ActivityInfo; // type@0017
+009f8e: 1a03 3100                              |0039: const-string v3, "CONFIG_SKIN_PACKAGE" // string@0031
+009f92: 6204 e700                              |003b: sget-object v4, Ljava/lang/Integer;.TYPE:Ljava/lang/Class; // field@00e7
+009f96: 7130 9101 3204                         |003d: invoke-static {v2, v3, v4}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.getField:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Field; // method@0191
+009f9c: 0c02                                   |0040: move-result-object v2
+009f9e: 5b82 db00                              |0041: iput-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldConfigSkinPackage:Ljava/lang/reflect/Field; // field@00db
+009fa2: 5482 df00                              |0043: iget-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mMethodGetRuntimeSkin:Ljava/lang/reflect/Method; // field@00df
+009fa6: 3902 1b00                              |0045: if-nez v2, 0060 // +001b
+009faa: 1c02 1900                              |0047: const-class v2, Landroid/content/pm/IPackageManager; // type@0019
+009fae: 1a03 c102                              |0049: const-string v3, "getRuntimeSkin" // string@02c1
+009fb2: 1c04 b800                              |004b: const-class v4, Ljava/lang/String; // type@00b8
+009fb6: 1225                                   |004d: const/4 v5, #int 2 // #2
+009fb8: 2355 db00                              |004e: new-array v5, v5, [Ljava/lang/Class; // type@00db
+009fbc: 1206                                   |0050: const/4 v6, #int 0 // #0
+009fbe: 1c07 b800                              |0051: const-class v7, Ljava/lang/String; // type@00b8
+009fc2: 4d07 0506                              |0053: aput-object v7, v5, v6
+009fc6: 1216                                   |0055: const/4 v6, #int 1 // #1
+009fc8: 6207 e700                              |0056: sget-object v7, Ljava/lang/Integer;.TYPE:Ljava/lang/Class; // field@00e7
+009fcc: 4d07 0506                              |0058: aput-object v7, v5, v6
+009fd0: 7140 9301 3254                         |005a: invoke-static {v2, v3, v4, v5}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.getMethod:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Method; // method@0193
+009fd6: 0c02                                   |005d: move-result-object v2
+009fd8: 5b82 df00                              |005e: iput-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mMethodGetRuntimeSkin:Ljava/lang/reflect/Method; // field@00df
+009fdc: 5482 e000                              |0060: iget-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mMethodSetRuntimeSkin:Ljava/lang/reflect/Method; // field@00e0
+009fe0: 3902 2000                              |0062: if-nez v2, 0082 // +0020
+009fe4: 1c02 1900                              |0064: const-class v2, Landroid/content/pm/IPackageManager; // type@0019
+009fe8: 1a03 f003                              |0066: const-string v3, "setRuntimeSkin" // string@03f0
+009fec: 6204 e600                              |0068: sget-object v4, Ljava/lang/Boolean;.TYPE:Ljava/lang/Class; // field@00e6
+009ff0: 1235                                   |006a: const/4 v5, #int 3 // #3
+009ff2: 2355 db00                              |006b: new-array v5, v5, [Ljava/lang/Class; // type@00db
+009ff6: 1206                                   |006d: const/4 v6, #int 0 // #0
+009ff8: 1c07 b800                              |006e: const-class v7, Ljava/lang/String; // type@00b8
+009ffc: 4d07 0506                              |0070: aput-object v7, v5, v6
+00a000: 1216                                   |0072: const/4 v6, #int 1 // #1
+00a002: 1c07 b800                              |0073: const-class v7, Ljava/lang/String; // type@00b8
+00a006: 4d07 0506                              |0075: aput-object v7, v5, v6
+00a00a: 1226                                   |0077: const/4 v6, #int 2 // #2
+00a00c: 6207 e700                              |0078: sget-object v7, Ljava/lang/Integer;.TYPE:Ljava/lang/Class; // field@00e7
+00a010: 4d07 0506                              |007a: aput-object v7, v5, v6
+00a014: 7140 9301 3254                         |007c: invoke-static {v2, v3, v4, v5}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.getMethod:(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Method; // method@0193
+00a01a: 0c02                                   |007f: move-result-object v2
+00a01c: 5b82 e000                              |0080: iput-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mMethodSetRuntimeSkin:Ljava/lang/reflect/Method; // field@00e0
+00a020: 5482 dc00                              |0082: iget-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldIsSkin:Ljava/lang/reflect/Field; // field@00dc
+00a024: 3802 1800                              |0084: if-eqz v2, 009c // +0018
+00a028: 5482 dd00                              |0086: iget-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldOverlayTarget:Ljava/lang/reflect/Field; // field@00dd
+00a02c: 3802 1400                              |0088: if-eqz v2, 009c // +0014
+00a030: 5482 de00                              |008a: iget-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldSkinPackageSeq:Ljava/lang/reflect/Field; // field@00de
+00a034: 3802 1000                              |008c: if-eqz v2, 009c // +0010
+00a038: 5482 db00                              |008e: iget-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldConfigSkinPackage:Ljava/lang/reflect/Field; // field@00db
+00a03c: 3802 0c00                              |0090: if-eqz v2, 009c // +000c
+00a040: 5482 df00                              |0092: iget-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mMethodGetRuntimeSkin:Ljava/lang/reflect/Method; // field@00df
+00a044: 3802 0800                              |0094: if-eqz v2, 009c // +0008
+00a048: 5482 e000                              |0096: iget-object v2, v8, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mMethodSetRuntimeSkin:Ljava/lang/reflect/Method; // field@00e0
+00a04c: 3802 0400                              |0098: if-eqz v2, 009c // +0004
+00a050: 1e08                                   |009a: monitor-exit v8
+00a052: 0f00                                   |009b: return v0
+00a054: 0110                                   |009c: move v0, v1
+00a056: 28fd                                   |009d: goto 009a // -0003
+00a058: 0d00                                   |009e: move-exception v0
+00a05a: 1e08                                   |009f: monitor-exit v8
+00a05c: 2700                                   |00a0: throw v0
+      catches       : 1
+        0x0003 - 0x0098
+          <any> -> 0x009e
+      positions     :
+        0x0002 line=195
+        0x0007 line=196
+        0x0013 line=198
+        0x0017 line=199
+        0x0023 line=201
+        0x0027 line=202
+        0x0033 line=204
+        0x0037 line=205
+        0x0043 line=208
+        0x0047 line=209
+        0x0060 line=212
+        0x0064 line=213
+        0x0082 line=216
+        0x009e line=195
+      locals        :
+        0x0000 - 0x00a1 reg=8 this Lcom/sonymobile/runtimeskinning/SkinGlueV17;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'getSkin'
+      type          : '(Landroid/content/Context;I)Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 9
+      ins           : 3
+      outs          : 4
+      insns size    : 38 16-bit code units
+00a06c:                                        |[00a06c] com.sonymobile.runtimeskinning.SkinGlueV17.getSkin:(Landroid/content/Context;I)Ljava/lang/String;
+00a07c: 7010 cc01 0600                         |0000: invoke-direct {v6}, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.init:()Z // method@01cc
+00a082: 0a01                                   |0003: move-result v1
+00a084: 3901 0400                              |0004: if-nez v1, 0008 // +0004
+00a088: 1201                                   |0006: const/4 v1, #int 0 // #0
+00a08a: 1101                                   |0007: return-object v1
+00a08c: 7100 0a00 0000                         |0008: invoke-static {}, Landroid/app/AppGlobals;.getPackageManager:()Landroid/content/pm/IPackageManager; // method@000a
+00a092: 0c00                                   |000b: move-result-object v0
+00a094: 5461 df00                              |000c: iget-object v1, v6, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mMethodGetRuntimeSkin:Ljava/lang/reflect/Method; // field@00df
+00a098: 1c02 b800                              |000e: const-class v2, Ljava/lang/String; // type@00b8
+00a09c: 1223                                   |0010: const/4 v3, #int 2 // #2
+00a09e: 2333 dc00                              |0011: new-array v3, v3, [Ljava/lang/Object; // type@00dc
+00a0a2: 1204                                   |0013: const/4 v4, #int 0 // #0
+00a0a4: 1a05 3102                              |0014: const-string v5, "com.sonyericsson.uxp" // string@0231
+00a0a8: 4d05 0304                              |0016: aput-object v5, v3, v4
+00a0ac: 1214                                   |0018: const/4 v4, #int 1 // #1
+00a0ae: 7110 f701 0800                         |0019: invoke-static {v8}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@01f7
+00a0b4: 0c05                                   |001c: move-result-object v5
+00a0b6: 4d05 0304                              |001d: aput-object v5, v3, v4
+00a0ba: 7140 9401 0132                         |001f: invoke-static {v1, v0, v2, v3}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.invokeMethod:(Ljava/lang/reflect/Method;Ljava/lang/Object;Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object; // method@0194
+00a0c0: 0c01                                   |0022: move-result-object v1
+00a0c2: 1f01 b800                              |0023: check-cast v1, Ljava/lang/String; // type@00b8
+00a0c6: 28e2                                   |0025: goto 0007 // -001e
+      catches       : (none)
+      positions     :
+        0x0000 line=173
+        0x0006 line=174
+        0x0007 line=177
+        0x0008 line=176
+        0x000c line=177
+      locals        :
+        0x000c - 0x0026 reg=0 ipm Landroid/content/pm/IPackageManager;
+        0x0000 - 0x0026 reg=6 this Lcom/sonymobile/runtimeskinning/SkinGlueV17;
+        0x0000 - 0x0026 reg=7 context Landroid/content/Context;
+        0x0000 - 0x0026 reg=8 userId I
+
+    #1              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'isApplicable'
+      type          : '(Landroid/content/Context;)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 1
+      insns size    : 16 16-bit code units
+00a0c8:                                        |[00a0c8] com.sonymobile.runtimeskinning.SkinGlueV17.isApplicable:(Landroid/content/Context;)Z
+00a0d8: 6000 0c00                              |0000: sget v0, Landroid/os/Build$VERSION;.SDK_INT:I // field@000c
+00a0dc: 1301 1000                              |0002: const/16 v1, #int 16 // #10
+00a0e0: 3710 0a00                              |0004: if-le v0, v1, 000e // +000a
+00a0e4: 7010 cc01 0200                         |0006: invoke-direct {v2}, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.init:()Z // method@01cc
+00a0ea: 0a00                                   |0009: move-result v0
+00a0ec: 3800 0400                              |000a: if-eqz v0, 000e // +0004
+00a0f0: 1210                                   |000c: const/4 v0, #int 1 // #1
+00a0f2: 0f00                                   |000d: return v0
+00a0f4: 1200                                   |000e: const/4 v0, #int 0 // #0
+00a0f6: 28fe                                   |000f: goto 000d // -0002
+      catches       : (none)
+      positions     :
+        0x0000 line=79
+      locals        :
+        0x0000 - 0x0010 reg=2 this Lcom/sonymobile/runtimeskinning/SkinGlueV17;
+        0x0000 - 0x0010 reg=3 context Landroid/content/Context;
+
+    #2              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'isResourceOverlaid'
+      type          : '(Landroid/content/Context;Landroid/content/res/Resources;II)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 11
+      ins           : 5
+      outs          : 4
+      insns size    : 27 16-bit code units
+00a0f8:                                        |[00a0f8] com.sonymobile.runtimeskinning.SkinGlueV17.isResourceOverlaid:(Landroid/content/Context;Landroid/content/res/Resources;II)Z
+00a108: 1204                                   |0000: const/4 v4, #int 0 // #0
+00a10a: 1213                                   |0001: const/4 v3, #int 1 // #1
+00a10c: 2202 3b00                              |0002: new-instance v2, Landroid/util/TypedValue; // type@003b
+00a110: 7010 5f00 0200                         |0004: invoke-direct {v2}, Landroid/util/TypedValue;.<init>:()V // method@005f
+00a116: 1215                                   |0007: const/4 v5, #int 1 // #1
+00a118: 6e40 3600 9852                         |0008: invoke-virtual {v8, v9, v2, v5}, Landroid/content/res/Resources;.getValue:(ILandroid/util/TypedValue;Z)V // method@0036
+00a11e: 5220 0d00                              |000b: iget v0, v2, Landroid/util/TypedValue;.assetCookie:I // field@000d
+00a122: 1215                                   |000d: const/4 v5, #int 1 // #1
+00a124: 6e40 3600 a852                         |000e: invoke-virtual {v8, v10, v2, v5}, Landroid/content/res/Resources;.getValue:(ILandroid/util/TypedValue;Z)V // method@0036
+00a12a: 5225 0d00                              |0011: iget v5, v2, Landroid/util/TypedValue;.assetCookie:I // field@000d
+00a12e: 3205 0300                              |0013: if-eq v5, v0, 0016 // +0003
+00a132: 0f03                                   |0015: return v3
+00a134: 0143                                   |0016: move v3, v4
+00a136: 28fe                                   |0017: goto 0015 // -0002
+00a138: 0d01                                   |0018: move-exception v1
+00a13a: 0143                                   |0019: move v3, v4
+00a13c: 28fb                                   |001a: goto 0015 // -0005
+      catches       : 1
+        0x0002 - 0x0013
+          Landroid/content/res/Resources$NotFoundException; -> 0x0018
+      positions     :
+        0x0002 line=120
+        0x0007 line=121
+        0x000b line=122
+        0x000d line=123
+        0x0011 line=124
+        0x0015 line=126
+        0x0017 line=124
+        0x0018 line=125
+        0x001a line=126
+      locals        :
+        0x000d - 0x0015 reg=0 cookie I
+        0x0007 - 0x0015 reg=2 tv Landroid/util/TypedValue;
+        0x0016 - 0x0018 reg=0 cookie I
+        0x0016 - 0x0018 reg=2 tv Landroid/util/TypedValue;
+        0x0019 - 0x001b reg=1 e Landroid/content/res/Resources$NotFoundException;
+        0x0000 - 0x001b reg=6 this Lcom/sonymobile/runtimeskinning/SkinGlueV17;
+        0x0000 - 0x001b reg=7 context Landroid/content/Context;
+        0x0000 - 0x001b reg=8 res Landroid/content/res/Resources;
+        0x0000 - 0x001b reg=9 referenceResId I
+        0x0000 - 0x001b reg=10 resId I
+
+    #3              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'isSkin'
+      type          : '(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 9
+      ins           : 4
+      outs          : 3
+      insns size    : 55 16-bit code units
+00a14c:                                        |[00a14c] com.sonymobile.runtimeskinning.SkinGlueV17.isSkin:(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z
+00a15c: 1203                                   |0000: const/4 v3, #int 0 // #0
+00a15e: 7010 cc01 0500                         |0001: invoke-direct {v5}, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.init:()Z // method@01cc
+00a164: 0a02                                   |0004: move-result v2
+00a166: 3902 0300                              |0005: if-nez v2, 0008 // +0003
+00a16a: 0f03                                   |0007: return v3
+00a16c: 5452 dc00                              |0008: iget-object v2, v5, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldIsSkin:Ljava/lang/reflect/Field; // field@00dc
+00a170: 1c04 a600                              |000a: const-class v4, Ljava/lang/Boolean; // type@00a6
+00a174: 7130 9701 7204                         |000c: invoke-static {v2, v7, v4}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.readField:(Ljava/lang/reflect/Field;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object; // method@0197
+00a17a: 0c02                                   |000f: move-result-object v2
+00a17c: 1f02 a600                              |0010: check-cast v2, Ljava/lang/Boolean; // type@00a6
+00a180: 6e10 ea01 0200                         |0012: invoke-virtual {v2}, Ljava/lang/Boolean;.booleanValue:()Z // method@01ea
+00a186: 0a00                                   |0015: move-result v0
+00a188: 5452 dd00                              |0016: iget-object v2, v5, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldOverlayTarget:Ljava/lang/reflect/Field; // field@00dd
+00a18c: 1c04 b800                              |0018: const-class v4, Ljava/lang/String; // type@00b8
+00a190: 7130 9701 7204                         |001a: invoke-static {v2, v7, v4}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.readField:(Ljava/lang/reflect/Field;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object; // method@0197
+00a196: 0c01                                   |001d: move-result-object v1
+00a198: 1f01 b800                              |001e: check-cast v1, Ljava/lang/String; // type@00b8
+00a19c: 3800 1500                              |0020: if-eqz v0, 0035 // +0015
+00a1a0: 1a02 3102                              |0022: const-string v2, "com.sonyericsson.uxp" // string@0231
+00a1a4: 6e20 0402 1200                         |0024: invoke-virtual {v2, v1}, Ljava/lang/String;.equals:(Ljava/lang/Object;)Z // method@0204
+00a1aa: 0a02                                   |0027: move-result v2
+00a1ac: 3802 0d00                              |0028: if-eqz v2, 0035 // +000d
+00a1b0: 5472 0200                              |002a: iget-object v2, v7, Landroid/content/pm/PackageInfo;.packageName:Ljava/lang/String; // field@0002
+00a1b4: 7110 5a00 0200                         |002c: invoke-static {v2}, Landroid/text/TextUtils;.isEmpty:(Ljava/lang/CharSequence;)Z // method@005a
+00a1ba: 0a02                                   |002f: move-result v2
+00a1bc: 3902 0500                              |0030: if-nez v2, 0035 // +0005
+00a1c0: 1212                                   |0032: const/4 v2, #int 1 // #1
+00a1c2: 0123                                   |0033: move v3, v2
+00a1c4: 28d3                                   |0034: goto 0007 // -002d
+00a1c6: 0132                                   |0035: move v2, v3
+00a1c8: 28fd                                   |0036: goto 0033 // -0003
+      catches       : (none)
+      positions     :
+        0x0001 line=86
+        0x0007 line=91
+        0x0008 line=89
+        0x0016 line=90
+        0x0020 line=91
+      locals        :
+        0x0016 - 0x0037 reg=0 isSkin Z
+        0x0020 - 0x0037 reg=1 overlayTarget Ljava/lang/String;
+        0x0000 - 0x0037 reg=5 this Lcom/sonymobile/runtimeskinning/SkinGlueV17;
+        0x0000 - 0x0037 reg=6 context Landroid/content/Context;
+        0x0000 - 0x0037 reg=7 pinf Landroid/content/pm/PackageInfo;
+        0x0000 - 0x0037 reg=8 userId I
+
+    #4              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'isSkinConfigurationChanged'
+      type          : '(Landroid/content/Context;I)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 7
+      ins           : 3
+      outs          : 3
+      insns size    : 40 16-bit code units
+00a1cc:                                        |[00a1cc] com.sonymobile.runtimeskinning.SkinGlueV17.isSkinConfigurationChanged:(Landroid/content/Context;I)Z
+00a1dc: 5441 db00                              |0000: iget-object v1, v4, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldConfigSkinPackage:Ljava/lang/reflect/Field; // field@00db
+00a1e0: 1202                                   |0002: const/4 v2, #int 0 // #0
+00a1e2: 1c03 af00                              |0003: const-class v3, Ljava/lang/Integer; // type@00af
+00a1e6: 7130 9701 2103                         |0005: invoke-static {v1, v2, v3}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.readField:(Ljava/lang/reflect/Field;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object; // method@0197
+00a1ec: 0c00                                   |0008: move-result-object v0
+00a1ee: 1f00 af00                              |0009: check-cast v0, Ljava/lang/Integer; // type@00af
+00a1f2: 3800 0800                              |000b: if-eqz v0, 0013 // +0008
+00a1f6: 6e10 f601 0000                         |000d: invoke-virtual {v0}, Ljava/lang/Integer;.intValue:()I // method@01f6
+00a1fc: 0a01                                   |0010: move-result v1
+00a1fe: 3901 0800                              |0011: if-nez v1, 0019 // +0008
+00a202: 2201 3300                              |0013: new-instance v1, Landroid/os/RemoteException; // type@0033
+00a206: 7010 4c00 0100                         |0015: invoke-direct {v1}, Landroid/os/RemoteException;.<init>:()V // method@004c
+00a20c: 2701                                   |0018: throw v1
+00a20e: 6e10 f601 0000                         |0019: invoke-virtual {v0}, Ljava/lang/Integer;.intValue:()I // method@01f6
+00a214: 0a01                                   |001c: move-result v1
+00a216: b561                                   |001d: and-int/2addr v1, v6
+00a218: 6e10 f601 0000                         |001e: invoke-virtual {v0}, Ljava/lang/Integer;.intValue:()I // method@01f6
+00a21e: 0a02                                   |0021: move-result v2
+00a220: 3321 0400                              |0022: if-ne v1, v2, 0026 // +0004
+00a224: 1211                                   |0024: const/4 v1, #int 1 // #1
+00a226: 0f01                                   |0025: return v1
+00a228: 1201                                   |0026: const/4 v1, #int 0 // #0
+00a22a: 28fe                                   |0027: goto 0025 // -0002
+      catches       : (none)
+      positions     :
+        0x0000 line=135
+        0x000b line=136
+        0x0013 line=137
+        0x0019 line=139
+      locals        :
+        0x000b - 0x0028 reg=0 flag Ljava/lang/Integer;
+        0x0000 - 0x0028 reg=4 this Lcom/sonymobile/runtimeskinning/SkinGlueV17;
+        0x0000 - 0x0028 reg=5 context Landroid/content/Context;
+        0x0000 - 0x0028 reg=6 diff I
+
+    #5              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'isTrusted'
+      type          : '(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 4
+      outs          : 4
+      insns size    : 5 16-bit code units
+00a22c:                                        |[00a22c] com.sonymobile.runtimeskinning.SkinGlueV17.isTrusted:(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z
+00a23c: 6e40 cf01 2143                         |0000: invoke-virtual {v1, v2, v3, v4}, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.isSkin:(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z // method@01cf
+00a242: 0a00                                   |0003: move-result v0
+00a244: 0f00                                   |0004: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=110
+      locals        :
+        0x0000 - 0x0005 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlueV17;
+        0x0000 - 0x0005 reg=2 context Landroid/content/Context;
+        0x0000 - 0x0005 reg=3 pinf Landroid/content/pm/PackageInfo;
+        0x0000 - 0x0005 reg=4 userId I
+
+    #6              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'isVerified'
+      type          : '(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 4
+      outs          : 4
+      insns size    : 5 16-bit code units
+00a248:                                        |[00a248] com.sonymobile.runtimeskinning.SkinGlueV17.isVerified:(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z
+00a258: 6e40 cf01 2143                         |0000: invoke-virtual {v1, v2, v3, v4}, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.isSkin:(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z // method@01cf
+00a25e: 0a00                                   |0003: move-result v0
+00a260: 0f00                                   |0004: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=101
+      locals        :
+        0x0000 - 0x0005 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlueV17;
+        0x0000 - 0x0005 reg=2 context Landroid/content/Context;
+        0x0000 - 0x0005 reg=3 pinf Landroid/content/pm/PackageInfo;
+        0x0000 - 0x0005 reg=4 userId I
+
+    #7              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'myUserId'
+      type          : '(Landroid/content/Context;)I'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 0
+      insns size    : 5 16-bit code units
+00a264:                                        |[00a264] com.sonymobile.runtimeskinning.SkinGlueV17.myUserId:(Landroid/content/Context;)I
+00a274: 7100 4f00 0000                         |0000: invoke-static {}, Landroid/os/UserHandle;.myUserId:()I // method@004f
+00a27a: 0a00                                   |0003: move-result v0
+00a27c: 0f00                                   |0004: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=72
+      locals        :
+        0x0000 - 0x0005 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlueV17;
+        0x0000 - 0x0005 reg=2 context Landroid/content/Context;
+
+    #8              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'setSkin'
+      type          : '(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 14
+      ins           : 4
+      outs          : 4
+      insns size    : 96 16-bit code units
+00a280:                                        |[00a280] com.sonymobile.runtimeskinning.SkinGlueV17.setSkin:(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z
+00a290: 1205                                   |0000: const/4 v5, #int 0 // #0
+00a292: 7010 cc01 0a00                         |0001: invoke-direct {v10}, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.init:()Z // method@01cc
+00a298: 0a06                                   |0004: move-result v6
+00a29a: 3906 0400                              |0005: if-nez v6, 0009 // +0004
+00a29e: 0153                                   |0007: move v3, v5
+00a2a0: 0f03                                   |0008: return v3
+00a2a2: 1203                                   |0009: const/4 v3, #int 0 // #0
+00a2a4: 7100 0a00 0000                         |000a: invoke-static {}, Landroid/app/AppGlobals;.getPackageManager:()Landroid/content/pm/IPackageManager; // method@000a
+00a2aa: 0c02                                   |000d: move-result-object v2
+00a2ac: 54a6 e000                              |000e: iget-object v6, v10, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mMethodSetRuntimeSkin:Ljava/lang/reflect/Method; // field@00e0
+00a2b0: 1c07 a600                              |0010: const-class v7, Ljava/lang/Boolean; // type@00a6
+00a2b4: 1238                                   |0012: const/4 v8, #int 3 // #3
+00a2b6: 2388 dc00                              |0013: new-array v8, v8, [Ljava/lang/Object; // type@00dc
+00a2ba: 1a09 3102                              |0015: const-string v9, "com.sonyericsson.uxp" // string@0231
+00a2be: 4d09 0805                              |0017: aput-object v9, v8, v5
+00a2c2: 1219                                   |0019: const/4 v9, #int 1 // #1
+00a2c4: 390c 4300                              |001a: if-nez v12, 005d // +0043
+00a2c8: 1205                                   |001c: const/4 v5, #int 0 // #0
+00a2ca: 4d05 0809                              |001d: aput-object v5, v8, v9
+00a2ce: 1225                                   |001f: const/4 v5, #int 2 // #2
+00a2d0: 7110 f701 0d00                         |0020: invoke-static {v13}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@01f7
+00a2d6: 0c09                                   |0023: move-result-object v9
+00a2d8: 4d09 0805                              |0024: aput-object v9, v8, v5
+00a2dc: 7140 9401 2687                         |0026: invoke-static {v6, v2, v7, v8}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.invokeMethod:(Ljava/lang/reflect/Method;Ljava/lang/Object;Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object; // method@0194
+00a2e2: 0c05                                   |0029: move-result-object v5
+00a2e4: 1f05 a600                              |002a: check-cast v5, Ljava/lang/Boolean; // type@00a6
+00a2e8: 6e10 ea01 0500                         |002c: invoke-virtual {v5}, Ljava/lang/Boolean;.booleanValue:()Z // method@01ea
+00a2ee: 0a05                                   |002f: move-result v5
+00a2f0: 3805 d8ff                              |0030: if-eqz v5, 0008 // -0028
+00a2f4: 7100 0100 0000                         |0032: invoke-static {}, Landroid/app/ActivityManagerNative;.getDefault:()Landroid/app/IActivityManager; // method@0001
+00a2fa: 0c01                                   |0035: move-result-object v1
+00a2fc: 7210 0c00 0100                         |0036: invoke-interface {v1}, Landroid/app/IActivityManager;.getConfiguration:()Landroid/content/res/Configuration; // method@000c
+00a302: 0c00                                   |0039: move-result-object v0
+00a304: 3800 ceff                              |003a: if-eqz v0, 0008 // -0032
+00a308: 54a5 de00                              |003c: iget-object v5, v10, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldSkinPackageSeq:Ljava/lang/reflect/Field; // field@00de
+00a30c: 1c06 af00                              |003e: const-class v6, Ljava/lang/Integer; // type@00af
+00a310: 7130 9701 0506                         |0040: invoke-static {v5, v0, v6}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.readField:(Ljava/lang/reflect/Field;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object; // method@0197
+00a316: 0c05                                   |0043: move-result-object v5
+00a318: 1f05 af00                              |0044: check-cast v5, Ljava/lang/Integer; // type@00af
+00a31c: 6e10 f601 0500                         |0046: invoke-virtual {v5}, Ljava/lang/Integer;.intValue:()I // method@01f6
+00a322: 0a05                                   |0049: move-result v5
+00a324: d804 0501                              |004a: add-int/lit8 v4, v5, #int 1 // #01
+00a328: 54a5 de00                              |004c: iget-object v5, v10, Lcom/sonymobile/runtimeskinning/SkinGlueV17;.mFieldSkinPackageSeq:Ljava/lang/reflect/Field; // field@00de
+00a32c: 7110 f701 0400                         |004e: invoke-static {v4}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@01f7
+00a332: 0c06                                   |0051: move-result-object v6
+00a334: 7130 9801 0506                         |0052: invoke-static {v5, v0, v6}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.setField:(Ljava/lang/reflect/Field;Ljava/lang/Object;Ljava/lang/Object;)Z // method@0198
+00a33a: 0a05                                   |0055: move-result v5
+00a33c: 3805 b2ff                              |0056: if-eqz v5, 0008 // -004e
+00a340: 7220 0d00 0100                         |0058: invoke-interface {v1, v0}, Landroid/app/IActivityManager;.updateConfiguration:(Landroid/content/res/Configuration;)V // method@000d
+00a346: 1213                                   |005b: const/4 v3, #int 1 // #1
+00a348: 28ac                                   |005c: goto 0008 // -0054
+00a34a: 54c5 0200                              |005d: iget-object v5, v12, Landroid/content/pm/PackageInfo;.packageName:Ljava/lang/String; // field@0002
+00a34e: 28be                                   |005f: goto 001d // -0042
+      catches       : (none)
+      positions     :
+        0x0001 line=147
+        0x0008 line=166
+        0x0009 line=150
+        0x000a line=152
+        0x000e line=153
+        0x0032 line=156
+        0x0036 line=157
+        0x003a line=158
+        0x003c line=159
+        0x004c line=160
+        0x0058 line=161
+        0x005b line=162
+        0x005d line=153
+      locals        :
+        0x003a - 0x005d reg=0 cfg Landroid/content/res/Configuration;
+        0x0036 - 0x005d reg=1 iam Landroid/app/IActivityManager;
+        0x004c - 0x005d reg=4 seq I
+        0x000e - 0x0060 reg=2 ipm Landroid/content/pm/IPackageManager;
+        0x000a - 0x0060 reg=3 res Z
+        0x0000 - 0x0060 reg=10 this Lcom/sonymobile/runtimeskinning/SkinGlueV17;
+        0x0000 - 0x0060 reg=11 context Landroid/content/Context;
+        0x0000 - 0x0060 reg=12 pinf Landroid/content/pm/PackageInfo;
+        0x0000 - 0x0060 reg=13 userId I
+
+    #9              : (in Lcom/sonymobile/runtimeskinning/SkinGlueV17;)
+      name          : 'supportsInstallableSkins'
+      type          : '(Landroid/content/Context;)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 0
+      insns size    : 2 16-bit code units
+00a350:                                        |[00a350] com.sonymobile.runtimeskinning.SkinGlueV17.supportsInstallableSkins:(Landroid/content/Context;)Z
+00a360: 1200                                   |0000: const/4 v0, #int 0 // #0
+00a362: 0f00                                   |0001: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=185
+      locals        :
+        0x0000 - 0x0002 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlueV17;
+        0x0000 - 0x0002 reg=2 context Landroid/content/Context;
+
+  source_file_idx   : 421 (SkinGlueV17.java)
+

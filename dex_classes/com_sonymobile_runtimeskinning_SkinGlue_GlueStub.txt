@@ -1,0 +1,252 @@
+Class #71            -
+  Class descriptor  : 'Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Lcom/sonymobile/runtimeskinning/SkinGlue;'
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10002 (PRIVATE CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+009aa4:                                        |[009aa4] com.sonymobile.runtimeskinning.SkinGlue$GlueStub.<init>:()V
+009ab4: 7010 0002 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+009aba: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=163
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;
+
+    #1              : (in Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;)
+      name          : '<init>'
+      type          : '(Lcom/sonymobile/runtimeskinning/SkinGlue$1;)V'
+      access        : 0x11000 (SYNTHETIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 4 16-bit code units
+009abc:                                        |[009abc] com.sonymobile.runtimeskinning.SkinGlue$GlueStub.<init>:(Lcom/sonymobile/runtimeskinning/SkinGlue$1;)V
+009acc: 7010 a701 0000                         |0000: invoke-direct {v0}, Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;.<init>:()V // method@01a7
+009ad2: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=158
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;
+        0x0000 - 0x0004 reg=1 x0 Lcom/sonymobile/runtimeskinning/SkinGlue$1;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;)
+      name          : 'getSkin'
+      type          : '(Landroid/content/Context;I)Ljava/lang/String;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 0
+      insns size    : 2 16-bit code units
+009ad4:                                        |[009ad4] com.sonymobile.runtimeskinning.SkinGlue$GlueStub.getSkin:(Landroid/content/Context;I)Ljava/lang/String;
+009ae4: 1200                                   |0000: const/4 v0, #int 0 // #0
+009ae6: 1100                                   |0001: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=231
+      locals        :
+        0x0000 - 0x0002 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;
+        0x0000 - 0x0002 reg=2 context Landroid/content/Context;
+        0x0000 - 0x0002 reg=3 userId I
+
+    #1              : (in Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;)
+      name          : 'isApplicable'
+      type          : '(Landroid/content/Context;)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 0
+      insns size    : 2 16-bit code units
+009ae8:                                        |[009ae8] com.sonymobile.runtimeskinning.SkinGlue$GlueStub.isApplicable:(Landroid/content/Context;)Z
+009af8: 1200                                   |0000: const/4 v0, #int 0 // #0
+009afa: 0f00                                   |0001: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=176
+      locals        :
+        0x0000 - 0x0002 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;
+        0x0000 - 0x0002 reg=2 context Landroid/content/Context;
+
+    #2              : (in Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;)
+      name          : 'isResourceOverlaid'
+      type          : '(Landroid/content/Context;Landroid/content/res/Resources;II)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 6
+      ins           : 5
+      outs          : 0
+      insns size    : 2 16-bit code units
+009afc:                                        |[009afc] com.sonymobile.runtimeskinning.SkinGlue$GlueStub.isResourceOverlaid:(Landroid/content/Context;Landroid/content/res/Resources;II)Z
+009b0c: 1200                                   |0000: const/4 v0, #int 0 // #0
+009b0e: 0f00                                   |0001: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=209
+      locals        :
+        0x0000 - 0x0002 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;
+        0x0000 - 0x0002 reg=2 context Landroid/content/Context;
+        0x0000 - 0x0002 reg=3 res Landroid/content/res/Resources;
+        0x0000 - 0x0002 reg=4 referenceResId I
+        0x0000 - 0x0002 reg=5 resId I
+
+    #3              : (in Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;)
+      name          : 'isSkin'
+      type          : '(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 4
+      outs          : 0
+      insns size    : 2 16-bit code units
+009b10:                                        |[009b10] com.sonymobile.runtimeskinning.SkinGlue$GlueStub.isSkin:(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z
+009b20: 1200                                   |0000: const/4 v0, #int 0 // #0
+009b22: 0f00                                   |0001: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=183
+      locals        :
+        0x0000 - 0x0002 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;
+        0x0000 - 0x0002 reg=2 context Landroid/content/Context;
+        0x0000 - 0x0002 reg=3 pinf Landroid/content/pm/PackageInfo;
+        0x0000 - 0x0002 reg=4 userId I
+
+    #4              : (in Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;)
+      name          : 'isSkinConfigurationChanged'
+      type          : '(Landroid/content/Context;I)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 0
+      insns size    : 2 16-bit code units
+009b24:                                        |[009b24] com.sonymobile.runtimeskinning.SkinGlue$GlueStub.isSkinConfigurationChanged:(Landroid/content/Context;I)Z
+009b34: 1200                                   |0000: const/4 v0, #int 0 // #0
+009b36: 0f00                                   |0001: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=217
+      locals        :
+        0x0000 - 0x0002 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;
+        0x0000 - 0x0002 reg=2 context Landroid/content/Context;
+        0x0000 - 0x0002 reg=3 diff I
+
+    #5              : (in Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;)
+      name          : 'isTrusted'
+      type          : '(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 4
+      outs          : 0
+      insns size    : 2 16-bit code units
+009b38:                                        |[009b38] com.sonymobile.runtimeskinning.SkinGlue$GlueStub.isTrusted:(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z
+009b48: 1200                                   |0000: const/4 v0, #int 0 // #0
+009b4a: 0f00                                   |0001: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=200
+      locals        :
+        0x0000 - 0x0002 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;
+        0x0000 - 0x0002 reg=2 context Landroid/content/Context;
+        0x0000 - 0x0002 reg=3 pinf Landroid/content/pm/PackageInfo;
+        0x0000 - 0x0002 reg=4 userId I
+
+    #6              : (in Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;)
+      name          : 'isVerified'
+      type          : '(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 4
+      outs          : 0
+      insns size    : 2 16-bit code units
+009b4c:                                        |[009b4c] com.sonymobile.runtimeskinning.SkinGlue$GlueStub.isVerified:(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z
+009b5c: 1200                                   |0000: const/4 v0, #int 0 // #0
+009b5e: 0f00                                   |0001: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=191
+      locals        :
+        0x0000 - 0x0002 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;
+        0x0000 - 0x0002 reg=2 context Landroid/content/Context;
+        0x0000 - 0x0002 reg=3 pinf Landroid/content/pm/PackageInfo;
+        0x0000 - 0x0002 reg=4 userId I
+
+    #7              : (in Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;)
+      name          : 'myUserId'
+      type          : '(Landroid/content/Context;)I'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 0
+      insns size    : 2 16-bit code units
+009b60:                                        |[009b60] com.sonymobile.runtimeskinning.SkinGlue$GlueStub.myUserId:(Landroid/content/Context;)I
+009b70: 1200                                   |0000: const/4 v0, #int 0 // #0
+009b72: 0f00                                   |0001: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=169
+      locals        :
+        0x0000 - 0x0002 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;
+        0x0000 - 0x0002 reg=2 context Landroid/content/Context;
+
+    #8              : (in Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;)
+      name          : 'setSkin'
+      type          : '(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 4
+      outs          : 0
+      insns size    : 2 16-bit code units
+009b74:                                        |[009b74] com.sonymobile.runtimeskinning.SkinGlue$GlueStub.setSkin:(Landroid/content/Context;Landroid/content/pm/PackageInfo;I)Z
+009b84: 1200                                   |0000: const/4 v0, #int 0 // #0
+009b86: 0f00                                   |0001: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=224
+      locals        :
+        0x0000 - 0x0002 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;
+        0x0000 - 0x0002 reg=2 context Landroid/content/Context;
+        0x0000 - 0x0002 reg=3 pinf Landroid/content/pm/PackageInfo;
+        0x0000 - 0x0002 reg=4 userId I
+
+    #9              : (in Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;)
+      name          : 'supportsInstallableSkins'
+      type          : '(Landroid/content/Context;)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 0
+      insns size    : 2 16-bit code units
+009b88:                                        |[009b88] com.sonymobile.runtimeskinning.SkinGlue$GlueStub.supportsInstallableSkins:(Landroid/content/Context;)Z
+009b98: 1200                                   |0000: const/4 v0, #int 0 // #0
+009b9a: 0f00                                   |0001: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=238
+      locals        :
+        0x0000 - 0x0002 reg=1 this Lcom/sonymobile/runtimeskinning/SkinGlue$GlueStub;
+        0x0000 - 0x0002 reg=2 context Landroid/content/Context;
+
+  source_file_idx   : 419 (SkinGlue.java)
+

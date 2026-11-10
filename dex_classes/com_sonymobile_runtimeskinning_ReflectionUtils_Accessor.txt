@@ -1,0 +1,88 @@
+Class #58            -
+  Class descriptor  : 'Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor;)
+      name          : 'mClass'
+      type          : 'Ljava/lang/Class;'
+      access        : 0x0002 (PRIVATE)
+    #1              : (in Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor;)
+      name          : 'mField'
+      type          : 'Ljava/lang/reflect/Field;'
+      access        : 0x0012 (PRIVATE FINAL)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor;)
+      name          : '<init>'
+      type          : '(Ljava/lang/Class;Ljava/lang/reflect/Field;)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 3
+      outs          : 1
+      insns size    : 8 16-bit code units
+008648:                                        |[008648] com.sonymobile.runtimeskinning.ReflectionUtils$Accessor.<init>:(Ljava/lang/Class;Ljava/lang/reflect/Field;)V
+008658: 7010 0002 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+00865e: 5b01 d100                              |0003: iput-object v1, v0, Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor;.mClass:Ljava/lang/Class; // field@00d1
+008662: 5b02 d200                              |0005: iput-object v2, v0, Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor;.mField:Ljava/lang/reflect/Field; // field@00d2
+008666: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=42
+        0x0003 line=43
+        0x0005 line=44
+        0x0007 line=45
+      locals        :
+        0x0000 - 0x0008 reg=0 this Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor; Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor<TT;>;
+        0x0000 - 0x0008 reg=1 clazz Ljava/lang/Class; Ljava/lang/Class<TT;>;
+        0x0000 - 0x0008 reg=2 field Ljava/lang/reflect/Field;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor;)
+      name          : 'get'
+      type          : '(Ljava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 3
+      insns size    : 9 16-bit code units
+008668:                                        |[008668] com.sonymobile.runtimeskinning.ReflectionUtils$Accessor.get:(Ljava/lang/Object;)Ljava/lang/Object;
+008678: 5420 d200                              |0000: iget-object v0, v2, Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor;.mField:Ljava/lang/reflect/Field; // field@00d2
+00867c: 5421 d100                              |0002: iget-object v1, v2, Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor;.mClass:Ljava/lang/Class; // field@00d1
+008680: 7130 9701 3001                         |0004: invoke-static {v0, v3, v1}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.readField:(Ljava/lang/reflect/Field;Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object; // method@0197
+008686: 0c00                                   |0007: move-result-object v0
+008688: 1100                                   |0008: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=53
+      locals        :
+        0x0000 - 0x0009 reg=2 this Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor; Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor<TT;>;
+        0x0000 - 0x0009 reg=3 o Ljava/lang/Object;
+
+    #1              : (in Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor;)
+      name          : 'set'
+      type          : '(Ljava/lang/Object;Ljava/lang/Object;)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 3
+      insns size    : 7 16-bit code units
+00868c:                                        |[00868c] com.sonymobile.runtimeskinning.ReflectionUtils$Accessor.set:(Ljava/lang/Object;Ljava/lang/Object;)Z
+00869c: 5410 d200                              |0000: iget-object v0, v1, Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor;.mField:Ljava/lang/reflect/Field; // field@00d2
+0086a0: 7130 9801 2003                         |0002: invoke-static {v0, v2, v3}, Lcom/sonymobile/runtimeskinning/ReflectionUtils;.setField:(Ljava/lang/reflect/Field;Ljava/lang/Object;Ljava/lang/Object;)Z // method@0198
+0086a6: 0a00                                   |0005: move-result v0
+0086a8: 0f00                                   |0006: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=64
+      locals        :
+        0x0000 - 0x0007 reg=1 this Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor; Lcom/sonymobile/runtimeskinning/ReflectionUtils$Accessor<TT;>;
+        0x0000 - 0x0007 reg=2 o Ljava/lang/Object;
+        0x0000 - 0x0007 reg=3 value Ljava/lang/Object; TT;
+
+  source_file_idx   : 402 (ReflectionUtils.java)
+

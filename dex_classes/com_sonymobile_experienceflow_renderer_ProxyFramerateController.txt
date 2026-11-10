@@ -1,0 +1,64 @@
+Class #75            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/renderer/ProxyFramerateController;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/ProxyFramerateController;)
+      name          : 'curveRenderer'
+      type          : 'Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;'
+      access        : 0x0000 ()
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/ProxyFramerateController;)
+      name          : '<init>'
+      type          : '(ILandroid/opengl/GLSurfaceView;Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 4
+      ins           : 4
+      outs          : 3
+      insns size    : 6 16-bit code units
+00a7c0:                                        |[00a7c0] com.sonymobile.experienceflow.renderer.ProxyFramerateController.<init>:(ILandroid/opengl/GLSurfaceView;Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)V
+00a7d0: 7030 d200 1002                         |0000: invoke-direct {v0, v1, v2}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.<init>:(ILandroid/opengl/GLSurfaceView;)V // method@00d2
+00a7d6: 5b03 3500                              |0003: iput-object v3, v0, Lcom/sonymobile/experienceflow/renderer/ProxyFramerateController;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0035
+00a7da: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=14
+        0x0003 line=15
+        0x0005 line=16
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/sonymobile/experienceflow/renderer/ProxyFramerateController;
+        0x0000 - 0x0006 reg=1 maxFps I
+        0x0000 - 0x0006 reg=2 surfaceView Landroid/opengl/GLSurfaceView;
+        0x0000 - 0x0006 reg=3 curveRenderer Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/ProxyFramerateController;)
+      name          : 'getFrameDelay'
+      type          : '(J)I'
+      access        : 0x0004 (PROTECTED)
+      code          -
+      registers     : 6
+      ins           : 3
+      outs          : 1
+      insns size    : 10 16-bit code units
+00a7dc:                                        |[00a7dc] com.sonymobile.experienceflow.renderer.ProxyFramerateController.getFrameDelay:(J)I
+00a7ec: 5431 3500                              |0000: iget-object v1, v3, Lcom/sonymobile/experienceflow/renderer/ProxyFramerateController;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0035
+00a7f0: 6e10 a500 0100                         |0002: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.getSleepRecommendation:()I // method@00a5
+00a7f6: 0a01                                   |0005: move-result v1
+00a7f8: 8442                                   |0006: long-to-int v2, v4
+00a7fa: 9100 0102                              |0007: sub-int v0, v1, v2
+00a7fe: 0f00                                   |0009: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=20
+        0x0009 line=21
+      locals        :
+        0x0009 - 0x000a reg=0 t I
+        0x0000 - 0x000a reg=3 this Lcom/sonymobile/experienceflow/renderer/ProxyFramerateController;
+        0x0000 - 0x000a reg=4 deltaTime J
+
+  source_file_idx   : 397 (ProxyFramerateController.java)
+

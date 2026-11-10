@@ -1,0 +1,162 @@
+Class #4            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/renderer/Capabilities;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/Capabilities;)
+      name          : 'CAP_VERTEX_HALF_FLOAT'
+      type          : 'Ljava/lang/String;'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : "GL_OES_vertex_half_float"
+    #1              : (in Lcom/sonymobile/experienceflow/renderer/Capabilities;)
+      name          : 'DEBUG'
+      type          : 'Z'
+      access        : 0x001a (PRIVATE STATIC FINAL)
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/Capabilities;)
+      name          : 'extensions'
+      type          : '[Ljava/lang/String;'
+      access        : 0x0002 (PRIVATE)
+    #1              : (in Lcom/sonymobile/experienceflow/renderer/Capabilities;)
+      name          : 'mMaxTextureSize'
+      type          : 'I'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/Capabilities;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+005f3c:                                        |[005f3c] com.sonymobile.experienceflow.renderer.Capabilities.<init>:()V
+005f4c: 7010 0002 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+005f52: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=13
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/experienceflow/renderer/Capabilities;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/Capabilities;)
+      name          : 'checkExtension'
+      type          : '(Ljava/lang/String;)Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 2
+      insns size    : 23 16-bit code units
+005f54:                                        |[005f54] com.sonymobile.experienceflow.renderer.Capabilities.checkExtension:(Ljava/lang/String;)Z
+005f64: 1200                                   |0000: const/4 v0, #int 0 // #0
+005f66: 5421 1600                              |0001: iget-object v1, v2, Lcom/sonymobile/experienceflow/renderer/Capabilities;.extensions:[Ljava/lang/String; // field@0016
+005f6a: 2111                                   |0003: array-length v1, v1
+005f6c: 3510 1100                              |0004: if-ge v0, v1, 0015 // +0011
+005f70: 5421 1600                              |0006: iget-object v1, v2, Lcom/sonymobile/experienceflow/renderer/Capabilities;.extensions:[Ljava/lang/String; // field@0016
+005f74: 4601 0100                              |0008: aget-object v1, v1, v0
+005f78: 6e20 0402 3100                         |000a: invoke-virtual {v1, v3}, Ljava/lang/String;.equals:(Ljava/lang/Object;)Z // method@0204
+005f7e: 0a01                                   |000d: move-result v1
+005f80: 3801 0400                              |000e: if-eqz v1, 0012 // +0004
+005f84: 1211                                   |0010: const/4 v1, #int 1 // #1
+005f86: 0f01                                   |0011: return v1
+005f88: d800 0001                              |0012: add-int/lit8 v0, v0, #int 1 // #01
+005f8c: 28ed                                   |0014: goto 0001 // -0013
+005f8e: 1201                                   |0015: const/4 v1, #int 0 // #0
+005f90: 28fb                                   |0016: goto 0011 // -0005
+      catches       : (none)
+      positions     :
+        0x0000 line=51
+        0x0006 line=52
+        0x0010 line=53
+        0x0011 line=56
+        0x0012 line=51
+        0x0015 line=56
+      locals        :
+        0x0001 - 0x0017 reg=0 i I
+        0x0000 - 0x0017 reg=2 this Lcom/sonymobile/experienceflow/renderer/Capabilities;
+        0x0000 - 0x0017 reg=3 extension Ljava/lang/String;
+
+    #1              : (in Lcom/sonymobile/experienceflow/renderer/Capabilities;)
+      name          : 'getMaxTextureSize'
+      type          : '()I'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+005f94:                                        |[005f94] com.sonymobile.experienceflow.renderer.Capabilities.getMaxTextureSize:()I
+005fa4: 5210 1700                              |0000: iget v0, v1, Lcom/sonymobile/experienceflow/renderer/Capabilities;.mMaxTextureSize:I // field@0017
+005fa8: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=76
+      locals        :
+        0x0000 - 0x0003 reg=1 this Lcom/sonymobile/experienceflow/renderer/Capabilities;
+
+    #2              : (in Lcom/sonymobile/experienceflow/renderer/Capabilities;)
+      name          : 'hasVertextHalfFloat'
+      type          : '()Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 7 16-bit code units
+005fac:                                        |[005fac] com.sonymobile.experienceflow.renderer.Capabilities.hasVertextHalfFloat:()Z
+005fbc: 1a00 6a00                              |0000: const-string v0, "GL_OES_vertex_half_float" // string@006a
+005fc0: 6e20 9000 0100                         |0002: invoke-virtual {v1, v0}, Lcom/sonymobile/experienceflow/renderer/Capabilities;.checkExtension:(Ljava/lang/String;)Z // method@0090
+005fc6: 0a00                                   |0005: move-result v0
+005fc8: 0f00                                   |0006: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=67
+      locals        :
+        0x0000 - 0x0007 reg=1 this Lcom/sonymobile/experienceflow/renderer/Capabilities;
+
+    #3              : (in Lcom/sonymobile/experienceflow/renderer/Capabilities;)
+      name          : 'setExtensions'
+      type          : '([Ljava/lang/String;)V'
+      access        : 0x0000 ()
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 3 16-bit code units
+005fcc:                                        |[005fcc] com.sonymobile.experienceflow.renderer.Capabilities.setExtensions:([Ljava/lang/String;)V
+005fdc: 5b01 1600                              |0000: iput-object v1, v0, Lcom/sonymobile/experienceflow/renderer/Capabilities;.extensions:[Ljava/lang/String; // field@0016
+005fe0: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=28
+        0x0002 line=37
+      locals        :
+        0x0000 - 0x0003 reg=0 this Lcom/sonymobile/experienceflow/renderer/Capabilities;
+        0x0000 - 0x0003 reg=1 extensions [Ljava/lang/String;
+
+    #4              : (in Lcom/sonymobile/experienceflow/renderer/Capabilities;)
+      name          : 'setMaxTextureSize'
+      type          : '(I)V'
+      access        : 0x0000 ()
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 3 16-bit code units
+005fe4:                                        |[005fe4] com.sonymobile.experienceflow.renderer.Capabilities.setMaxTextureSize:(I)V
+005ff4: 5901 1700                              |0000: iput v1, v0, Lcom/sonymobile/experienceflow/renderer/Capabilities;.mMaxTextureSize:I // field@0017
+005ff8: 0e00                                   |0002: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=40
+        0x0002 line=41
+      locals        :
+        0x0000 - 0x0003 reg=0 this Lcom/sonymobile/experienceflow/renderer/Capabilities;
+        0x0000 - 0x0003 reg=1 maxTexSize I
+
+  source_file_idx   : 50 (Capabilities.java)
+

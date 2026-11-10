@@ -1,0 +1,58 @@
+Class #8            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$1;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$1;)
+      name          : 'this$0'
+      type          : 'Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$1;)
+      name          : '<init>'
+      type          : '(Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+006030:                                        |[006030] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer$1.<init>:(Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)V
+006040: 5b01 1b00                              |0000: iput-object v1, v0, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$1;.this$0:Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer; // field@001b
+006044: 7010 0002 0000                         |0002: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+00604a: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=59
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$1;
+        0x0000 - 0x0006 reg=1 this$0 Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$1;)
+      name          : 'onSharedPreferenceChanged'
+      type          : '(Landroid/content/SharedPreferences;Ljava/lang/String;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 2
+      insns size    : 6 16-bit code units
+00604c:                                        |[00604c] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer$1.onSharedPreferenceChanged:(Landroid/content/SharedPreferences;Ljava/lang/String;)V
+00605c: 5410 1b00                              |0000: iget-object v0, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$1;.this$0:Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer; // field@001b
+006060: 7120 b800 2000                         |0002: invoke-static {v0, v2}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.access$000:(Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;Landroid/content/SharedPreferences;)V // method@00b8
+006066: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=64
+        0x0005 line=65
+      locals        :
+        0x0000 - 0x0006 reg=1 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$1;
+        0x0000 - 0x0006 reg=2 sharedPreferences Landroid/content/SharedPreferences;
+        0x0000 - 0x0006 reg=3 key Ljava/lang/String;
+
+  source_file_idx   : 87 (ExperienceFlowRenderer.java)
+

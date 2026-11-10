@@ -1,0 +1,114 @@
+Class #27            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Landroid/widget/ArrayAdapter;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;)
+      name          : 'this$0'
+      type          : 'Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;)
+      name          : '<init>'
+      type          : '(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;Landroid/content/Context;I[Lcom/sonymobile/experienceflow/wallpaper/ColorInfo;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 5
+      ins           : 5
+      outs          : 4
+      insns size    : 6 16-bit code units
+007810:                                        |[007810] com.sonymobile.experienceflow.wallpaper.ExperienceFlowPreferencesActivity$1.<init>:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;Landroid/content/Context;I[Lcom/sonymobile/experienceflow/wallpaper/ColorInfo;)V
+007820: 5b01 5e00                              |0000: iput-object v1, v0, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@005e
+007824: 7040 7000 2043                         |0002: invoke-direct {v0, v2, v3, v4}, Landroid/widget/ArrayAdapter;.<init>:(Landroid/content/Context;I[Ljava/lang/Object;)V // method@0070
+00782a: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=113
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;
+        0x0000 - 0x0006 reg=1 this$0 Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;
+        0x0000 - 0x0006 reg=2 x0 Landroid/content/Context;
+        0x0000 - 0x0006 reg=3 x1 I
+        0x0000 - 0x0006 reg=4 x2 [Lcom/sonymobile/experienceflow/wallpaper/ColorInfo;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;)
+      name          : 'getView'
+      type          : '(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 11
+      ins           : 4
+      outs          : 3
+      insns size    : 80 16-bit code units
+00782c:                                        |[00782c] com.sonymobile.experienceflow.wallpaper.ExperienceFlowPreferencesActivity$1.getView:(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
+00783c: 0794                                   |0000: move-object v4, v9
+00783e: 3904 1900                              |0001: if-nez v4, 001a // +0019
+007842: 5475 5e00                              |0003: iget-object v5, v7, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@005e
+007846: 1a06 1d03                              |0005: const-string v6, "layout_inflater" // string@031d
+00784a: 6e20 4301 6500                         |0007: invoke-virtual {v5, v6}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;.getSystemService:(Ljava/lang/String;)Ljava/lang/Object; // method@0143
+007850: 0c03                                   |000a: move-result-object v3
+007852: 1f03 3d00                              |000b: check-cast v3, Landroid/view/LayoutInflater; // type@003d
+007856: 1505 037f                              |000d: const/high16 v5, #int 2130903040 // #7f03
+00785a: 1206                                   |000f: const/4 v6, #int 0 // #0
+00785c: 6e30 6100 5306                         |0010: invoke-virtual {v3, v5, v6}, Landroid/view/LayoutInflater;.inflate:(ILandroid/view/ViewGroup;)Landroid/view/View; // method@0061
+007862: 0c04                                   |0013: move-result-object v4
+007864: 0745                                   |0014: move-object v5, v4
+007866: 1f05 4300                              |0015: check-cast v5, Landroid/view/ViewGroup; // type@0043
+00786a: 7110 4901 0500                         |0017: invoke-static {v5}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;.setDirectionalityLeftToRight:(Landroid/view/ViewGroup;)V // method@0149
+007870: 6e20 2301 8700                         |001a: invoke-virtual {v7, v8}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;.getItem:(I)Ljava/lang/Object; // method@0123
+007876: 0c00                                   |001d: move-result-object v0
+007878: 1f00 6a00                              |001e: check-cast v0, Lcom/sonymobile/experienceflow/wallpaper/ColorInfo; // type@006a
+00787c: 1505 087f                              |0020: const/high16 v5, #int 2131230720 // #7f08
+007880: 6e20 6900 5400                         |0022: invoke-virtual {v4, v5}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@0069
+007886: 0c01                                   |0025: move-result-object v1
+007888: 1f01 4a00                              |0026: check-cast v1, Landroid/widget/ImageView; // type@004a
+00788c: 3801 1100                              |0028: if-eqz v1, 0039 // +0011
+007890: 5475 5e00                              |002a: iget-object v5, v7, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@005e
+007894: 6e10 4101 0500                         |002c: invoke-virtual {v5}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;.getResources:()Landroid/content/res/Resources; // method@0141
+00789a: 0c05                                   |002f: move-result-object v5
+00789c: 5206 5500                              |0030: iget v6, v0, Lcom/sonymobile/experienceflow/wallpaper/ColorInfo;.thumbnailID:I // field@0055
+0078a0: 6e20 3400 6500                         |0032: invoke-virtual {v5, v6}, Landroid/content/res/Resources;.getDrawable:(I)Landroid/graphics/drawable/Drawable; // method@0034
+0078a6: 0c05                                   |0035: move-result-object v5
+0078a8: 6e20 7100 5100                         |0036: invoke-virtual {v1, v5}, Landroid/widget/ImageView;.setImageDrawable:(Landroid/graphics/drawable/Drawable;)V // method@0071
+0078ae: 1405 0100 087f                         |0039: const v5, #float 1.80775e+38 // #7f080001
+0078b4: 6e20 6900 5400                         |003c: invoke-virtual {v4, v5}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@0069
+0078ba: 0c02                                   |003f: move-result-object v2
+0078bc: 1f02 4d00                              |0040: check-cast v2, Landroid/widget/TextView; // type@004d
+0078c0: 3802 0d00                              |0042: if-eqz v2, 004f // +000d
+0078c4: 5475 5e00                              |0044: iget-object v5, v7, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@005e
+0078c8: 5206 5400                              |0046: iget v6, v0, Lcom/sonymobile/experienceflow/wallpaper/ColorInfo;.nameID:I // field@0054
+0078cc: 6e20 4401 6500                         |0048: invoke-virtual {v5, v6}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;.getText:(I)Ljava/lang/CharSequence; // method@0144
+0078d2: 0c05                                   |004b: move-result-object v5
+0078d4: 6e20 7300 5200                         |004c: invoke-virtual {v2, v5}, Landroid/widget/TextView;.setText:(Ljava/lang/CharSequence;)V // method@0073
+0078da: 1104                                   |004f: return-object v4
+      catches       : (none)
+      positions     :
+        0x0000 line=117
+        0x0001 line=118
+        0x0003 line=119
+        0x000d line=120
+        0x0015 line=121
+        0x001a line=124
+        0x0020 line=126
+        0x0028 line=127
+        0x002a line=128
+        0x0039 line=130
+        0x0042 line=131
+        0x0044 line=132
+        0x004f line=134
+      locals        :
+        0x000d - 0x001a reg=3 vi Landroid/view/LayoutInflater;
+        0x0020 - 0x0050 reg=0 color Lcom/sonymobile/experienceflow/wallpaper/ColorInfo;
+        0x0028 - 0x0050 reg=1 imageView Landroid/widget/ImageView;
+        0x0042 - 0x0050 reg=2 textView Landroid/widget/TextView;
+        0x0001 - 0x0050 reg=4 view Landroid/view/View;
+        0x0000 - 0x0050 reg=7 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;
+        0x0000 - 0x0050 reg=8 position I
+        0x0000 - 0x0050 reg=9 convertView Landroid/view/View;
+        0x0000 - 0x0050 reg=10 parent Landroid/view/ViewGroup;
+
+  source_file_idx   : 85 (ExperienceFlowPreferencesActivity.java)
+

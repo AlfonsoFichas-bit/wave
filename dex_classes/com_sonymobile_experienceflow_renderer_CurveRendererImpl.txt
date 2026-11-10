@@ -1,0 +1,399 @@
+Class #64            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Lcom/sonymobile/experienceflow/renderer/CurveRenderer;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : 'id'
+      type          : 'I'
+      access        : 0x0000 ()
+    #1              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : 'renderListener'
+      type          : 'Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl$RenderListener;'
+      access        : 0x0004 (PROTECTED)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : '<init>'
+      type          : '(Landroid/content/res/AssetManager;)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 10 16-bit code units
+008e68:                                        |[008e68] com.sonymobile.experienceflow.renderer.CurveRendererImpl.<init>:(Landroid/content/res/AssetManager;)V
+008e78: 7010 9600 0100                         |0000: invoke-direct {v1}, Lcom/sonymobile/experienceflow/renderer/CurveRenderer;.<init>:()V // method@0096
+008e7e: 6e20 a600 2100                         |0003: invoke-virtual {v1, v2}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.init:(Landroid/content/res/AssetManager;)I // method@00a6
+008e84: 0a00                                   |0006: move-result v0
+008e86: 5910 1800                              |0007: iput v0, v1, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.id:I // field@0018
+008e8a: 0e00                                   |0009: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=23
+        0x0003 line=24
+        0x0009 line=25
+      locals        :
+        0x0000 - 0x000a reg=1 this Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;
+        0x0000 - 0x000a reg=2 am Landroid/content/res/AssetManager;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : 'activate'
+      type          : '()V'
+      access        : 0x20001 (PUBLIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 14 16-bit code units
+008e8c:                                        |[008e8c] com.sonymobile.experienceflow.renderer.CurveRendererImpl.activate:()V
+008e9c: 1d01                                   |0000: monitor-enter v1
+008e9e: 5210 1800                              |0001: iget v0, v1, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.id:I // field@0018
+008ea2: 6f20 9700 0100                         |0003: invoke-super {v1, v0}, Lcom/sonymobile/experienceflow/renderer/CurveRenderer;.activate:(I)V // method@0097
+008ea8: 6e10 a700 0100                         |0006: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.pleaseRender:()V // method@00a7
+008eae: 1e01                                   |0009: monitor-exit v1
+008eb0: 0e00                                   |000a: return-void
+008eb2: 0d00                                   |000b: move-exception v0
+008eb4: 1e01                                   |000c: monitor-exit v1
+008eb6: 2700                                   |000d: throw v0
+      catches       : 1
+        0x0001 - 0x0009
+          <any> -> 0x000b
+      positions     :
+        0x0000 line=49
+        0x0006 line=50
+        0x0009 line=51
+        0x000b line=49
+      locals        :
+        0x0000 - 0x000e reg=1 this Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;
+
+    #1              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : 'deactivate'
+      type          : '()V'
+      access        : 0x20001 (PUBLIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 14 16-bit code units
+008ec4:                                        |[008ec4] com.sonymobile.experienceflow.renderer.CurveRendererImpl.deactivate:()V
+008ed4: 1d01                                   |0000: monitor-enter v1
+008ed6: 5210 1800                              |0001: iget v0, v1, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.id:I // field@0018
+008eda: 6f20 9800 0100                         |0003: invoke-super {v1, v0}, Lcom/sonymobile/experienceflow/renderer/CurveRenderer;.deactivate:(I)V // method@0098
+008ee0: 6e10 a700 0100                         |0006: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.pleaseRender:()V // method@00a7
+008ee6: 1e01                                   |0009: monitor-exit v1
+008ee8: 0e00                                   |000a: return-void
+008eea: 0d00                                   |000b: move-exception v0
+008eec: 1e01                                   |000c: monitor-exit v1
+008eee: 2700                                   |000d: throw v0
+      catches       : 1
+        0x0001 - 0x0009
+          <any> -> 0x000b
+      positions     :
+        0x0000 line=53
+        0x0006 line=54
+        0x0009 line=55
+        0x000b line=53
+      locals        :
+        0x0000 - 0x000e reg=1 this Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;
+
+    #2              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : 'getSleepRecommendation'
+      type          : '()I'
+      access        : 0x20001 (PUBLIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 12 16-bit code units
+008efc:                                        |[008efc] com.sonymobile.experienceflow.renderer.CurveRendererImpl.getSleepRecommendation:()I
+008f0c: 1d01                                   |0000: monitor-enter v1
+008f0e: 5210 1800                              |0001: iget v0, v1, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.id:I // field@0018
+008f12: 6f20 9900 0100                         |0003: invoke-super {v1, v0}, Lcom/sonymobile/experienceflow/renderer/CurveRenderer;.getSleepRecommendation:(I)I // method@0099
+008f18: 0a00                                   |0006: move-result v0
+008f1a: 1e01                                   |0007: monitor-exit v1
+008f1c: 0f00                                   |0008: return v0
+008f1e: 0d00                                   |0009: move-exception v0
+008f20: 1e01                                   |000a: monitor-exit v1
+008f22: 2700                                   |000b: throw v0
+      catches       : 1
+        0x0001 - 0x0006
+          <any> -> 0x0009
+      positions     :
+        0x0000 line=63
+      locals        :
+        0x0000 - 0x000c reg=1 this Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;
+
+    #3              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : 'pleaseRender'
+      type          : '()V'
+      access        : 0x20004 (PROTECTED DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 20 16-bit code units
+008f30:                                        |[008f30] com.sonymobile.experienceflow.renderer.CurveRendererImpl.pleaseRender:()V
+008f40: 1d01                                   |0000: monitor-enter v1
+008f42: 5410 1900                              |0001: iget-object v0, v1, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.renderListener:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl$RenderListener; // field@0019
+008f46: 3800 0900                              |0003: if-eqz v0, 000c // +0009
+008f4a: 1d01                                   |0005: monitor-enter v1
+008f4c: 5410 1900                              |0006: iget-object v0, v1, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.renderListener:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl$RenderListener; // field@0019
+008f50: 7210 a100 0000                         |0008: invoke-interface {v0}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl$RenderListener;.pleaseRender:()V // method@00a1
+008f56: 1e01                                   |000b: monitor-exit v1
+008f58: 1e01                                   |000c: monitor-exit v1
+008f5a: 0e00                                   |000d: return-void
+008f5c: 0d00                                   |000e: move-exception v0
+008f5e: 1e01                                   |000f: monitor-exit v1
+008f60: 2700                                   |0010: throw v0
+008f62: 0d00                                   |0011: move-exception v0
+008f64: 1e01                                   |0012: monitor-exit v1
+008f66: 2700                                   |0013: throw v0
+      catches       : 4
+        0x0001 - 0x0006
+          <any> -> 0x0011
+        0x0006 - 0x000c
+          <any> -> 0x000e
+        0x000f - 0x0010
+          <any> -> 0x000e
+        0x0010 - 0x0011
+          <any> -> 0x0011
+      positions     :
+        0x0000 line=14
+        0x0005 line=15
+        0x0006 line=16
+        0x000b line=17
+        0x000c line=19
+        0x000e line=17
+        0x0011 line=14
+      locals        :
+        0x0000 - 0x0014 reg=1 this Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;
+
+    #4              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : 'render'
+      type          : '(Landroid/content/res/AssetManager;)V'
+      access        : 0x20001 (PUBLIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 3
+      insns size    : 11 16-bit code units
+008f90:                                        |[008f90] com.sonymobile.experienceflow.renderer.CurveRendererImpl.render:(Landroid/content/res/AssetManager;)V
+008fa0: 1d01                                   |0000: monitor-enter v1
+008fa2: 5210 1800                              |0001: iget v0, v1, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.id:I // field@0018
+008fa6: 6f30 9b00 0102                         |0003: invoke-super {v1, v0, v2}, Lcom/sonymobile/experienceflow/renderer/CurveRenderer;.render:(ILandroid/content/res/AssetManager;)V // method@009b
+008fac: 1e01                                   |0006: monitor-exit v1
+008fae: 0e00                                   |0007: return-void
+008fb0: 0d00                                   |0008: move-exception v0
+008fb2: 1e01                                   |0009: monitor-exit v1
+008fb4: 2700                                   |000a: throw v0
+      catches       : 1
+        0x0001 - 0x0006
+          <any> -> 0x0008
+      positions     :
+        0x0000 line=60
+        0x0006 line=61
+        0x0008 line=60
+      locals        :
+        0x0000 - 0x000b reg=1 this Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;
+        0x0000 - 0x000b reg=2 am Landroid/content/res/AssetManager;
+
+    #5              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : 'requestColors'
+      type          : '(Landroid/content/res/AssetManager;I)V'
+      access        : 0x20001 (PUBLIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 4
+      insns size    : 14 16-bit code units
+008fc4:                                        |[008fc4] com.sonymobile.experienceflow.renderer.CurveRendererImpl.requestColors:(Landroid/content/res/AssetManager;I)V
+008fd4: 1d01                                   |0000: monitor-enter v1
+008fd6: 5210 1800                              |0001: iget v0, v1, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.id:I // field@0018
+008fda: 6f40 9c00 0132                         |0003: invoke-super {v1, v0, v2, v3}, Lcom/sonymobile/experienceflow/renderer/CurveRenderer;.requestColors:(ILandroid/content/res/AssetManager;I)V // method@009c
+008fe0: 6e10 a700 0100                         |0006: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.pleaseRender:()V // method@00a7
+008fe6: 1e01                                   |0009: monitor-exit v1
+008fe8: 0e00                                   |000a: return-void
+008fea: 0d00                                   |000b: move-exception v0
+008fec: 1e01                                   |000c: monitor-exit v1
+008fee: 2700                                   |000d: throw v0
+      catches       : 1
+        0x0001 - 0x0009
+          <any> -> 0x000b
+      positions     :
+        0x0000 line=32
+        0x0006 line=33
+        0x0009 line=34
+        0x000b line=32
+      locals        :
+        0x0000 - 0x000e reg=1 this Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;
+        0x0000 - 0x000e reg=2 am Landroid/content/res/AssetManager;
+        0x0000 - 0x000e reg=3 theme I
+
+    #6              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : 'setOnRenderListener'
+      type          : '(Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl$RenderListener;)V'
+      access        : 0x20001 (PUBLIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 0
+      insns size    : 8 16-bit code units
+008ffc:                                        |[008ffc] com.sonymobile.experienceflow.renderer.CurveRendererImpl.setOnRenderListener:(Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl$RenderListener;)V
+00900c: 1d01                                   |0000: monitor-enter v1
+00900e: 5b12 1900                              |0001: iput-object v2, v1, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.renderListener:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl$RenderListener; // field@0019
+009012: 1e01                                   |0003: monitor-exit v1
+009014: 0e00                                   |0004: return-void
+009016: 0d00                                   |0005: move-exception v0
+009018: 1e01                                   |0006: monitor-exit v1
+00901a: 2700                                   |0007: throw v0
+      catches       : 1
+        0x0001 - 0x0003
+          <any> -> 0x0005
+      positions     :
+        0x0000 line=57
+        0x0003 line=58
+        0x0005 line=57
+      locals        :
+        0x0000 - 0x0008 reg=1 this Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;
+        0x0000 - 0x0008 reg=2 l Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl$RenderListener;
+
+    #7              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : 'touch'
+      type          : '(FF)V'
+      access        : 0x20001 (PUBLIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 4
+      insns size    : 14 16-bit code units
+009028:                                        |[009028] com.sonymobile.experienceflow.renderer.CurveRendererImpl.touch:(FF)V
+009038: 1d01                                   |0000: monitor-enter v1
+00903a: 5210 1800                              |0001: iget v0, v1, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.id:I // field@0018
+00903e: 6f40 9d00 0132                         |0003: invoke-super {v1, v0, v2, v3}, Lcom/sonymobile/experienceflow/renderer/CurveRenderer;.touch:(IFF)V // method@009d
+009044: 6e10 a700 0100                         |0006: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.pleaseRender:()V // method@00a7
+00904a: 1e01                                   |0009: monitor-exit v1
+00904c: 0e00                                   |000a: return-void
+00904e: 0d00                                   |000b: move-exception v0
+009050: 1e01                                   |000c: monitor-exit v1
+009052: 2700                                   |000d: throw v0
+      catches       : 1
+        0x0001 - 0x0009
+          <any> -> 0x000b
+      positions     :
+        0x0000 line=41
+        0x0006 line=42
+        0x0009 line=43
+        0x000b line=41
+      locals        :
+        0x0000 - 0x000e reg=1 this Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;
+        0x0000 - 0x000e reg=2 x F
+        0x0000 - 0x000e reg=3 y F
+
+    #8              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : 'touchDown'
+      type          : '(FF)V'
+      access        : 0x20001 (PUBLIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 4
+      insns size    : 14 16-bit code units
+009060:                                        |[009060] com.sonymobile.experienceflow.renderer.CurveRendererImpl.touchDown:(FF)V
+009070: 1d01                                   |0000: monitor-enter v1
+009072: 5210 1800                              |0001: iget v0, v1, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.id:I // field@0018
+009076: 6f40 9e00 0132                         |0003: invoke-super {v1, v0, v2, v3}, Lcom/sonymobile/experienceflow/renderer/CurveRenderer;.touchDown:(IFF)V // method@009e
+00907c: 6e10 a700 0100                         |0006: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.pleaseRender:()V // method@00a7
+009082: 1e01                                   |0009: monitor-exit v1
+009084: 0e00                                   |000a: return-void
+009086: 0d00                                   |000b: move-exception v0
+009088: 1e01                                   |000c: monitor-exit v1
+00908a: 2700                                   |000d: throw v0
+      catches       : 1
+        0x0001 - 0x0009
+          <any> -> 0x000b
+      positions     :
+        0x0000 line=37
+        0x0006 line=38
+        0x0009 line=39
+        0x000b line=37
+      locals        :
+        0x0000 - 0x000e reg=1 this Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;
+        0x0000 - 0x000e reg=2 x F
+        0x0000 - 0x000e reg=3 y F
+
+    #9              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : 'touchUp'
+      type          : '(FF)V'
+      access        : 0x20001 (PUBLIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 4
+      insns size    : 14 16-bit code units
+009098:                                        |[009098] com.sonymobile.experienceflow.renderer.CurveRendererImpl.touchUp:(FF)V
+0090a8: 1d01                                   |0000: monitor-enter v1
+0090aa: 5210 1800                              |0001: iget v0, v1, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.id:I // field@0018
+0090ae: 6f40 9f00 0132                         |0003: invoke-super {v1, v0, v2, v3}, Lcom/sonymobile/experienceflow/renderer/CurveRenderer;.touchUp:(IFF)V // method@009f
+0090b4: 6e10 a700 0100                         |0006: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.pleaseRender:()V // method@00a7
+0090ba: 1e01                                   |0009: monitor-exit v1
+0090bc: 0e00                                   |000a: return-void
+0090be: 0d00                                   |000b: move-exception v0
+0090c0: 1e01                                   |000c: monitor-exit v1
+0090c2: 2700                                   |000d: throw v0
+      catches       : 1
+        0x0001 - 0x0009
+          <any> -> 0x000b
+      positions     :
+        0x0000 line=45
+        0x0006 line=46
+        0x0009 line=47
+        0x000b line=45
+      locals        :
+        0x0000 - 0x000e reg=1 this Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;
+        0x0000 - 0x000e reg=2 x F
+        0x0000 - 0x000e reg=3 y F
+
+    #10              : (in Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)
+      name          : 'updateScreenLayout'
+      type          : '(IIIIII)V'
+      access        : 0x20001 (PUBLIC DECLARED_SYNCHRONIZED)
+      code          -
+      registers     : 15
+      ins           : 7
+      outs          : 8
+      insns size    : 18 16-bit code units
+0090d0:                                        |[0090d0] com.sonymobile.experienceflow.renderer.CurveRendererImpl.updateScreenLayout:(IIIIII)V
+0090e0: 1d08                                   |0000: monitor-enter v8
+0090e2: 5281 1800                              |0001: iget v1, v8, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.id:I // field@0018
+0090e6: 0780                                   |0003: move-object v0, v8
+0090e8: 0192                                   |0004: move v2, v9
+0090ea: 01a3                                   |0005: move v3, v10
+0090ec: 01b4                                   |0006: move v4, v11
+0090ee: 01c5                                   |0007: move v5, v12
+0090f0: 01d6                                   |0008: move v6, v13
+0090f2: 01e7                                   |0009: move v7, v14
+0090f4: 7508 a000 0000                         |000a: invoke-super/range {v0, v1, v2, v3, v4, v5, v6, v7}, Lcom/sonymobile/experienceflow/renderer/CurveRenderer;.updateScreenLayout:(IIIIIII)V // method@00a0
+0090fa: 1e08                                   |000d: monitor-exit v8
+0090fc: 0e00                                   |000e: return-void
+0090fe: 0d00                                   |000f: move-exception v0
+009100: 1e08                                   |0010: monitor-exit v8
+009102: 2700                                   |0011: throw v0
+      catches       : 1
+        0x0001 - 0x000d
+          <any> -> 0x000f
+      positions     :
+        0x0000 line=28
+      locals        :
+        0x0000 - 0x0012 reg=8 this Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;
+        0x0000 - 0x0012 reg=9 x I
+        0x0000 - 0x0012 reg=10 y I
+        0x0000 - 0x0012 reg=11 w I
+        0x0000 - 0x0012 reg=12 h I
+        0x0000 - 0x0012 reg=13 sw I
+        0x0000 - 0x0012 reg=14 sh I
+
+  source_file_idx   : 59 (CurveRendererImpl.java)
+

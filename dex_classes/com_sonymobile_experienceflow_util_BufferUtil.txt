@@ -1,0 +1,120 @@
+Class #17            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/util/BufferUtil;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/sonymobile/experienceflow/util/BufferUtil;)
+      name          : 'BYTES_PER_FLOAT'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 4
+    #1              : (in Lcom/sonymobile/experienceflow/util/BufferUtil;)
+      name          : 'BYTES_PER_SHORT'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/util/BufferUtil;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+0067a4:                                        |[0067a4] com.sonymobile.experienceflow.util.BufferUtil.<init>:()V
+0067b4: 7010 0002 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+0067ba: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=13
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/experienceflow/util/BufferUtil;
+
+    #1              : (in Lcom/sonymobile/experienceflow/util/BufferUtil;)
+      name          : 'createFloatBuffer'
+      type          : '([F)Ljava/nio/FloatBuffer;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 4
+      ins           : 1
+      outs          : 2
+      insns size    : 28 16-bit code units
+0067bc:                                        |[0067bc] com.sonymobile.experienceflow.util.BufferUtil.createFloatBuffer:([F)Ljava/nio/FloatBuffer;
+0067cc: 2131                                   |0000: array-length v1, v3
+0067ce: da01 0104                              |0001: mul-int/lit8 v1, v1, #int 4 // #04
+0067d2: 7110 2102 0100                         |0003: invoke-static {v1}, Ljava/nio/ByteBuffer;.allocateDirect:(I)Ljava/nio/ByteBuffer; // method@0221
+0067d8: 0c01                                   |0006: move-result-object v1
+0067da: 7100 2502 0000                         |0007: invoke-static {}, Ljava/nio/ByteOrder;.nativeOrder:()Ljava/nio/ByteOrder; // method@0225
+0067e0: 0c02                                   |000a: move-result-object v2
+0067e2: 6e20 2402 2100                         |000b: invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;.order:(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer; // method@0224
+0067e8: 0c01                                   |000e: move-result-object v1
+0067ea: 6e10 2202 0100                         |000f: invoke-virtual {v1}, Ljava/nio/ByteBuffer;.asFloatBuffer:()Ljava/nio/FloatBuffer; // method@0222
+0067f0: 0c00                                   |0012: move-result-object v0
+0067f2: 6e20 2702 3000                         |0013: invoke-virtual {v0, v3}, Ljava/nio/FloatBuffer;.put:([F)Ljava/nio/FloatBuffer; // method@0227
+0067f8: 0c01                                   |0016: move-result-object v1
+0067fa: 1202                                   |0017: const/4 v2, #int 0 // #0
+0067fc: 6e20 2602 2100                         |0018: invoke-virtual {v1, v2}, Ljava/nio/FloatBuffer;.position:(I)Ljava/nio/Buffer; // method@0226
+006802: 1100                                   |001b: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=19
+        0x0007 line=20
+        0x0013 line=21
+        0x001b line=23
+      locals        :
+        0x0013 - 0x001c reg=0 floatBuffer Ljava/nio/FloatBuffer;
+        0x0000 - 0x001c reg=3 floats [F
+
+    #2              : (in Lcom/sonymobile/experienceflow/util/BufferUtil;)
+      name          : 'createShortBuffer'
+      type          : '([F)Ljava/nio/ShortBuffer;'
+      access        : 0x0009 (PUBLIC STATIC)
+      code          -
+      registers     : 7
+      ins           : 1
+      outs          : 2
+      insns size    : 40 16-bit code units
+006804:                                        |[006804] com.sonymobile.experienceflow.util.BufferUtil.createShortBuffer:([F)Ljava/nio/ShortBuffer;
+006814: 1203                                   |0000: const/4 v3, #int 0 // #0
+006816: 2162                                   |0001: array-length v2, v6
+006818: da02 0202                              |0002: mul-int/lit8 v2, v2, #int 2 // #02
+00681c: 7110 2102 0200                         |0004: invoke-static {v2}, Ljava/nio/ByteBuffer;.allocateDirect:(I)Ljava/nio/ByteBuffer; // method@0221
+006822: 0c02                                   |0007: move-result-object v2
+006824: 7100 2502 0000                         |0008: invoke-static {}, Ljava/nio/ByteOrder;.nativeOrder:()Ljava/nio/ByteOrder; // method@0225
+00682a: 0c04                                   |000b: move-result-object v4
+00682c: 6e20 2402 4200                         |000c: invoke-virtual {v2, v4}, Ljava/nio/ByteBuffer;.order:(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer; // method@0224
+006832: 0c02                                   |000f: move-result-object v2
+006834: 6e10 2302 0200                         |0010: invoke-virtual {v2}, Ljava/nio/ByteBuffer;.asShortBuffer:()Ljava/nio/ShortBuffer; // method@0223
+00683a: 0c01                                   |0013: move-result-object v1
+00683c: 2164                                   |0014: array-length v4, v6
+00683e: 0132                                   |0015: move v2, v3
+006840: 3542 0e00                              |0016: if-ge v2, v4, 0024 // +000e
+006844: 4400 0602                              |0018: aget v0, v6, v2
+006848: 7110 fa00 0000                         |001a: invoke-static {v0}, Lcom/sonymobile/experienceflow/util/FastMath;.convertFloatToHalf:(F)S // method@00fa
+00684e: 0a05                                   |001d: move-result v5
+006850: 6e20 2902 5100                         |001e: invoke-virtual {v1, v5}, Ljava/nio/ShortBuffer;.put:(S)Ljava/nio/ShortBuffer; // method@0229
+006856: d802 0201                              |0021: add-int/lit8 v2, v2, #int 1 // #01
+00685a: 28f3                                   |0023: goto 0016 // -000d
+00685c: 6e20 2802 3100                         |0024: invoke-virtual {v1, v3}, Ljava/nio/ShortBuffer;.position:(I)Ljava/nio/Buffer; // method@0228
+006862: 1101                                   |0027: return-object v1
+      catches       : (none)
+      positions     :
+        0x0001 line=27
+        0x0008 line=28
+        0x0014 line=30
+        0x001a line=31
+        0x0021 line=30
+        0x0024 line=33
+        0x0027 line=35
+      locals        :
+        0x001a - 0x0024 reg=0 f F
+        0x0014 - 0x0028 reg=1 shortBuffer Ljava/nio/ShortBuffer;
+        0x0000 - 0x0028 reg=6 floats [F
+
+  Virtual methods   -
+  source_file_idx   : 45 (BufferUtil.java)
+

@@ -1,0 +1,25 @@
+
+//Common input attrib
+attribute vec2 linedata;
+
+
+//Common vertex functions
+float baseMotion(vec2 ld, float force){
+  return mix(curveOffsetRange.x,curveOffsetRange.y, cos(force*curveOffsetSpeed)*0.5+0.5)
+        +mix(curveBendRange.x, curveBendRange.y, cos(force*curveBendSpeed + ld.x*curveBendFactor)*0.5+0.5)        ;
+}
+
+float curvePush(vec2 ld, float push){
+  float ldxo = 1.0-ld.x*ld.x*0.225;
+  return (push*0.5+0.05)
+  *l1.y*ldxo*ldxo*-0.24*precalc_ratio
+  *(ild.y*-0.25*sign(l1.y)+0.75);
+}
+
+
+//Header
+void main()
+{
+  float force = l4.x*200.0;
+  ld = linedata*2.0-1.0;
+  ild = ld;

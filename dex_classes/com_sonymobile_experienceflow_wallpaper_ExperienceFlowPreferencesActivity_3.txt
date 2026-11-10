@@ -1,0 +1,58 @@
+Class #29            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$3;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Landroid/content/DialogInterface$OnDismissListener;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$3;)
+      name          : 'this$0'
+      type          : 'Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$3;)
+      name          : '<init>'
+      type          : '(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+007950:                                        |[007950] com.sonymobile.experienceflow.wallpaper.ExperienceFlowPreferencesActivity$3.<init>:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;)V
+007960: 5b01 6000                              |0000: iput-object v1, v0, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$3;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@0060
+007964: 7010 0002 0000                         |0002: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+00796a: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=222
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$3;
+        0x0000 - 0x0006 reg=1 this$0 Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$3;)
+      name          : 'onDismiss'
+      type          : '(Landroid/content/DialogInterface;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 2
+      outs          : 2
+      insns size    : 7 16-bit code units
+00796c:                                        |[00796c] com.sonymobile.experienceflow.wallpaper.ExperienceFlowPreferencesActivity$3.onDismiss:(Landroid/content/DialogInterface;)V
+00797c: 5420 6000                              |0000: iget-object v0, v2, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$3;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@0060
+007980: 1201                                   |0002: const/4 v1, #int 0 // #0
+007982: 7120 3701 1000                         |0003: invoke-static {v0, v1}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;.access$202:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;)Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask; // method@0137
+007988: 0e00                                   |0006: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=226
+        0x0006 line=227
+      locals        :
+        0x0000 - 0x0007 reg=2 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$3;
+        0x0000 - 0x0007 reg=3 dialog Landroid/content/DialogInterface;
+
+  source_file_idx   : 85 (ExperienceFlowPreferencesActivity.java)
+

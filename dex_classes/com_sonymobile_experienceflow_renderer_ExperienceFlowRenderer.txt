@@ -1,0 +1,558 @@
+Class #9            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Landroid/opengl/GLSurfaceView$Renderer;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'ax'
+      type          : 'F'
+      access        : 0x0000 ()
+    #1              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'ay'
+      type          : 'F'
+      access        : 0x0000 ()
+    #2              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'curveRenderer'
+      type          : 'Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;'
+      access        : 0x0004 (PROTECTED)
+    #3              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'doReset'
+      type          : 'Z'
+      access        : 0x0000 ()
+    #4              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'location'
+      type          : '[I'
+      access        : 0x0000 ()
+    #5              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'mContext'
+      type          : 'Landroid/content/Context;'
+      access        : 0x0012 (PRIVATE FINAL)
+    #6              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'mFramerateController'
+      type          : 'Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;'
+      access        : 0x0002 (PRIVATE)
+    #7              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'mHeight'
+      type          : 'I'
+      access        : 0x0002 (PRIVATE)
+    #8              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'mSurfaceView'
+      type          : 'Landroid/opengl/GLSurfaceView;'
+      access        : 0x0002 (PRIVATE)
+    #9              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'mWidth'
+      type          : 'I'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : '<init>'
+      type          : '(Landroid/content/Context;Landroid/opengl/GLSurfaceView;)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 6
+      ins           : 3
+      outs          : 3
+      insns size    : 60 16-bit code units
+006068:                                        |[006068] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.<init>:(Landroid/content/Context;Landroid/opengl/GLSurfaceView;)V
+006078: 1202                                   |0000: const/4 v2, #int 0 // #0
+00607a: 7010 0002 0300                         |0001: invoke-direct {v3}, Ljava/lang/Object;.<init>:()V // method@0200
+006080: 5c32 2100                              |0004: iput-boolean v2, v3, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.doReset:Z // field@0021
+006084: 1220                                   |0006: const/4 v0, #int 2 // #2
+006086: 2300 d800                              |0007: new-array v0, v0, [I // type@00d8
+00608a: 5b30 2200                              |0009: iput-object v0, v3, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.location:[I // field@0022
+00608e: 5b34 2300                              |000b: iput-object v4, v3, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mContext:Landroid/content/Context; // field@0023
+006092: 5b35 2600                              |000d: iput-object v5, v3, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mSurfaceView:Landroid/opengl/GLSurfaceView; // field@0026
+006096: 2200 5500                              |000f: new-instance v0, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // type@0055
+00609a: 5431 2300                              |0011: iget-object v1, v3, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mContext:Landroid/content/Context; // field@0023
+00609e: 6e10 1800 0100                         |0013: invoke-virtual {v1}, Landroid/content/Context;.getAssets:()Landroid/content/res/AssetManager; // method@0018
+0060a4: 0c01                                   |0016: move-result-object v1
+0060a6: 7020 a200 1000                         |0017: invoke-direct {v0, v1}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.<init>:(Landroid/content/res/AssetManager;)V // method@00a2
+0060ac: 5b30 2000                              |001a: iput-object v0, v3, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0020
+0060b0: 5430 2000                              |001c: iget-object v0, v3, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0020
+0060b4: 6e10 a300 0000                         |001e: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.activate:()V // method@00a3
+0060ba: 1a00 5600                              |0021: const-string v0, "ExperienceFlowPrefs" // string@0056
+0060be: 6e30 1c00 0402                         |0023: invoke-virtual {v4, v0, v2}, Landroid/content/Context;.getSharedPreferences:(Ljava/lang/String;I)Landroid/content/SharedPreferences; // method@001c
+0060c4: 0c00                                   |0026: move-result-object v0
+0060c6: 2201 5700                              |0027: new-instance v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$1; // type@0057
+0060ca: 7020 af00 3100                         |0029: invoke-direct {v1, v3}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$1;.<init>:(Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)V // method@00af
+0060d0: 7220 2f00 1000                         |002c: invoke-interface {v0, v1}, Landroid/content/SharedPreferences;.registerOnSharedPreferenceChangeListener:(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V // method@002f
+0060d6: 6e10 bb00 0300                         |002f: invoke-virtual {v3}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.getFramerateController:()Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // method@00bb
+0060dc: 0c00                                   |0032: move-result-object v0
+0060de: 2201 5800                              |0033: new-instance v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$2; // type@0058
+0060e2: 7020 b100 3100                         |0035: invoke-direct {v1, v3}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$2;.<init>:(Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)V // method@00b1
+0060e8: 6e20 d700 1000                         |0038: invoke-virtual {v0, v1}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.addRenderModeListener:(Lcom/sonymobile/experienceflow/renderer/RenderModeListener;)V // method@00d7
+0060ee: 0e00                                   |003b: return-void
+      catches       : (none)
+      positions     :
+        0x0001 line=52
+        0x0004 line=93
+        0x0006 line=102
+        0x000b line=53
+        0x000d line=54
+        0x000f line=55
+        0x001c line=57
+        0x0021 line=58
+        0x002c line=59
+        0x002f line=67
+        0x003b line=79
+      locals        :
+        0x0000 - 0x003c reg=3 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+        0x0000 - 0x003c reg=4 context Landroid/content/Context;
+        0x0000 - 0x003c reg=5 surfaceView Landroid/opengl/GLSurfaceView;
+
+    #1              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'access$000'
+      type          : '(Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;Landroid/content/SharedPreferences;)V'
+      access        : 0x1008 (STATIC SYNTHETIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 2
+      insns size    : 4 16-bit code units
+0060f0:                                        |[0060f0] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.access$000:(Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;Landroid/content/SharedPreferences;)V
+006100: 7020 c500 1000                         |0000: invoke-direct {v0, v1}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.updateColor:(Landroid/content/SharedPreferences;)V // method@00c5
+006106: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=29
+      locals        :
+        0x0000 - 0x0004 reg=0 x0 Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+        0x0000 - 0x0004 reg=1 x1 Landroid/content/SharedPreferences;
+
+    #2              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'access$100'
+      type          : '(Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)Landroid/content/Context;'
+      access        : 0x1008 (STATIC SYNTHETIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+006108:                                        |[006108] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.access$100:(Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)Landroid/content/Context;
+006118: 5410 2300                              |0000: iget-object v0, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mContext:Landroid/content/Context; // field@0023
+00611c: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=29
+      locals        :
+        0x0000 - 0x0003 reg=1 x0 Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+
+    #3              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'updateColor'
+      type          : '(Landroid/content/SharedPreferences;)V'
+      access        : 0x0002 (PRIVATE)
+      code          -
+      registers     : 6
+      ins           : 2
+      outs          : 3
+      insns size    : 24 16-bit code units
+006120:                                        |[006120] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.updateColor:(Landroid/content/SharedPreferences;)V
+006130: 5440 2000                              |0000: iget-object v0, v4, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0020
+006134: 5441 2300                              |0002: iget-object v1, v4, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mContext:Landroid/content/Context; // field@0023
+006138: 6e10 1800 0100                         |0004: invoke-virtual {v1}, Landroid/content/Context;.getAssets:()Landroid/content/res/AssetManager; // method@0018
+00613e: 0c01                                   |0007: move-result-object v1
+006140: 1a02 9c03                              |0008: const-string v2, "preferences_color" // string@039c
+006144: 5443 2300                              |000a: iget-object v3, v4, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mContext:Landroid/content/Context; // field@0023
+006148: 7110 1701 0300                         |000c: invoke-static {v3}, Lcom/sonymobile/experienceflow/wallpaper/ColorPicker;.getDefaultLiveWallpaperIndex:(Landroid/content/Context;)I // method@0117
+00614e: 0a03                                   |000f: move-result v3
+006150: 7230 2e00 2503                         |0010: invoke-interface {v5, v2, v3}, Landroid/content/SharedPreferences;.getInt:(Ljava/lang/String;I)I // method@002e
+006156: 0a02                                   |0013: move-result v2
+006158: 6e30 a900 1002                         |0014: invoke-virtual {v0, v1, v2}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.requestColors:(Landroid/content/res/AssetManager;I)V // method@00a9
+00615e: 0e00                                   |0017: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=41
+        0x000c line=43
+        0x0010 line=42
+        0x0014 line=41
+        0x0017 line=44
+      locals        :
+        0x0000 - 0x0018 reg=4 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+        0x0000 - 0x0018 reg=5 sharedPreferences Landroid/content/SharedPreferences;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'accelerate'
+      type          : '(F)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 1
+      insns size    : 8 16-bit code units
+006160:                                        |[006160] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.accelerate:(F)V
+006170: 6e10 bb00 0100                         |0000: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.getFramerateController:()Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // method@00bb
+006176: 0c00                                   |0003: move-result-object v0
+006178: 6e10 d800 0000                         |0004: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.continueFrame:()V // method@00d8
+00617e: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=168
+        0x0007 line=169
+      locals        :
+        0x0000 - 0x0008 reg=1 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+        0x0000 - 0x0008 reg=2 value F
+
+    #1              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'getCapabilities'
+      type          : '()Lcom/sonymobile/experienceflow/renderer/Capabilities;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 8
+      ins           : 1
+      outs          : 2
+      insns size    : 38 16-bit code units
+006180:                                        |[006180] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.getCapabilities:()Lcom/sonymobile/experienceflow/renderer/Capabilities;
+006190: 2200 5200                              |0000: new-instance v0, Lcom/sonymobile/experienceflow/renderer/Capabilities; // type@0052
+006194: 7010 8f00 0000                         |0002: invoke-direct {v0}, Lcom/sonymobile/experienceflow/renderer/Capabilities;.<init>:()V // method@008f
+00619a: 1306 031f                              |0005: const/16 v6, #int 7939 // #1f03
+00619e: 7110 4000 0600                         |0007: invoke-static {v6}, Landroid/opengl/GLES20;.glGetString:(I)Ljava/lang/String; // method@0040
+0061a4: 0c02                                   |000a: move-result-object v2
+0061a6: 2205 ce00                              |000b: new-instance v5, Ljava/util/StringTokenizer; // type@00ce
+0061aa: 7020 3302 2500                         |000d: invoke-direct {v5, v2}, Ljava/util/StringTokenizer;.<init>:(Ljava/lang/String;)V // method@0233
+0061b0: 6e10 3402 0500                         |0010: invoke-virtual {v5}, Ljava/util/StringTokenizer;.countTokens:()I // method@0234
+0061b6: 0a04                                   |0013: move-result v4
+0061b8: 2341 dd00                              |0014: new-array v1, v4, [Ljava/lang/String; // type@00dd
+0061bc: 1203                                   |0016: const/4 v3, #int 0 // #0
+0061be: 3543 0b00                              |0017: if-ge v3, v4, 0022 // +000b
+0061c2: 6e10 3502 0500                         |0019: invoke-virtual {v5}, Ljava/util/StringTokenizer;.nextToken:()Ljava/lang/String; // method@0235
+0061c8: 0c06                                   |001c: move-result-object v6
+0061ca: 4d06 0103                              |001d: aput-object v6, v1, v3
+0061ce: d803 0301                              |001f: add-int/lit8 v3, v3, #int 1 // #01
+0061d2: 28f6                                   |0021: goto 0017 // -000a
+0061d4: 6e20 9300 1000                         |0022: invoke-virtual {v0, v1}, Lcom/sonymobile/experienceflow/renderer/Capabilities;.setExtensions:([Ljava/lang/String;)V // method@0093
+0061da: 1100                                   |0025: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=129
+        0x0005 line=130
+        0x000b line=131
+        0x0010 line=132
+        0x0014 line=133
+        0x0016 line=134
+        0x0019 line=135
+        0x001f line=134
+        0x0022 line=137
+        0x0025 line=138
+      locals        :
+        0x0005 - 0x0026 reg=0 c Lcom/sonymobile/experienceflow/renderer/Capabilities;
+        0x0016 - 0x0026 reg=1 extArray [Ljava/lang/String;
+        0x000b - 0x0026 reg=2 extensions Ljava/lang/String;
+        0x0017 - 0x0026 reg=3 i I
+        0x0014 - 0x0026 reg=4 length I
+        0x0010 - 0x0026 reg=5 st Ljava/util/StringTokenizer;
+        0x0000 - 0x0026 reg=7 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+
+    #2              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'getFramerateController'
+      type          : '()Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 1
+      outs          : 4
+      insns size    : 20 16-bit code units
+0061dc:                                        |[0061dc] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.getFramerateController:()Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;
+0061ec: 5440 2400                              |0000: iget-object v0, v4, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mFramerateController:Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // field@0024
+0061f0: 3900 0f00                              |0002: if-nez v0, 0011 // +000f
+0061f4: 2200 5f00                              |0004: new-instance v0, Lcom/sonymobile/experienceflow/renderer/ProxyFramerateController; // type@005f
+0061f8: 1301 1e00                              |0006: const/16 v1, #int 30 // #1e
+0061fc: 5442 2600                              |0008: iget-object v2, v4, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mSurfaceView:Landroid/opengl/GLSurfaceView; // field@0026
+006200: 5443 2000                              |000a: iget-object v3, v4, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0020
+006204: 7040 e400 1032                         |000c: invoke-direct {v0, v1, v2, v3}, Lcom/sonymobile/experienceflow/renderer/ProxyFramerateController;.<init>:(ILandroid/opengl/GLSurfaceView;Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;)V // method@00e4
+00620a: 5b40 2400                              |000f: iput-object v0, v4, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mFramerateController:Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // field@0024
+00620e: 5440 2400                              |0011: iget-object v0, v4, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mFramerateController:Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // field@0024
+006212: 1100                                   |0013: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=172
+        0x0004 line=173
+        0x0011 line=175
+      locals        :
+        0x0000 - 0x0014 reg=4 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+
+    #3              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'handleSwipe'
+      type          : '(Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 1
+      insns size    : 8 16-bit code units
+006214:                                        |[006214] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.handleSwipe:(Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)V
+006224: 6e10 bb00 0100                         |0000: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.getFramerateController:()Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // method@00bb
+00622a: 0c00                                   |0003: move-result-object v0
+00622c: 6e10 d800 0000                         |0004: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.continueFrame:()V // method@00d8
+006232: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=164
+        0x0007 line=165
+      locals        :
+        0x0000 - 0x0008 reg=1 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+        0x0000 - 0x0008 reg=2 dc Lcom/sonymobile/experienceflow/wallpaper/SwipeData;
+
+    #4              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'onDrawFrame'
+      type          : '(Ljavax/microedition/khronos/opengles/GL10;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 11
+      ins           : 2
+      outs          : 7
+      insns size    : 93 16-bit code units
+006234:                                        |[006234] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.onDrawFrame:(Ljavax/microedition/khronos/opengles/GL10;)V
+006244: 1202                                   |0000: const/4 v2, #int 0 // #0
+006246: 6e10 bb00 0900                         |0001: invoke-virtual {v9}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.getFramerateController:()Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // method@00bb
+00624c: 0c00                                   |0004: move-result-object v0
+00624e: 6e10 dd00 0000                         |0005: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.onFrame:()J // method@00dd
+006254: 5590 2100                              |0008: iget-boolean v0, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.doReset:Z // field@0021
+006258: 3800 0e00                              |000a: if-eqz v0, 0018 // +000e
+00625c: 5490 2000                              |000c: iget-object v0, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0020
+006260: 6e10 a400 0000                         |000e: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.deactivate:()V // method@00a4
+006266: 5490 2000                              |0011: iget-object v0, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0020
+00626a: 6e10 a300 0000                         |0013: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.activate:()V // method@00a3
+006270: 5c92 2100                              |0016: iput-boolean v2, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.doReset:Z // field@0021
+006274: 2207 2500                              |0018: new-instance v7, Landroid/graphics/Point; // type@0025
+006278: 7010 3d00 0700                         |001a: invoke-direct {v7}, Landroid/graphics/Point;.<init>:()V // method@003d
+00627e: 5490 2300                              |001d: iget-object v0, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mContext:Landroid/content/Context; // field@0023
+006282: 1a01 4b04                              |001f: const-string v1, "window" // string@044b
+006286: 6e20 1d00 1000                         |0021: invoke-virtual {v0, v1}, Landroid/content/Context;.getSystemService:(Ljava/lang/String;)Ljava/lang/Object; // method@001d
+00628c: 0c08                                   |0024: move-result-object v8
+00628e: 1f08 4400                              |0025: check-cast v8, Landroid/view/WindowManager; // type@0044
+006292: 7210 6a00 0800                         |0027: invoke-interface {v8}, Landroid/view/WindowManager;.getDefaultDisplay:()Landroid/view/Display; // method@006a
+006298: 0c00                                   |002a: move-result-object v0
+00629a: 3800 2600                              |002b: if-eqz v0, 0051 // +0026
+00629e: 7210 6a00 0800                         |002d: invoke-interface {v8}, Landroid/view/WindowManager;.getDefaultDisplay:()Landroid/view/Display; // method@006a
+0062a4: 0c00                                   |0030: move-result-object v0
+0062a6: 6e20 6000 7000                         |0031: invoke-virtual {v0, v7}, Landroid/view/Display;.getRealSize:(Landroid/graphics/Point;)V // method@0060
+0062ac: 5490 2600                              |0034: iget-object v0, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mSurfaceView:Landroid/opengl/GLSurfaceView; // field@0026
+0062b0: 5491 2200                              |0036: iget-object v1, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.location:[I // field@0022
+0062b4: 6e20 4200 1000                         |0038: invoke-virtual {v0, v1}, Landroid/opengl/GLSurfaceView;.getLocationOnScreen:([I)V // method@0042
+0062ba: 5490 2000                              |003b: iget-object v0, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0020
+0062be: 5491 2200                              |003d: iget-object v1, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.location:[I // field@0022
+0062c2: 4401 0102                              |003f: aget v1, v1, v2
+0062c6: 5492 2200                              |0041: iget-object v2, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.location:[I // field@0022
+0062ca: 1213                                   |0043: const/4 v3, #int 1 // #1
+0062cc: 4402 0203                              |0044: aget v2, v2, v3
+0062d0: 5293 2700                              |0046: iget v3, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mWidth:I // field@0027
+0062d4: 5294 2500                              |0048: iget v4, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mHeight:I // field@0025
+0062d8: 5275 0900                              |004a: iget v5, v7, Landroid/graphics/Point;.x:I // field@0009
+0062dc: 5276 0a00                              |004c: iget v6, v7, Landroid/graphics/Point;.y:I // field@000a
+0062e0: 7407 ae00 0000                         |004e: invoke-virtual/range {v0, v1, v2, v3, v4, v5, v6}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.updateScreenLayout:(IIIIII)V // method@00ae
+0062e6: 5490 2000                              |0051: iget-object v0, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0020
+0062ea: 5491 2300                              |0053: iget-object v1, v9, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mContext:Landroid/content/Context; // field@0023
+0062ee: 6e10 1800 0100                         |0055: invoke-virtual {v1}, Landroid/content/Context;.getAssets:()Landroid/content/res/AssetManager; // method@0018
+0062f4: 0c01                                   |0058: move-result-object v1
+0062f6: 6e20 a800 1000                         |0059: invoke-virtual {v0, v1}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.render:(Landroid/content/res/AssetManager;)V // method@00a8
+0062fc: 0e00                                   |005c: return-void
+      catches       : (none)
+      positions     :
+        0x0001 line=105
+        0x0008 line=107
+        0x000c line=108
+        0x0011 line=109
+        0x0016 line=110
+        0x0018 line=113
+        0x001d line=114
+        0x0027 line=115
+        0x002d line=116
+        0x0034 line=117
+        0x003b line=118
+        0x0051 line=120
+        0x005c line=121
+      locals        :
+        0x001d - 0x005d reg=7 outSize Landroid/graphics/Point;
+        0x0027 - 0x005d reg=8 systemService Landroid/view/WindowManager;
+        0x0000 - 0x005d reg=9 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+        0x0000 - 0x005d reg=10 glUnused Ljavax/microedition/khronos/opengles/GL10;
+
+    #5              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'onSurfaceChanged'
+      type          : '(Ljavax/microedition/khronos/opengles/GL10;II)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 4
+      outs          : 0
+      insns size    : 8 16-bit code units
+006300:                                        |[006300] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.onSurfaceChanged:(Ljavax/microedition/khronos/opengles/GL10;II)V
+006310: 5913 2700                              |0000: iput v3, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mWidth:I // field@0027
+006314: 5914 2500                              |0002: iput v4, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.mHeight:I // field@0025
+006318: 1210                                   |0004: const/4 v0, #int 1 // #1
+00631a: 5c10 2100                              |0005: iput-boolean v0, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.doReset:Z // field@0021
+00631e: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=96
+        0x0002 line=97
+        0x0004 line=99
+        0x0007 line=100
+      locals        :
+        0x0000 - 0x0008 reg=1 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+        0x0000 - 0x0008 reg=2 glUnused Ljavax/microedition/khronos/opengles/GL10;
+        0x0000 - 0x0008 reg=3 width I
+        0x0000 - 0x0008 reg=4 height I
+
+    #6              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'onSurfaceCreated'
+      type          : '(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 3
+      outs          : 2
+      insns size    : 14 16-bit code units
+006320:                                        |[006320] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.onSurfaceCreated:(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V
+006330: 5420 2000                              |0000: iget-object v0, v2, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0020
+006334: 2201 5900                              |0002: new-instance v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$3; // type@0059
+006338: 7020 b400 2100                         |0004: invoke-direct {v1, v2}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer$3;.<init>:(Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)V // method@00b4
+00633e: 6e20 aa00 1000                         |0007: invoke-virtual {v0, v1}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.setOnRenderListener:(Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl$RenderListener;)V // method@00aa
+006344: 1210                                   |000a: const/4 v0, #int 1 // #1
+006346: 5c20 2100                              |000b: iput-boolean v0, v2, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.doReset:Z // field@0021
+00634a: 0e00                                   |000d: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=83
+        0x000a line=90
+        0x000d line=91
+      locals        :
+        0x0000 - 0x000e reg=2 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+        0x0000 - 0x000e reg=3 glUnused Ljavax/microedition/khronos/opengles/GL10;
+        0x0000 - 0x000e reg=4 config Ljavax/microedition/khronos/egl/EGLConfig;
+
+    #7              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'poke'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 8 16-bit code units
+00634c:                                        |[00634c] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.poke:()V
+00635c: 6e10 bb00 0100                         |0000: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.getFramerateController:()Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // method@00bb
+006362: 0c00                                   |0003: move-result-object v0
+006364: 6e10 d800 0000                         |0004: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.continueFrame:()V // method@00d8
+00636a: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=160
+        0x0007 line=161
+      locals        :
+        0x0000 - 0x0008 reg=1 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+
+    #8              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'pushTouchUp'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 3
+      ins           : 1
+      outs          : 3
+      insns size    : 8 16-bit code units
+00636c:                                        |[00636c] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.pushTouchUp:()V
+00637c: 5220 1e00                              |0000: iget v0, v2, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.ax:F // field@001e
+006380: 5221 1f00                              |0002: iget v1, v2, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.ay:F // field@001f
+006384: 6e30 c400 0201                         |0004: invoke-virtual {v2, v0, v1}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.touchUp:(FF)V // method@00c4
+00638a: 0e00                                   |0007: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=125
+        0x0007 line=126
+      locals        :
+        0x0000 - 0x0008 reg=2 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+
+    #9              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'touch'
+      type          : '(FF)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 3
+      insns size    : 17 16-bit code units
+00638c:                                        |[00638c] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.touch:(FF)V
+00639c: 5410 2000                              |0000: iget-object v0, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0020
+0063a0: 6e30 ab00 2003                         |0002: invoke-virtual {v0, v2, v3}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.touch:(FF)V // method@00ab
+0063a6: 5912 1e00                              |0005: iput v2, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.ax:F // field@001e
+0063aa: 5913 1f00                              |0007: iput v3, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.ay:F // field@001f
+0063ae: 6e10 bb00 0100                         |0009: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.getFramerateController:()Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // method@00bb
+0063b4: 0c00                                   |000c: move-result-object v0
+0063b6: 6e10 d800 0000                         |000d: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.continueFrame:()V // method@00d8
+0063bc: 0e00                                   |0010: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=148
+        0x0005 line=149
+        0x0009 line=150
+        0x0010 line=151
+      locals        :
+        0x0000 - 0x0011 reg=1 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+        0x0000 - 0x0011 reg=2 x F
+        0x0000 - 0x0011 reg=3 y F
+
+    #10              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'touchDown'
+      type          : '(FF)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 3
+      insns size    : 17 16-bit code units
+0063c0:                                        |[0063c0] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.touchDown:(FF)V
+0063d0: 5410 2000                              |0000: iget-object v0, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0020
+0063d4: 6e30 ac00 2003                         |0002: invoke-virtual {v0, v2, v3}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.touchDown:(FF)V // method@00ac
+0063da: 5912 1e00                              |0005: iput v2, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.ax:F // field@001e
+0063de: 5913 1f00                              |0007: iput v3, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.ay:F // field@001f
+0063e2: 6e10 bb00 0100                         |0009: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.getFramerateController:()Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // method@00bb
+0063e8: 0c00                                   |000c: move-result-object v0
+0063ea: 6e10 d800 0000                         |000d: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.continueFrame:()V // method@00d8
+0063f0: 0e00                                   |0010: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=142
+        0x0005 line=143
+        0x0009 line=144
+        0x0010 line=145
+      locals        :
+        0x0000 - 0x0011 reg=1 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+        0x0000 - 0x0011 reg=2 x F
+        0x0000 - 0x0011 reg=3 y F
+
+    #11              : (in Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)
+      name          : 'touchUp'
+      type          : '(FF)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 4
+      ins           : 3
+      outs          : 3
+      insns size    : 17 16-bit code units
+0063f4:                                        |[0063f4] com.sonymobile.experienceflow.renderer.ExperienceFlowRenderer.touchUp:(FF)V
+006404: 5410 2000                              |0000: iget-object v0, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.curveRenderer:Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl; // field@0020
+006408: 6e30 ad00 2003                         |0002: invoke-virtual {v0, v2, v3}, Lcom/sonymobile/experienceflow/renderer/CurveRendererImpl;.touchUp:(FF)V // method@00ad
+00640e: 5912 1e00                              |0005: iput v2, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.ax:F // field@001e
+006412: 5913 1f00                              |0007: iput v3, v1, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.ay:F // field@001f
+006416: 6e10 bb00 0100                         |0009: invoke-virtual {v1}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.getFramerateController:()Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // method@00bb
+00641c: 0c00                                   |000c: move-result-object v0
+00641e: 6e10 d800 0000                         |000d: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.continueFrame:()V // method@00d8
+006424: 0e00                                   |0010: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=154
+        0x0005 line=155
+        0x0009 line=156
+        0x0010 line=157
+      locals        :
+        0x0000 - 0x0011 reg=1 this Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+        0x0000 - 0x0011 reg=2 x F
+        0x0000 - 0x0011 reg=3 y F
+
+  source_file_idx   : 87 (ExperienceFlowRenderer.java)
+

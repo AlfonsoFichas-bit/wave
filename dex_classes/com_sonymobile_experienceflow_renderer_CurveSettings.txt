@@ -1,0 +1,16 @@
+Class #7            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/renderer/CurveSettings;'
+  Access flags      : 0x0601 (PUBLIC INTERFACE ABSTRACT)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/CurveSettings;)
+      name          : 'MAX_FPS'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 30
+  Instance fields   -
+  Direct methods    -
+  Virtual methods   -
+  source_file_idx   : 60 (CurveSettings.java)
+

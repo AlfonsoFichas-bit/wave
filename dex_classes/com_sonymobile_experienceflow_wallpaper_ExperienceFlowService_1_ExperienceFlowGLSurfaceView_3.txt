@@ -1,0 +1,60 @@
+Class #35            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView$3;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Ljava/lang/Runnable;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView$3;)
+      name          : 'this$2'
+      type          : 'Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView$3;)
+      name          : '<init>'
+      type          : '(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+008104:                                        |[008104] com.sonymobile.experienceflow.wallpaper.ExperienceFlowService$1$ExperienceFlowGLSurfaceView$3.<init>:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView;)V
+008114: 5b01 7500                              |0000: iput-object v1, v0, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView$3;.this$2:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView; // field@0075
+008118: 7010 0002 0000                         |0002: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+00811e: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=152
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView$3;
+        0x0000 - 0x0006 reg=1 this$2 Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView$3;)
+      name          : 'run'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 14 16-bit code units
+008120:                                        |[008120] com.sonymobile.experienceflow.wallpaper.ExperienceFlowService$1$ExperienceFlowGLSurfaceView$3.run:()V
+008130: 5410 7500                              |0000: iget-object v0, v1, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView$3;.this$2:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView; // field@0075
+008134: 7110 5601 0000                         |0002: invoke-static {v0}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView;.access$000:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView;)Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer; // method@0156
+00813a: 0c00                                   |0005: move-result-object v0
+00813c: 6e10 bb00 0000                         |0006: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.getFramerateController:()Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // method@00bb
+008142: 0c00                                   |0009: move-result-object v0
+008144: 6e10 d900 0000                         |000a: invoke-virtual {v0}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.forceSingleFrameRender:()V // method@00d9
+00814a: 0e00                                   |000d: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=155
+        0x000d line=156
+      locals        :
+        0x0000 - 0x000e reg=1 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowService$1$ExperienceFlowGLSurfaceView$3;
+
+  source_file_idx   : 88 (ExperienceFlowService.java)
+

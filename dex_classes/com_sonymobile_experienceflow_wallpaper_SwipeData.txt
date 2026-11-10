@@ -1,0 +1,185 @@
+Class #41            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/wallpaper/SwipeData;'
+  Access flags      : 0x0001 (PUBLIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Ljava/lang/Runnable;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)
+      name          : 'mAction'
+      type          : 'Z'
+      access        : 0x0002 (PRIVATE)
+    #1              : (in Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)
+      name          : 'mFreeList'
+      type          : 'Lcom/sonymobile/experienceflow/util/FreeList;'
+      access        : 0x0002 (PRIVATE)
+    #2              : (in Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)
+      name          : 'mRenderer'
+      type          : 'Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;'
+      access        : 0x0002 (PRIVATE)
+    #3              : (in Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)
+      name          : 'mX'
+      type          : 'F'
+      access        : 0x0002 (PRIVATE)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+00825c:                                        |[00825c] com.sonymobile.experienceflow.wallpaper.SwipeData.<init>:()V
+00826c: 7010 0002 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+008272: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=15
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/SwipeData;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)
+      name          : 'getActionUp'
+      type          : '()Z'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+008274:                                        |[008274] com.sonymobile.experienceflow.wallpaper.SwipeData.getActionUp:()Z
+008284: 5510 8900                              |0000: iget-boolean v0, v1, Lcom/sonymobile/experienceflow/wallpaper/SwipeData;.mAction:Z // field@0089
+008288: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=49
+      locals        :
+        0x0000 - 0x0003 reg=1 this Lcom/sonymobile/experienceflow/wallpaper/SwipeData;
+
+    #1              : (in Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)
+      name          : 'getX'
+      type          : '()F'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+00828c:                                        |[00828c] com.sonymobile.experienceflow.wallpaper.SwipeData.getX:()F
+00829c: 5210 8c00                              |0000: iget v0, v1, Lcom/sonymobile/experienceflow/wallpaper/SwipeData;.mX:F // field@008c
+0082a0: 0f00                                   |0002: return v0
+      catches       : (none)
+      positions     :
+        0x0000 line=45
+      locals        :
+        0x0000 - 0x0003 reg=1 this Lcom/sonymobile/experienceflow/wallpaper/SwipeData;
+
+    #2              : (in Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)
+      name          : 'run'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 2
+      insns size    : 11 16-bit code units
+0082a4:                                        |[0082a4] com.sonymobile.experienceflow.wallpaper.SwipeData.run:()V
+0082b4: 5410 8b00                              |0000: iget-object v0, v1, Lcom/sonymobile/experienceflow/wallpaper/SwipeData;.mRenderer:Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer; // field@008b
+0082b8: 6e20 bc00 1000                         |0002: invoke-virtual {v0, v1}, Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;.handleSwipe:(Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)V // method@00bc
+0082be: 5410 8a00                              |0005: iget-object v0, v1, Lcom/sonymobile/experienceflow/wallpaper/SwipeData;.mFreeList:Lcom/sonymobile/experienceflow/util/FreeList; // field@008a
+0082c2: 6e20 0001 1000                         |0007: invoke-virtual {v0, v1}, Lcom/sonymobile/experienceflow/util/FreeList;.checkIn:(Ljava/lang/Object;)V // method@0100
+0082c8: 0e00                                   |000a: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=54
+        0x0005 line=55
+        0x000a line=56
+      locals        :
+        0x0000 - 0x000b reg=1 this Lcom/sonymobile/experienceflow/wallpaper/SwipeData;
+
+    #3              : (in Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)
+      name          : 'setActionUp'
+      type          : '(Z)Lcom/sonymobile/experienceflow/wallpaper/SwipeData;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 3 16-bit code units
+0082cc:                                        |[0082cc] com.sonymobile.experienceflow.wallpaper.SwipeData.setActionUp:(Z)Lcom/sonymobile/experienceflow/wallpaper/SwipeData;
+0082dc: 5c01 8900                              |0000: iput-boolean v1, v0, Lcom/sonymobile/experienceflow/wallpaper/SwipeData;.mAction:Z // field@0089
+0082e0: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=40
+        0x0002 line=41
+      locals        :
+        0x0000 - 0x0003 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/SwipeData;
+        0x0000 - 0x0003 reg=1 action Z
+
+    #4              : (in Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)
+      name          : 'setFreeList'
+      type          : '(Lcom/sonymobile/experienceflow/util/FreeList;)Lcom/sonymobile/experienceflow/wallpaper/SwipeData;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 3 16-bit code units
+0082e4:                                        |[0082e4] com.sonymobile.experienceflow.wallpaper.SwipeData.setFreeList:(Lcom/sonymobile/experienceflow/util/FreeList;)Lcom/sonymobile/experienceflow/wallpaper/SwipeData;
+0082f4: 5b01 8a00                              |0000: iput-object v1, v0, Lcom/sonymobile/experienceflow/wallpaper/SwipeData;.mFreeList:Lcom/sonymobile/experienceflow/util/FreeList; // field@008a
+0082f8: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=25
+        0x0002 line=26
+      locals        :
+        0x0000 - 0x0003 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/SwipeData;
+        0x0000 - 0x0003 reg=1 freeList Lcom/sonymobile/experienceflow/util/FreeList; Lcom/sonymobile/experienceflow/util/FreeList<Lcom/sonymobile/experienceflow/wallpaper/SwipeData;>;
+
+    #5              : (in Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)
+      name          : 'setRenderer'
+      type          : '(Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)Lcom/sonymobile/experienceflow/wallpaper/SwipeData;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 3 16-bit code units
+0082fc:                                        |[0082fc] com.sonymobile.experienceflow.wallpaper.SwipeData.setRenderer:(Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;)Lcom/sonymobile/experienceflow/wallpaper/SwipeData;
+00830c: 5b01 8b00                              |0000: iput-object v1, v0, Lcom/sonymobile/experienceflow/wallpaper/SwipeData;.mRenderer:Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer; // field@008b
+008310: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=30
+        0x0002 line=31
+      locals        :
+        0x0000 - 0x0003 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/SwipeData;
+        0x0000 - 0x0003 reg=1 renderer Lcom/sonymobile/experienceflow/renderer/ExperienceFlowRenderer;
+
+    #6              : (in Lcom/sonymobile/experienceflow/wallpaper/SwipeData;)
+      name          : 'setX'
+      type          : '(F)Lcom/sonymobile/experienceflow/wallpaper/SwipeData;'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 0
+      insns size    : 3 16-bit code units
+008314:                                        |[008314] com.sonymobile.experienceflow.wallpaper.SwipeData.setX:(F)Lcom/sonymobile/experienceflow/wallpaper/SwipeData;
+008324: 5901 8c00                              |0000: iput v1, v0, Lcom/sonymobile/experienceflow/wallpaper/SwipeData;.mX:F // field@008c
+008328: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=35
+        0x0002 line=36
+      locals        :
+        0x0000 - 0x0003 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/SwipeData;
+        0x0000 - 0x0003 reg=1 x F
+
+  source_file_idx   : 423 (SwipeData.java)
+

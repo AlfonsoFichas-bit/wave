@@ -1,0 +1,99 @@
+Class #12            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;'
+  Access flags      : 0x0010 (FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Ljava/lang/Runnable;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;)
+      name          : 'this$0'
+      type          : 'Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;)
+      name          : '<init>'
+      type          : '(Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;)V'
+      access        : 0x10002 (PRIVATE CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+006428:                                        |[006428] com.sonymobile.experienceflow.renderer.FramerateControllerBase$RenderRequest.<init>:(Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;)V
+006438: 5b01 2800                              |0000: iput-object v1, v0, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;.this$0:Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // field@0028
+00643c: 7010 0002 0000                         |0002: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+006442: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=180
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;
+        0x0000 - 0x0006 reg=1 (null) Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;
+
+    #1              : (in Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;)
+      name          : '<init>'
+      type          : '(Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$1;)V'
+      access        : 0x11000 (SYNTHETIC CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 3
+      outs          : 2
+      insns size    : 4 16-bit code units
+006444:                                        |[006444] com.sonymobile.experienceflow.renderer.FramerateControllerBase$RenderRequest.<init>:(Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$1;)V
+006454: 7020 cf00 1000                         |0000: invoke-direct {v0, v1}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;.<init>:(Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;)V // method@00cf
+00645a: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=180
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;
+        0x0000 - 0x0004 reg=1 x0 Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;
+        0x0000 - 0x0004 reg=2 x1 Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$1;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;)
+      name          : 'run'
+      type          : '()V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 1
+      outs          : 3
+      insns size    : 48 16-bit code units
+00645c:                                        |[00645c] com.sonymobile.experienceflow.renderer.FramerateControllerBase$RenderRequest.run:()V
+00646c: 5440 2800                              |0000: iget-object v0, v4, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;.this$0:Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // field@0028
+006470: 7110 d300 0000                         |0002: invoke-static {v0}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.access$100:(Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;)Landroid/opengl/GLSurfaceView; // method@00d3
+006476: 0c00                                   |0005: move-result-object v0
+006478: 3800 2900                              |0006: if-eqz v0, 002f // +0029
+00647c: 5440 2800                              |0008: iget-object v0, v4, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;.this$0:Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // field@0028
+006480: 7110 d400 0000                         |000a: invoke-static {v0}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.access$200:(Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;)I // method@00d4
+006486: 0a00                                   |000d: move-result v0
+006488: 3c00 0f00                              |000e: if-gtz v0, 001d // +000f
+00648c: 5440 2800                              |0010: iget-object v0, v4, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;.this$0:Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // field@0028
+006490: 7110 d500 0000                         |0012: invoke-static {v0}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.access$300:(Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;)Ljava/util/concurrent/atomic/AtomicBoolean; // method@00d5
+006496: 0c00                                   |0015: move-result-object v0
+006498: 1201                                   |0016: const/4 v1, #int 0 // #0
+00649a: 6e20 3702 1000                         |0017: invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;.getAndSet:(Z)Z // method@0237
+0064a0: 0a00                                   |001a: move-result v0
+0064a2: 3800 1400                              |001b: if-eqz v0, 002f // +0014
+0064a6: 5440 2800                              |001d: iget-object v0, v4, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;.this$0:Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // field@0028
+0064aa: 7100 4e00 0000                         |001f: invoke-static {}, Landroid/os/SystemClock;.elapsedRealtime:()J // method@004e
+0064b0: 0b02                                   |0022: move-result-wide v2
+0064b2: 7130 d600 2003                         |0023: invoke-static {v0, v2, v3}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.access$402:(Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;J)J // method@00d6
+0064b8: 5440 2800                              |0026: iget-object v0, v4, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;.this$0:Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase; // field@0028
+0064bc: 7110 d300 0000                         |0028: invoke-static {v0}, Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;.access$100:(Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase;)Landroid/opengl/GLSurfaceView; // method@00d3
+0064c2: 0c00                                   |002b: move-result-object v0
+0064c4: 6e10 4400 0000                         |002c: invoke-virtual {v0}, Landroid/opengl/GLSurfaceView;.requestRender:()V // method@0044
+0064ca: 0e00                                   |002f: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=183
+        0x001d line=184
+        0x0026 line=185
+        0x002f line=187
+      locals        :
+        0x0000 - 0x0030 reg=4 this Lcom/sonymobile/experienceflow/renderer/FramerateControllerBase$RenderRequest;
+
+  source_file_idx   : 99 (FramerateControllerBase.java)
+

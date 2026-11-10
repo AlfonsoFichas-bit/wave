@@ -1,0 +1,85 @@
+Class #30            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$4;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Landroid/webkit/WebViewClient;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$4;)
+      name          : 'this$0'
+      type          : 'Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$4;)
+      name          : '<init>'
+      type          : '(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;)V'
+      access        : 0x10000 (CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+00798c:                                        |[00798c] com.sonymobile.experienceflow.wallpaper.ExperienceFlowPreferencesActivity$4.<init>:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;)V
+00799c: 5b01 6100                              |0000: iput-object v1, v0, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$4;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@0061
+0079a0: 7010 6e00 0000                         |0002: invoke-direct {v0}, Landroid/webkit/WebViewClient;.<init>:()V // method@006e
+0079a6: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=230
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$4;
+        0x0000 - 0x0006 reg=1 this$0 Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$4;)
+      name          : 'onPageFinished'
+      type          : '(Landroid/webkit/WebView;Ljava/lang/String;)V'
+      access        : 0x0001 (PUBLIC)
+      code          -
+      registers     : 5
+      ins           : 3
+      outs          : 2
+      insns size    : 53 16-bit code units
+0079a8:                                        |[0079a8] com.sonymobile.experienceflow.wallpaper.ExperienceFlowPreferencesActivity$4.onPageFinished:(Landroid/webkit/WebView;Ljava/lang/String;)V
+0079b8: 5420 6100                              |0000: iget-object v0, v2, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$4;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@0061
+0079bc: 7110 3801 0000                         |0002: invoke-static {v0}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;.access$300:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;)Landroid/app/ProgressDialog; // method@0138
+0079c2: 0c00                                   |0005: move-result-object v0
+0079c4: 3800 2e00                              |0006: if-eqz v0, 0034 // +002e
+0079c8: 5420 6100                              |0008: iget-object v0, v2, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$4;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@0061
+0079cc: 7110 3801 0000                         |000a: invoke-static {v0}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;.access$300:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;)Landroid/app/ProgressDialog; // method@0138
+0079d2: 0c00                                   |000d: move-result-object v0
+0079d4: 6e10 1000 0000                         |000e: invoke-virtual {v0}, Landroid/app/ProgressDialog;.isShowing:()Z // method@0010
+0079da: 0a00                                   |0011: move-result v0
+0079dc: 3800 0b00                              |0012: if-eqz v0, 001d // +000b
+0079e0: 5420 6100                              |0014: iget-object v0, v2, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$4;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@0061
+0079e4: 7110 3801 0000                         |0016: invoke-static {v0}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;.access$300:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;)Landroid/app/ProgressDialog; // method@0138
+0079ea: 0c00                                   |0019: move-result-object v0
+0079ec: 6e10 0f00 0000                         |001a: invoke-virtual {v0}, Landroid/app/ProgressDialog;.dismiss:()V // method@000f
+0079f2: 5420 6100                              |001d: iget-object v0, v2, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$4;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@0061
+0079f6: 1201                                   |001f: const/4 v1, #int 0 // #0
+0079f8: 7120 3901 1000                         |0020: invoke-static {v0, v1}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;.access$302:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog; // method@0139
+0079fe: 5420 6100                              |0023: iget-object v0, v2, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$4;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@0061
+007a02: 7110 3a01 0000                         |0025: invoke-static {v0}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;.access$400:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;)Landroid/app/AlertDialog; // method@013a
+007a08: 0c00                                   |0028: move-result-object v0
+007a0a: 3800 0b00                              |0029: if-eqz v0, 0034 // +000b
+007a0e: 5420 6100                              |002b: iget-object v0, v2, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$4;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@0061
+007a12: 7110 3a01 0000                         |002d: invoke-static {v0}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;.access$400:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;)Landroid/app/AlertDialog; // method@013a
+007a18: 0c00                                   |0030: move-result-object v0
+007a1a: 6e10 0900 0000                         |0031: invoke-virtual {v0}, Landroid/app/AlertDialog;.show:()V // method@0009
+007a20: 0e00                                   |0034: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=235
+        0x0008 line=236
+        0x0014 line=237
+        0x001d line=240
+        0x0023 line=242
+        0x002b line=243
+        0x0034 line=246
+      locals        :
+        0x0000 - 0x0035 reg=2 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$4;
+        0x0000 - 0x0035 reg=3 view Landroid/webkit/WebView;
+        0x0000 - 0x0035 reg=4 url Ljava/lang/String;
+
+  source_file_idx   : 85 (ExperienceFlowPreferencesActivity.java)
+

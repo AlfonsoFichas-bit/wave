@@ -1,0 +1,1133 @@
+td(l
+/system/bin/linker
+__cxa_finalize
+__cxa_atexit
+_ZN6varrayC2Ev
+memset
+__aeabi_unwind_cpp_pr0
+_ZN6varrayC1Ev
+_ZN6buffer9addconfigEP12bufferconfig
+_ZSt18_Rb_tree_decrementPSt18_Rb_tree_node_base
+_Znwj
+_ZSt29_Rb_tree_insert_and_rebalancebPSt18_Rb_tree_node_baseS0_RS_
+_ZN12bufferconfig3setEP6bufferii
+_ZN6bufferC2Eji
+glGenBuffers
+_ZN6bufferC1Eji
+_ZNSt8_Rb_treeIP12bufferconfigS1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E
+_ZdlPv
+_ZNSt6vectorIP12bufferconfigSaIS1_EE19_M_emplace_back_auxIIRKS1_EEEvDpOT_
+memmove
+_ZNSt6vectorIP12bufferconfigSaIS1_EE19_M_emplace_back_auxIJRKS1_EEEvDpOT_
+_ZN6buffer5touchEv
+_ZSt18_Rb_tree_incrementPKSt18_Rb_tree_node_base
+_ZSt28_Rb_tree_rebalance_for_erasePSt18_Rb_tree_node_baseRS_
+_ZN6buffer3setEjPvj
+glBindBuffer
+glBufferData
+_ZN6buffer6subsetEjjPv
+glBufferSubData
+_ZStltIcSt11char_traitsIcESaIcEEbRKSbIT_T0_T1_ES8_
+_ZNKSs7compareERKSs
+__aeabi_unwind_cpp_pr1
+_ZNSt8_Rb_treeISsSt4pairIKSsP9attributeESt10_Select1stIS4_ESt4lessISsESaIS4_EE24_M_get_insert_unique_posERS1_
+_ZNSt8_Rb_treeISsSt4pairIKSsP9attributeESt10_Select1stIS4_ESt4lessISsESaIS4_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIRS1_EESF_IIEEEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_
+_ZNSsC1ERKSs
+_ZSt18_Rb_tree_incrementPSt18_Rb_tree_node_base
+_ZNSsD1Ev
+_ZNSt8_Rb_treeISsSt4pairIKSsP9attributeESt10_Select1stIS4_ESt4lessISsESaIS4_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESF_IJEEEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_
+_ZN7program9getattribESs
+_ZN7program7attribsE
+_ZNSs4_Rep20_S_empty_rep_storageE
+_ZN6varray6updateEv
+_ZNKSs7compareEPKc
+glVertexAttribPointer
+glEnableVertexAttribArray
+_ZNSt8_Rb_treeISsSt4pairIKSsP12bufferconfigESt10_Select1stIS4_ESt4lessISsESaIS4_EE24_M_get_insert_unique_posERS1_
+_ZNSt8_Rb_treeISsSt4pairIKSsP12bufferconfigESt10_Select1stIS4_ESt4lessISsESaIS4_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIRS1_EESF_IIEEEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_
+_ZNSt8_Rb_treeISsSt4pairIKSsP12bufferconfigESt10_Select1stIS4_ESt4lessISsESaIS4_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESF_IJEEEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_
+_ZNSt3mapISsP12bufferconfigSt4lessISsESaISt4pairIKSsS1_EEEixERS5_
+_ZN6varray9getconfigESs
+_ZN7programC2ERj
+_ZN7programC1ERj
+_ZN7program4bindEv
+glUseProgram
+_ZN7program5boundE
+_ZN7program6updateEv
+_ZN7texture4bindEi
+glUniform1fv
+glUniform4fv
+glUniform4iv
+glUniformMatrix4fv
+glUniform2fv
+glUniform3fv
+glUniform1iv
+glUniform2iv
+glUniform3iv
+glUniformMatrix2fv
+glUniformMatrix3fv
+glUniform1i
+_ZNSt8_Rb_treeIP13uniformconfigS1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE16_M_insert_uniqueIRKS1_EESt4pairISt17_Rb_tree_iteratorIS1_EbEOT_
+_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIIRKjEEEvDpOT_
+_ZNSt6vectorIjSaIjEE19_M_emplace_back_auxIJRKjEEEvDpOT_
+_ZN7program6shaderEjSsRSt6vectorIjSaIjEE
+glCreateShader
+glShaderSource
+glCompileShader
+glGetShaderiv
+glGetShaderInfoLog
+exit
+_ZNSt8_Rb_treeISsSt4pairIKSsP9attributeESt10_Select1stIS4_ESt4lessISsESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E
+_ZNSt3mapISsP9attributeSt4lessISsESaISt4pairIKSsS1_EEED2Ev
+_ZNSt3mapISsP9attributeSt4lessISsESaISt4pairIKSsS1_EEED1Ev
+_ZNSt8_Rb_treeISsSt4pairIKSsP7uniformESt10_Select1stIS4_ESt4lessISsESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E
+_ZNSt3mapISsP7uniformSt4lessISsESaISt4pairIKSsS1_EEED2Ev
+_ZNSt3mapISsP7uniformSt4lessISsESaISt4pairIKSsS1_EEED1Ev
+_ZNSt8_Rb_treeISsSt4pairIKSsP7uniformESt10_Select1stIS4_ESt4lessISsESaIS4_EE24_M_get_insert_unique_posERS1_
+_ZNSt8_Rb_treeISsSt4pairIKSsP7uniformESt10_Select1stIS4_ESt4lessISsESaIS4_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIOSsEESF_IIEEEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_
+_ZNSt8_Rb_treeISsSt4pairIKSsP7uniformESt10_Select1stIS4_ESt4lessISsESaIS4_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOSsEESF_IJEEEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_
+_ZNSt3mapISsP7uniformSt4lessISsESaISt4pairIKSsS1_EEEixEOSs
+_ZNSt8_Rb_treeISsSt4pairIKSsP9attributeESt10_Select1stIS4_ESt4lessISsESaIS4_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIOSsEESF_IIEEEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_
+_ZNSt8_Rb_treeISsSt4pairIKSsP9attributeESt10_Select1stIS4_ESt4lessISsESaIS4_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOSsEESF_IJEEEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_
+_ZNSt3mapISsP9attributeSt4lessISsESaISt4pairIKSsS1_EEEixEOSs
+_ZN7program13createProgramERSt6vectorIjSaIjEE
+glCreateProgram
+glAttachShader
+glDeleteShader
+glLinkProgram
+glGetProgramiv
+glGetProgramInfoLog
+glGetActiveUniform
+_ZNSsC1EPKcRKSaIcE
+glBindAttribLocation
+glGetActiveAttrib
+_ZNSs4swapERSs
+_Znaj
+glGetUniformLocation
+__stack_chk_fail
+__stack_chk_guard
+_ZN7program8uniformsE
+_ZN7program11attribindexE
+__aeabi_atexit
+_ZN8fsshaderC2EP7program
+_ZN8fsshaderC1EP7program
+_ZN8fsshader3runEv
+glDrawArrays
+_ZNSt8ios_base4InitC1Ev
+_ZNSt8ios_base4InitD1Ev
+_ZN8rendererC2Ev
+_ZN8rendererC1Ev
+_ZN8renderer4initEP13AAssetManager
+_ZN5CurveC1EP13AAssetManager
+_Z3mixfff
+_ZN8renderer7getfileEP13AAssetManagerSs
+AAssetManager_open
+AAsset_getBuffer
+AAsset_getLength
+_ZNSsC1EPKcjRKSaIcE
+AAsset_close
+_ZN8renderer14createVerticesEii
+_ZdaPv
+_ZN8renderer13createIndicesEii
+__aeabi_uidivmod
+_ZNSt23mersenne_twister_engineIjLj32ELj624ELj397ELj31ELj2567483615ELj11ELj4294967295ELj7ELj2636928640ELj15ELj4022730752ELj18ELj1812433253EE4seedEj
+_ZNSt23mersenne_twister_engineIjLj32ELj624ELj397ELj31ELj2567483615ELj11ELj4294967295ELj7ELj2636928640ELj15ELj4022730752ELj18ELj1812433253EEclEv
+_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EOS6_PKS3_
+_ZNSs6appendEPKc
+_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EOS6_S7_
+_ZNSs6appendERKSs
+_ZNSs6insertEjRKSs
+_ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_EPKS3_RKS6_
+strlen
+_ZNSs7reserveEj
+_ZNSs6appendEPKcj
+_ZN8renderer15buildShaderFileEP13AAssetManagerSsSs
+_ZN6bufferD2Ev
+glDeleteBuffers
+_ZN6bufferD1Ev
+_ZNSt8_Rb_treeIP13uniformconfigS1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE8_M_eraseEPSt13_Rb_tree_nodeIS1_E
+_ZNSt6vectorIP13uniformconfigSaIS1_EE19_M_emplace_back_auxIIRKS1_EEEvDpOT_
+_ZNSt6vectorIP13uniformconfigSaIS1_EE19_M_emplace_back_auxIJRKS1_EEEvDpOT_
+_ZNSt8_Rb_treeIP13uniformconfigS1_St9_IdentityIS1_ESt4lessIS1_ESaIS1_EE5eraseERKS1_
+_ZN7programD2Ev
+glDeleteProgram
+_ZN7programD1Ev
+_ZN7uniform7touchedEv
+_ZN7uniform3setIfEEvT_
+_ZN7uniform3setIfEEvT_S1_S1_S1_
+_ZN7uniform3setIfEEvT_S1_
+_ZNSt8_Rb_treeISsSt4pairIKSs14themeparameterESt10_Select1stIS3_ESt4lessISsESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E
+_ZNSt8_Rb_treeISsSt4pairIKSsP7uniformESt10_Select1stIS4_ESt4lessISsESaIS4_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIRS1_EESF_IIEEEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_
+_ZNSt8_Rb_treeISsSt4pairIKSsP7uniformESt10_Select1stIS4_ESt4lessISsESaIS4_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESF_IJEEEEESt17_Rb_tree_iteratorIS4_ESt23_Rb_tree_const_iteratorIS4_EDpOT_
+_ZN7program10getuniformESs
+_ZNSt8_Rb_treeISsSt4pairIKSs14themeparameterESt10_Select1stIS3_ESt4lessISsESaIS3_EE24_M_get_insert_unique_posERS1_
+_ZNSt8_Rb_treeISsSt4pairIKSs14themeparameterESt10_Select1stIS3_ESt4lessISsESaIS3_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIOSsEESE_IIEEEEESt17_Rb_tree_iteratorIS3_ESt23_Rb_tree_const_iteratorIS3_EDpOT_
+_ZNSt8_Rb_treeISsSt4pairIKSs14themeparameterESt10_Select1stIS3_ESt4lessISsESaIS3_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJOSsEESE_IJEEEEESt17_Rb_tree_iteratorIS3_ESt23_Rb_tree_const_iteratorIS3_EDpOT_
+_ZNSt3mapISs14themeparameterSt4lessISsESaISt4pairIKSsS0_EEEixEOSs
+_ZN8renderer6renderEP13AAssetManager
+_ZN5Curve14updateRendererEv
+__android_log_print
+glDeleteTextures
+_ZN7textureC1Ev
+_ZN7texture3setEiiiiiPvb
+_ZNKSs4findEPKcj
+glViewport
+glDisable
+glDrawElements
+glEnable
+glBlendFunc
+_ZNSt8_Rb_treeIiSt4pairIKi17RendererInterfaceESt10_Select1stIS3_ESt4lessIiESaIS3_EE8_M_eraseEPSt13_Rb_tree_nodeIS3_E
+_ZNSt3mapIi17RendererInterfaceSt4lessIiESaISt4pairIKiS0_EEED2Ev
+_ZNSt3mapIi17RendererInterfaceSt4lessIiESaISt4pairIKiS0_EEED1Ev
+_ZNSt8_Rb_treeIiSt4pairIKi17RendererInterfaceESt10_Select1stIS3_ESt4lessIiESaIS3_EE24_M_get_insert_unique_posERS1_
+_ZNSt8_Rb_treeIiSt4pairIKi17RendererInterfaceESt10_Select1stIS3_ESt4lessIiESaIS3_EE22_M_emplace_hint_uniqueIIRKSt21piecewise_construct_tSt5tupleIIRS1_EESE_IIEEEEESt17_Rb_tree_iteratorIS3_ESt23_Rb_tree_const_iteratorIS3_EDpOT_
+_ZNSt8_Rb_treeIiSt4pairIKi17RendererInterfaceESt10_Select1stIS3_ESt4lessIiESaIS3_EE22_M_emplace_hint_uniqueIJRKSt21piecewise_construct_tSt5tupleIJRS1_EESE_IJEEEEESt17_Rb_tree_iteratorIS3_ESt23_Rb_tree_const_iteratorIS3_EDpOT_
+_ZNSt3mapIi17RendererInterfaceSt4lessIiESaISt4pairIKiS0_EEEixERS4_
+Java_com_sonymobile_experienceflow_renderer_CurveRenderer_init
+AAssetManager_fromJava
+Java_com_sonymobile_experienceflow_renderer_CurveRenderer_render
+Java_com_sonymobile_experienceflow_renderer_CurveRenderer_requestColors
+_ZN5Curve13requestColorsEP13AAssetManageri
+Java_com_sonymobile_experienceflow_renderer_CurveRenderer_updateScreenLayout
+_ZN5Curve18updateScreenLayoutEiiiiii
+Java_com_sonymobile_experienceflow_renderer_CurveRenderer_touchDown
+_ZN5Curve9touchDownEff
+Java_com_sonymobile_experienceflow_renderer_CurveRenderer_touch
+_ZN5Curve5touchEff
+Java_com_sonymobile_experienceflow_renderer_CurveRenderer_touchUp
+_ZN5Curve7touchUpEff
+Java_com_sonymobile_experienceflow_renderer_CurveRenderer_activate
+_ZN5Curve8activateEv
+Java_com_sonymobile_experienceflow_renderer_CurveRenderer_deactivate
+_ZN5Curve10deactivateEv
+Java_com_sonymobile_experienceflow_renderer_CurveRenderer_getSleepRecommendation
+_ZN5Curve22getSleepRecommendationEv
+_ZNSt6vectorIP11framebufferSaIS1_EED2Ev
+_ZNSt6vectorIP11framebufferSaIS1_EED1Ev
+_ZN7textureC2Ev
+glGenTextures
+_ZN7textureC2Ej
+_ZN7textureC1Ej
+glActiveTexture
+glBindTexture
+glTexImage2D
+glTexParameteri
+_ZN7texture3setESs
+_ZN7lodepng6decodeERSt6vectorIhSaIhEERjS4_RKSs16LodePNGColorTypej
+_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+_ZStlsIcSt11char_traitsIcESaIcEERSt13basic_ostreamIT_T0_ES7_RKSbIS4_S5_T1_E
+_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+_ZSt4cerr
+_ZN7texture4loadESs
+_ZN11framebuffer4exitEv
+glBindFramebuffer
+_ZN11framebuffer7fbstackE
+_ZN11framebufferC2Ev
+glGenFramebuffers
+_ZN11framebufferC1Ev
+_ZN11framebuffer3setEjP7texture
+glFramebufferTexture2D
+_ZNSt6vectorIP11framebufferSaIS1_EE19_M_emplace_back_auxIIRKS1_EEEvDpOT_
+_ZNSt6vectorIP11framebufferSaIS1_EE19_M_emplace_back_auxIJRKS1_EEEvDpOT_
+_ZN11framebuffer5enterEPS_
+_ZN12LodePNGStateD2Ev
+_ZTV12LodePNGState
+_ZN12LodePNGStateD1Ev
+__aeabi_uidiv
+_ZN12LodePNGStateD0Ev
+free
+realloc
+malloc
+_Z20lodepng_read32bitIntPKh
+_Z17lodepng_load_filePPhPjPKc
+fopen
+fseek
+ftell
+rewind
+fread
+fclose
+_Z17lodepng_save_filePKhjPKc
+fwrite
+_Z28lodepng_huffman_code_lengthsPjPKjjj
+_Z15lodepng_inflatePPhPjPKhjPK25LodePNGDecompressSettings
+_Z15lodepng_deflatePPhPjPKhjPK23LodePNGCompressSettings
+__aeabi_idivmod
+_Z23lodepng_zlib_decompressPPhPjPKhjPK25LodePNGDecompressSettings
+_Z21lodepng_zlib_compressPPhPjPKhjPK23LodePNGCompressSettings
+_Z30lodepng_compress_settings_initP23LodePNGCompressSettings
+_Z32lodepng_decompress_settings_initP25LodePNGDecompressSettings
+_Z13lodepng_crc32PKhj
+_Z20lodepng_chunk_lengthPKh
+_Z18lodepng_chunk_typePcPKh
+_Z25lodepng_chunk_type_equalsPKhPKc
+_Z23lodepng_chunk_ancillaryPKh
+_Z21lodepng_chunk_privatePKh
+_Z24lodepng_chunk_safetocopyPKh
+_Z18lodepng_chunk_dataPh
+_Z24lodepng_chunk_data_constPKh
+_Z23lodepng_chunk_check_crcPKh
+_Z26lodepng_chunk_generate_crcPh
+_Z18lodepng_chunk_nextPh
+_Z24lodepng_chunk_next_constPKh
+_Z20lodepng_chunk_appendPPhPjPKh
+_Z20lodepng_chunk_createPPhPjjPKcPKh
+_Z23lodepng_color_mode_initP16LodePNGColorMode
+_Z21lodepng_palette_clearP16LodePNGColorMode
+_Z26lodepng_color_mode_cleanupP16LodePNGColorMode
+_Z23lodepng_color_mode_copyP16LodePNGColorModePKS_
+_Z19lodepng_palette_addP16LodePNGColorModehhhh
+_Z15lodepng_get_bppPK16LodePNGColorMode
+_Z20lodepng_get_channelsPK16LodePNGColorMode
+_Z25lodepng_is_greyscale_typePK16LodePNGColorMode
+_Z21lodepng_is_alpha_typePK16LodePNGColorMode
+_Z23lodepng_is_palette_typePK16LodePNGColorMode
+_Z25lodepng_has_palette_alphaPK16LodePNGColorMode
+_Z22lodepng_can_have_alphaPK16LodePNGColorMode
+_Z20lodepng_get_raw_sizejjPK16LodePNGColorMode
+_Z24lodepng_get_raw_size_lctjj16LodePNGColorTypej
+_Z18lodepng_clear_textP11LodePNGInfo
+_Z16lodepng_add_textP11LodePNGInfoPKcS2_
+_Z19lodepng_clear_itextP11LodePNGInfo
+_Z17lodepng_add_itextP11LodePNGInfoPKcS2_S2_S2_
+_Z17lodepng_info_initP11LodePNGInfo
+_Z20lodepng_info_cleanupP11LodePNGInfo
+_Z17lodepng_info_copyP11LodePNGInfoPKS_
+memcpy
+_Z17lodepng_info_swapP11LodePNGInfoS0_
+_Z15lodepng_convertPhPKhP16LodePNGColorModePKS2_jjj
+_Z20getValueRequiredBitst
+_Z25lodepng_auto_choose_colorP16LodePNGColorModePKhjjPKS_18LodePNGAutoConvert
+_Z15lodepng_inspectPjS_P12LodePNGStatePKhj
+_Z14lodepng_decodePPhPjS1_P12LodePNGStatePKhj
+_Z29lodepng_decoder_settings_initP22LodePNGDecoderSettings
+_Z21lodepng_state_cleanupP12LodePNGState
+_ZN7lodepng5StateD2Ev
+_ZTVN7lodepng5StateE
+_ZN7lodepng5StateD1Ev
+_ZN7lodepng5StateD0Ev
+_Z18lodepng_state_copyP12LodePNGStatePKS_
+_Z14lodepng_encodePPhPjPKhjjP12LodePNGState
+strcmp
+_Z29lodepng_encoder_settings_initP22LodePNGEncoderSettings
+_Z18lodepng_state_initP12LodePNGState
+_Z21lodepng_decode_memoryPPhPjS1_PKhj16LodePNGColorTypej
+_Z16lodepng_decode32PPhPjS1_PKhj
+_Z16lodepng_decode24PPhPjS1_PKhj
+_Z19lodepng_decode_filePPhPjS1_PKc16LodePNGColorTypej
+_Z21lodepng_decode32_filePPhPjS1_PKc
+_Z21lodepng_decode24_filePPhPjS1_PKc
+_Z21lodepng_encode_memoryPPhPjPKhjj16LodePNGColorTypej
+_Z16lodepng_encode32PPhPjPKhjj
+_Z16lodepng_encode24PPhPjPKhjj
+_Z19lodepng_encode_filePKcPKhjj16LodePNGColorTypej
+_Z21lodepng_encode32_filePKcPKhjj
+_Z21lodepng_encode24_filePKcPKhjj
+_Z18lodepng_error_textj
+_ZN7lodepng9save_fileERKSt6vectorIhSaIhEERKSs
+_ZNSt14basic_ofstreamIcSt11char_traitsIcEEC1EPKcSt13_Ios_Openmode
+_ZNSo5writeEPKci
+_ZNSt14basic_ofstreamIcSt11char_traitsIcEED1Ev
+_ZN7lodepng5StateC2Ev
+_ZN7lodepng5StateC1Ev
+_ZN7lodepng5StateC2ERKS0_
+_ZN7lodepng5StateC1ERKS0_
+_ZN7lodepng5StateaSERKS0_
+_ZNKSt6vectorIhSaIhEE12_M_check_lenEjPKc
+_ZSt20__throw_length_errorPKc
+_ZNSt11__copy_moveILb1ELb1ESt26random_access_iterator_tagE8__copy_mIhEEPT_PKS3_S6_S4_
+_ZN7lodepng9load_fileERSt6vectorIhSaIhEERKSs
+_ZNSt14basic_ifstreamIcSt11char_traitsIcEEC1EPKcSt13_Ios_Openmode
+_ZNSi5seekgExSt12_Ios_Seekdir
+_ZNSi5tellgEv
+_ZNSi4readEPci
+_ZNSt14basic_ifstreamIcSt11char_traitsIcEED1Ev
+_ZNSt6vectorIhSaIhEE15_M_range_insertIPhEEvN9__gnu_cxx17__normal_iteratorIS3_S1_EET_S7_St20forward_iterator_tag
+_ZN7lodepng6decodeERSt6vectorIhSaIhEERjS4_PKhj16LodePNGColorTypej
+_ZN7lodepng6decodeERSt6vectorIhSaIhEERjS4_RKS2_16LodePNGColorTypej
+_ZN7lodepng6encodeERSt6vectorIhSaIhEEPKhjjRNS_5StateE
+_ZN7lodepng6encodeERSt6vectorIhSaIhEERKS2_jjRNS_5StateE
+_ZN7lodepng6encodeERSt6vectorIhSaIhEEPKhjj16LodePNGColorTypej
+_ZN7lodepng6encodeERSt6vectorIhSaIhEERKS2_jj16LodePNGColorTypej
+_ZN7lodepng6encodeERKSsPKhjj16LodePNGColorTypej
+_ZN7lodepng6encodeERKSsRKSt6vectorIhSaIhEEjj16LodePNGColorTypej
+_ZN7lodepng10decompressERSt6vectorIhSaIhEEPKhjRK25LodePNGDecompressSettings
+_ZN7lodepng10decompressERSt6vectorIhSaIhEERKS2_RK25LodePNGDecompressSettings
+_ZN7lodepng8compressERSt6vectorIhSaIhEEPKhjRK23LodePNGCompressSettings
+_ZN7lodepng8compressERSt6vectorIhSaIhEERKS2_RK23LodePNGCompressSettings
+_ZN7lodepng6decodeERSt6vectorIhSaIhEERjS4_RNS_5StateEPKhj
+_ZN7lodepng6decodeERSt6vectorIhSaIhEERjS4_RNS_5StateERKS2_
+lodepng_default_decompress_settings
+lodepng_default_compress_settings
+_Z9timesinceRK8timespec
+clock_gettime
+_ZN11CurveClientC2Ev
+_ZN11CurveClientC1Ev
+_ZNSt8_Rb_treeISsSt4pairIKSs14themeparameterESt10_Select1stIS3_ESt4lessISsESaIS3_EE13_Rb_tree_implIS7_Lb1EEC2Ev
+_ZNSt8_Rb_treeISsSt4pairIKSs14themeparameterESt10_Select1stIS3_ESt4lessISsESaIS3_EE13_Rb_tree_implIS7_Lb1EEC1Ev
+_ZNSt8_Rb_treeISsSt4pairIKSs14themeparameterESt10_Select1stIS3_ESt4lessISsESaIS3_EE4findERS1_
+_ZNSt8_Rb_treeISsSt4pairIKSs14themeparameterESt10_Select1stIS3_ESt4lessISsESaIS3_EE14_M_insert_nodeEPSt18_Rb_tree_node_baseSB_PSt13_Rb_tree_nodeIS3_E
+_ZNSt8_Rb_treeISsSt4pairIKSs14themeparameterESt10_Select1stIS3_ESt4lessISsESaIS3_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS3_ERS1_
+_ZNSt3mapISs14themeparameterSt4lessISsESaISt4pairIKSsS0_EEEixERS4_
+_Z9readThemeISt19basic_istringstreamIcSt11char_traitsIcESaIcEEESt3mapISs14themeparameterSt4lessISsESaISt4pairIKSsS6_EEERT_
+_ZNKSt9basic_iosIcSt11char_traitsIcEEcvPvEv
+_ZStrsIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RSbIS4_S5_T1_E
+_ZNSi10_M_extractIdEERSiRT_
+_ZNSirsERd
+_Z5themeP13AAssetManageri
+_ZNSt19basic_ostringstreamIcSt11char_traitsIcESaIcEEC1ESt13_Ios_Openmode
+_ZNSolsEi
+_ZNKSt15basic_stringbufIcSt11char_traitsIcESaIcEE3strEv
+_ZNSt19basic_istringstreamIcSt11char_traitsIcESaIcEEC1ERKSsSt13_Ios_Openmode
+_ZNSt19basic_istringstreamIcSt11char_traitsIcESaIcEED1Ev
+_ZNSt19basic_ostringstreamIcSt11char_traitsIcESaIcEED1Ev
+_ZSt4cout
+_ZN5CurveC2EP13AAssetManager
+_ZNSt13_Rb_tree_nodeISt4pairIKSs14themeparameterEEC2IIRKS3_EEEDpOT_
+_ZNSt13_Rb_tree_nodeISt4pairIKSs14themeparameterEEC2IJRKS3_EEEDpOT_
+_ZNSt13_Rb_tree_nodeISt4pairIKSs14themeparameterEEC1IIRKS3_EEEDpOT_
+_ZNSt13_Rb_tree_nodeISt4pairIKSs14themeparameterEEC1IJRKS3_EEEDpOT_
+_ZNSt8_Rb_treeISsSt4pairIKSs14themeparameterESt10_Select1stIS3_ESt4lessISsESaIS3_EE7_M_copyEPKSt13_Rb_tree_nodeIS3_EPSB_
+_ZN12rendererdataC2ERKS_
+_ZN12rendererdataC1ERKS_
+fmod
+floor
+ceil
+__udivsi3
+__aeabi_idiv0
+__divsi3
+__aeabi_idiv
+__aeabi_ldiv0
+raise
+__aeabi_unwind_cpp_pr2
+__gnu_Unwind_Find_exidx
+__gnu_Unwind_Restore_VFP_D
+__gnu_Unwind_Restore_VFP
+__gnu_Unwind_Restore_VFP_D_16_to_31
+__gnu_Unwind_Restore_WMMXD
+__gnu_Unwind_Restore_WMMXC
+abort
+restore_core_regs
+_Unwind_GetCFA
+__gnu_Unwind_RaiseException
+__gnu_Unwind_ForcedUnwind
+__gnu_Unwind_Resume
+__gnu_Unwind_Resume_or_Rethrow
+_Unwind_Complete
+_Unwind_DeleteException
+_Unwind_VRS_Get
+_Unwind_VRS_Set
+__gnu_Unwind_Backtrace
+__cxa_begin_cleanup
+__cxa_type_match
+__gnu_unwind_execute
+__cxa_call_unexpected
+_Unwind_VRS_Pop
+__gnu_Unwind_Save_WMMXD
+__gnu_Unwind_Save_WMMXC
+__gnu_Unwind_Save_VFP_D
+__gnu_Unwind_Save_VFP
+__gnu_Unwind_Save_VFP_D_16_to_31
+__restore_core_regs
+___Unwind_RaiseException
+_Unwind_RaiseException
+___Unwind_Resume
+_Unwind_Resume
+___Unwind_Resume_or_Rethrow
+_Unwind_Resume_or_Rethrow
+___Unwind_ForcedUnwind
+_Unwind_ForcedUnwind
+___Unwind_Backtrace
+_Unwind_Backtrace
+__gnu_unwind_frame
+_Unwind_GetRegionStart
+_Unwind_GetLanguageSpecificData
+_Unwind_GetDataRelBase
+_Unwind_GetTextRelBase
+_edata
+__bss_start
+_end
+libgnustl_shared.so
+libGLESv2.so
+libandroid.so
+liblog.so
+libstdc++.so
+libm.so
+libc.so
+libdl.so
+liblwplocal.so
+(FAF"F
+kh F
+I}(F
+(F!}
+!}(F
+a~(F
+!~(F
+!|D$h
+Iea F
+`:F&ayD
+)FBF|D$h&
+L|D F
+J FyD
+"|D%
+` FcayD
+h%azD
+L}D|D(F
+I"F(FyD
+h"FyD
+#aca
+`;F@FIF"F
+#%`#sf`
+`ca%a
+5Fbh#h
+(F:F
+ h/D
+@FiF
+h>FZ
+#icE
+ibE:
+i)F:F3F
+.`l`
+,`h`(F
+(F!h
+4i)F
+(FAF
+hF1F*F
+F'FDF 
+@F)F
+ SFIF"F
+siHF
+<F(F
+h%F,F
+``a`i
+!F8FC
+(FIF
+)F8F
+FDFe
+!F0FC
+FFFd
+h4F&F
+`8F)F
+"h*`8
+""pYh
+ ,F+i
+#0`3q0F
+0+aKFPF)F"F
+{i5`
+*F{D
+ FiF
+0CK{D
+P+hK
+"F{D
+ F9F*F
+!FHF
+RF)F F
+J)FX
+!F`F
+!FHFO
+rJQFX
+9F F
+0F!F
+hJ`H
+#9FC`
+*F9Fp` F
+9F(F
+)FHF
+HF!F
+h F^h
+@!%`zD(F
+IjFf`(FyD
+)F0F
+d#ece
+F"FyD
+1h8F
+kF9F
+(F!F
+FCE#
+F FHE"
+3dD%
+? FO
+ADi`
+!1FL@
+A!CS
+L|D$h
+`(Fp
+3#`+hS
+F F9D
+1F:F F
+ F)F
+rJzD
+aIZF
+9F0F$
+AF0F
+YF0F
+)F"F
+HFAFRF
+:IZFPF
+XFQFbF
+[F)F`F"F
+F>FLF,
+`.akahi
++iAF
+!0F%a
+@FIF
+; F9F
+pGCh
+h,F%F
+b'bgblahi
+)F8FC
+0BK{D
+$yDzD
+0HF1F
+KFPF)F
+1FXF
+{D8F
+[F0F)F
+1FBFH
+(e0F
+PF)F
+XFyD
+1F(F
+I:F0FyD
+:F0FyD
+1FHF
+:F0F
+:F0FQF
+:FYF0F
+)ljl
+:FQF0F
+ \JyDzD
+yDTJ
+ DJyDzD
+yD<J
+DNE\
+AF8F
+imBh:
+mBh:
+I0FyD'
+{I:F0FyD
+!m"n
+tI:F0FyD
+ambn
+jI:F0FyD
+<J<KzD
+8FBF
+9FHF
+#IRF@FyD
+F8F9
+IBFyDn
+YFHF
+AFHF
+{8F8
+QFHF
+b` F
+2i;i
+=i#i
+hF1FZF
+ KF9F
+si8F
+ZFhF1F
+F!FK
+#` #q
+%`(F1F
+3!FC`
+!&a@
+;Fg`
+1F F
+@P{D
+1#h@
+`pGb
+4,`G
+!P#hS
+0#hC
+8FAF
+ pGK
+ pG-
+F0F9F
+gCtC
+#]CK])D
+pKx;p
+#]CK
+\:p*
+M]_x
+ 0pk
+/ . P
+DRx:p
+pKx#
+pcp#p^
+pbp"pv
+jh`F9F
+p`p pN
+8x pzxbp
+XF9F
+/ . d
+pcp#p
+DIxap
+pbp"p
+:x"pzxbp
+:x"p
+xbp:y
+0Q)Y
+(Y(Q
+@+YX
++Y1YSCZ
+2Y)YJCZCY
+:FBEz
+"BEo
+b]rU
+:FBEU
+:FBEB
+:FBE
+QF0F
+YF F
+hF1F
+$(Y 
+F(ha
+BhKh
+BiKi
+ \b\
+%@wx
+5@wx
+0yqy
+ e`p
+F,FLE
+kh)h
+3#`p
+(F1F
+ 1FO
+(F1FZh
+3FCF
++F"i
+9@XQX
+S%hF
+&a F
+!F "
+$`olW
+jh)h 
+pZp"
+$`/mW
+$`omW
+p(`8
+"FXF
+uEE(
+%.F&
+XF"F
+BFPF!F#
+F3FCE
+!"F+F
+!*F#F0F
+(FYF
+0FJFSF
+JFSF
+DaF(F
+#F.F
+'YF0F
+h9F"F3F
+!DaE
+s1FXF
+#F"FH
+0FYF
+XF1F
+"XF1F
+IF "
+0F!F*FSF
+ F1F
+:FKF
+(F[D
+0D1F
++hVBQDVA
+@F9F2F
+@F9F
+@F9F"F
+ F+i
+"F9F[F
+@F9FO
+!F8F
+8F!F
+;8F!F
+8F!FZF
+BF8F!F
+8F!FS
+F8F!FZh
+8F1F
+x!(F
+:F3F
+(F9F
+qpG8
+*y#x
+jycx
+XBXA8
+0pGp
+0h9F
+pCp#
+qsxCq
+#XCpG
+F.`(F
+`!Fn`
+*F1h
+&=F.`(F
+ZF#FW
+8F[]
+AF#F
+a;`.`(F
+JF[F
+lN~D"
+FKYcC
+ )DY
+S% F
+!F2F;F
+XBXApG
+L|D"D
+"YCHCPC
+k%dC
+k lAF
+k`l9F
+l mQF
+l`mIF
+`#`c`
+ccc#c
+c#dcd
+F d`d
+*l FklR
+d'ege
+F"F9FhF
+)F"F8F
+(FiF"F
+IF:F
++kh@
+*0{h
+rq1pO
+ FYF
+ pC!T!
+R#*h
+ FU!
+KBKA
+kh(FO
+PBPA
+XBXA
+QFJF
+> Zp
+D &a
+N0 aaa
+cxP+
+#{I+
+c{H+
+8`#~
+0kik
+8FyD
+0*xkx
+0*yky
+3N+7
+YF2F
+FS%XF
+3N+/
+K%HF
+#aDh
+IFBF
+FS%HF
+1*xkx
+1*yky
+Fci;
+F8FQF
+PFQF:FCF
+2FKF
+QF:FCF
+KFXF
+YjCV
+i(F1F
+(18F
+K F{D
+(1@F
+)FBF;F
+0FIF
+JFCF
+*FCF
+P!0F
+N!0F
+G!0F
+IF(F
+0FyD
+FJE)
+:N*1
+0FQF
+vI0FvJyDzD
+:N*i
+8FQF
+bbc"c
+F|D$h
+AF:F0F
+8F1F*F
+F|D$hW
+xHxDpGwHxDpGwHxDpGvHxDpGvHxDpGuHxDpGuHxDpGtHxDpGtHxDpGsHxDpGsHxDpGrHxDpGrHxDpGqHxDpGqHxDpGpHxDpGpHxDpGoHxDpGoHxDpGnHxDpGnHxDpGmHxDpGmHxDpGlHxDpGlHxDpGkHxDpGkHxDpGjHxDpGjHxDpGiHxDpGiHxDpGhHxDpGhHxDpGgHxDpGgHxDpGfHxDpGfHxDpGeHxDpGeHxDpGdHxDpGdHxDpGcHxDpGcHxDpGbHxDpGbHxDpGaHxDpGaHxDpG`HxDpG`HxDpG_HxDpG_HxDpG^HxDpG^HxDpG]HxDpG]HxDpG\HxDpG\HxDpG[HxDpG[HxDpGZHxDpGZHxDpGYHxDpGYHxDpGXHxDpGXHxDpGWHxDpGWHxDpGVHxDpGVHxDpGUHxDpGUHxDpGTHxDpGTHxDpGSHxDpGSHxDpGRHxDpGRHxDpGQHxDpGQHxDpGPHxDpG
++hjh F
+F#h@h
+DCi3
+1F8F
+`h#h
+Dg`$
+J F9FzD
+0F!h*F
+BFAFHF
++Dc`
+0F9F*F
+0FAFZ
+SDc`-
+0F9F
+J)FzD
+F h1FBF
+9F*F
+0Fah
+"hqh
+0F)F:F
+2F+F
+ Fah
+ah$h
+!*F3F
+FBF;F
+!2F+F
+P pG
+` Fca%a8
+h!F2F
+ ;F!F2F
+ki F
+HF1F
+%```
+#`e`
+ F9F2F
+"FhF)F;F
+!F(F3F
+K)F F{D
+0F)F
+6I@F4
+3IyD
+3F)F
+"iF0F
+`ca'ab
+`)i!aW`
+`*aji
+`kaba(F
+2FhF9F
+b!cccJ
+ cQ`
+hFbk
+4E` 
+LE0F
+>EAF
+L1yD
+P1@F
+J+FyDzD
+@F"F
+@F*F
+acb&b
+8F2F
+ bkjcb
+b+k#ckkcc
+c+l#dklcd
+d+m#ekmce
+e+n#fkncf
+f+o#gkocg
+LaQm
+ffffff
+@ffffff
+D2F@F9F
+AF(F
+2F9F@F
+1F(F)
+{0F)
+ IFBF
+@BpG
+@BpG8
+DpG-
+ pG&K
+M K}D-h{D
+ pGpGp
+F(F!l
+ )F"Fka+i
+0F!l
+F3`8F1l
+3l1FO
+r(F{a
+;iPF9F*F
+QF:F;F
+0F)FO
+ F1l
+@lpG
+;i9FjF
+hQ`0
+33`hF1l
+0FAF
+ iF2F
+!*FB
+kh*h
+ bcb
+#j0F
+bcc+h
+;CrCh
+9F;F
+b(FH
+3(FC
+_index
+transition_position
+inputs.base
+.header
+header.
+.base
+footer.
+renderlib
+reset flag
+gfxbackground
+vert
+frag
+gfxline
+gfxlineB
+linedata
+renderer
+remove bg texture
+bg texture: %d, %d, %p
+remove noise texture
+noise texture: %d, %d, %p
+noiseTextureScale
+noise
+time
+lsByx
+precalc_ratio
+precalc_radlc
+lineCount
+precalc_randval
+precalc_car
+curveAmplitudeRange
+precalc_curveParams
+curveFrequencyRange
+curveSpeedRange
+Could not decode 
+, file missing or corrupt!
+PLTE
+tRNS
+tEXt
+IDAT
+IEND
+bKGD
+zTXt
+iTXt
+tIME
+pHYs
+IHDR
+LodePNG
+20131115
+no error, everything went ok
+nothing done yet
+end of input memory reached without huffman end code
+error in code tree made it jump outside of huffman tree
+problem while processing dynamic deflate block
+unexisting code while processing dynamic deflate block
+end of out buffer memory reached while inflating
+invalid distance code while inflating
+invalid deflate block BTYPE encountered while decoding
+NLEN is not ones complement of LEN in a deflate block
+end of in buffer memory reached while inflating
+invalid FCHECK in zlib header
+invalid compression method in zlib header
+FDICT encountered in zlib header while it's not used for PNG
+PNG file is smaller than a PNG header
+incorrect PNG signature, it's no PNG or corrupted
+first chunk is not the header chunk
+chunk length too large, chunk broken off at end of file
+illegal PNG color type or bpp
+illegal PNG compression method
+illegal PNG filter method
+illegal PNG interlace method
+chunk length of a chunk is too large or the chunk too small
+illegal PNG filter type encountered
+illegal bit depth for this color type given
+the palette is too big
+more palette alpha values given in tRNS chunk than there are colors in the palette
+tRNS chunk has wrong size for greyscale image
+tRNS chunk has wrong size for RGB image
+tRNS chunk appeared while it was not allowed for this color type
+bKGD chunk has wrong size for palette image
+bKGD chunk has wrong size for greyscale image
+bKGD chunk has wrong size for RGB image
+a value in indexed image is larger than the palette size (bitdepth = 8)
+a value in indexed image is larger than the palette size (bitdepth < 8)
+empty input or file doesn't exist
+jumped past memory while generating dynamic huffman tree
+jumped past memory while inflating huffman block
+jumped past memory while inflating
+size of zlib data too small
+repeat symbol in tree while there was no value symbol yet
+jumped past tree while generating huffman tree
+given output image colortype or bitdepth not supported for color conversion
+invalid CRC encountered (checking CRC can be disabled)
+invalid ADLER32 encountered (checking ADLER32 can be disabled)
+requested color conversion not supported
+invalid window size given in the settings of the encoder (must be 0-32768)
+invalid BTYPE given in the settings of the encoder (only 0, 1 and 2 are allowed)
+conversion from color to greyscale not supported
+length of a chunk too long, max allowed for PNG is 2147483647 bytes per chunk
+the length of the END symbol 256 in the Huffman tree is 0
+the length of a text chunk keyword given to the encoder is longer than the maximum of 79 bytes
+the length of a text chunk keyword given to the encoder is smaller than the minimum of 1 byte
+tried to encode a PLTE chunk with a palette that has less than 1 or more than 256 colors
+unknown chunk type with 'critical' flag encountered by the decoder
+unexisting interlace mode given to encoder (must be 0 or 1)
+while decoding, unexisting compression method encountering in zTXt or iTXt chunk (it must be 0)
+invalid tIME chunk size
+invalid pHYs chunk size
+no null termination char found while decoding text chunk
+iTXt chunk too short to contain required bytes
+integer overflow in buffer size
+failed to open file for reading
+failed to open file for writing
+tried creating a tree of 0 symbols
+lazy matching at pos 0 is impossible
+color conversion to palette requested while a color isn't in palette
+memory allocation failed
+given image too small to contain all pixels to be encoded
+internal color conversion bug
+impossible offset in lz77 encoding (internal bug)
+must provide custom zlib function pointer if LODEPNG_COMPILE_ZLIB is not defined
+invalid filter strategy given for LodePNGEncoderSettings.filter_strategy
+text chunk keyword too short or long: must have size 1-79
+unknown error code
+vector::_M_default_append
+vector::_M_range_insert
+lwp.
+.theme
+Requesting color: 
+noise.png
+%p, %ld
+.transitions
+nfd:%p, bgfd:%p
+ n;^
+Qkkbal
+i]Wb
+9a&g
+MGiI
+wn>Jj
+#.zf
++o*7
+GCC: (GNU) 4.6 20120106 (prerelease)
+GCC: (GNU) 4.8
+gold 1.11
+aeabi
+ARM v7
+.shstrtab
+.interp
+.dynsym
+.dynstr
+.hash
+.rel.dyn
+.rel.plt
+.text
+.ARM.extab
+.ARM.exidx
+.rodata
+.fini_array
+.init_array
+.data.rel.ro
+.dynamic
+.got
+.data
+.bss
+.comment
+.note.gnu.gold-version
+.ARM.attributes

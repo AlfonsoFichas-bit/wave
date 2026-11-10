@@ -1,0 +1,253 @@
+Class #31            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;'
+  Access flags      : 0x0000 ()
+  Superclass        : 'Landroid/os/AsyncTask;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;)
+      name          : 'this$0'
+      type          : 'Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;'
+      access        : 0x1010 (FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;)
+      name          : '<init>'
+      type          : '(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;)V'
+      access        : 0x10002 (PRIVATE CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+007a24:                                        |[007a24] com.sonymobile.experienceflow.wallpaper.ExperienceFlowPreferencesActivity$LoadLicenseTask.<init>:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;)V
+007a34: 5b01 6200                              |0000: iput-object v1, v0, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@0062
+007a38: 7010 4500 0000                         |0002: invoke-direct {v0}, Landroid/os/AsyncTask;.<init>:()V // method@0045
+007a3e: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=251
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;
+        0x0000 - 0x0006 reg=1 (null) Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;
+
+    #1              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;)
+      name          : '<init>'
+      type          : '(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;)V'
+      access        : 0x11000 (SYNTHETIC CONSTRUCTOR)
+      code          -
+      registers     : 3
+      ins           : 3
+      outs          : 2
+      insns size    : 4 16-bit code units
+007a40:                                        |[007a40] com.sonymobile.experienceflow.wallpaper.ExperienceFlowPreferencesActivity$LoadLicenseTask.<init>:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;)V
+007a50: 7020 2b01 1000                         |0000: invoke-direct {v0, v1}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;.<init>:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;)V // method@012b
+007a56: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=251
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;
+        0x0000 - 0x0004 reg=1 x0 Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;
+        0x0000 - 0x0004 reg=2 x1 Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$1;
+
+  Virtual methods   -
+    #0              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;)
+      name          : 'doInBackground'
+      type          : '([Ljava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1044 (PROTECTED BRIDGE SYNTHETIC)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 7 16-bit code units
+007a58:                                        |[007a58] com.sonymobile.experienceflow.wallpaper.ExperienceFlowPreferencesActivity$LoadLicenseTask.doInBackground:([Ljava/lang/Object;)Ljava/lang/Object;
+007a68: 1f02 de00                              |0000: check-cast v2, [Ljava/lang/Void; // type@00de
+007a6c: 6e20 2f01 2100                         |0002: invoke-virtual {v1, v2}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;.doInBackground:([Ljava/lang/Void;)Ljava/lang/String; // method@012f
+007a72: 0c00                                   |0005: move-result-object v0
+007a74: 1100                                   |0006: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=251
+      locals        :
+        0x0000 - 0x0007 reg=1 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;
+        0x0000 - 0x0007 reg=2 (null) [Ljava/lang/Object;
+
+    #1              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;)
+      name          : 'doInBackground'
+      type          : '([Ljava/lang/Void;)Ljava/lang/String;'
+      access        : 0x0084 (PROTECTED VARARGS)
+      code          -
+      registers     : 11
+      ins           : 2
+      outs          : 4
+      insns size    : 105 16-bit code units
+007a78:                                        |[007a78] com.sonymobile.experienceflow.wallpaper.ExperienceFlowPreferencesActivity$LoadLicenseTask.doInBackground:([Ljava/lang/Void;)Ljava/lang/String;
+007a88: 1204                                   |0000: const/4 v4, #int 0 // #0
+007a8a: 2200 b900                              |0001: new-instance v0, Ljava/lang/StringBuilder; // type@00b9
+007a8e: 7010 0502 0000                         |0003: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@0205
+007a94: 2205 a000                              |0006: new-instance v5, Ljava/io/BufferedReader; // type@00a0
+007a98: 2206 a400                              |0008: new-instance v6, Ljava/io/InputStreamReader; // type@00a4
+007a9c: 5497 6200                              |000a: iget-object v7, v9, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@0062
+007aa0: 6e10 3f01 0700                         |000c: invoke-virtual {v7}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;.getAssets:()Landroid/content/res/AssetManager; // method@013f
+007aa6: 0c07                                   |000f: move-result-object v7
+007aa8: 1a08 8500                              |0010: const-string v8, "LICENSE.html" // string@0085
+007aac: 6e20 3300 8700                         |0012: invoke-virtual {v7, v8}, Landroid/content/res/AssetManager;.open:(Ljava/lang/String;)Ljava/io/InputStream; // method@0033
+007ab2: 0c07                                   |0015: move-result-object v7
+007ab4: 1a08 3704                              |0016: const-string v8, "utf-8" // string@0437
+007ab8: 7030 e901 7608                         |0018: invoke-direct {v6, v7, v8}, Ljava/io/InputStreamReader;.<init>:(Ljava/io/InputStream;Ljava/lang/String;)V // method@01e9
+007abe: 7020 e201 6500                         |001b: invoke-direct {v5, v6}, Ljava/io/BufferedReader;.<init>:(Ljava/io/Reader;)V // method@01e2
+007ac4: 1306 0004                              |001e: const/16 v6, #int 1024 // #400
+007ac8: 2361 d600                              |0020: new-array v1, v6, [C // type@00d6
+007acc: 6e20 e401 1500                         |0022: invoke-virtual {v5, v1}, Ljava/io/BufferedReader;.read:([C)I // method@01e4
+007ad2: 0a03                                   |0025: move-result v3
+007ad4: 3d03 1800                              |0026: if-lez v3, 003e // +0018
+007ad8: 1206                                   |0028: const/4 v6, #int 0 // #0
+007ada: 6e40 0802 1036                         |0029: invoke-virtual {v0, v1, v6, v3}, Ljava/lang/StringBuilder;.append:([CII)Ljava/lang/StringBuilder; // method@0208
+007ae0: 28f6                                   |002c: goto 0022 // -000a
+007ae2: 0d02                                   |002d: move-exception v2
+007ae4: 0754                                   |002e: move-object v4, v5
+007ae6: 1a06 5400                              |002f: const-string v6, "ExperienceFlowPreferencesActivity" // string@0054
+007aea: 7120 5e00 2600                         |0031: invoke-static {v6, v2}, Landroid/util/Log;.w:(Ljava/lang/String;Ljava/lang/Throwable;)I // method@005e
+007af0: 3804 0500                              |0034: if-eqz v4, 0039 // +0005
+007af4: 6e10 e301 0400                         |0036: invoke-virtual {v4}, Ljava/io/BufferedReader;.close:()V // method@01e3
+007afa: 6e10 0902 0000                         |0039: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0209
+007b00: 0c06                                   |003c: move-result-object v6
+007b02: 1106                                   |003d: return-object v6
+007b04: 3805 2900                              |003e: if-eqz v5, 0067 // +0029
+007b08: 6e10 e301 0500                         |0040: invoke-virtual {v5}, Ljava/io/BufferedReader;.close:()V // method@01e3
+007b0e: 0754                                   |0043: move-object v4, v5
+007b10: 28f5                                   |0044: goto 0039 // -000b
+007b12: 0d02                                   |0045: move-exception v2
+007b14: 1a06 5400                              |0046: const-string v6, "ExperienceFlowPreferencesActivity" // string@0054
+007b18: 7120 5e00 2600                         |0048: invoke-static {v6, v2}, Landroid/util/Log;.w:(Ljava/lang/String;Ljava/lang/Throwable;)I // method@005e
+007b1e: 0754                                   |004b: move-object v4, v5
+007b20: 28ed                                   |004c: goto 0039 // -0013
+007b22: 0d02                                   |004d: move-exception v2
+007b24: 1a06 5400                              |004e: const-string v6, "ExperienceFlowPreferencesActivity" // string@0054
+007b28: 7120 5e00 2600                         |0050: invoke-static {v6, v2}, Landroid/util/Log;.w:(Ljava/lang/String;Ljava/lang/Throwable;)I // method@005e
+007b2e: 28e6                                   |0053: goto 0039 // -001a
+007b30: 0d06                                   |0054: move-exception v6
+007b32: 3804 0500                              |0055: if-eqz v4, 005a // +0005
+007b36: 6e10 e301 0400                         |0057: invoke-virtual {v4}, Ljava/io/BufferedReader;.close:()V // method@01e3
+007b3c: 2706                                   |005a: throw v6
+007b3e: 0d02                                   |005b: move-exception v2
+007b40: 1a07 5400                              |005c: const-string v7, "ExperienceFlowPreferencesActivity" // string@0054
+007b44: 7120 5e00 2700                         |005e: invoke-static {v7, v2}, Landroid/util/Log;.w:(Ljava/lang/String;Ljava/lang/Throwable;)I // method@005e
+007b4a: 28f9                                   |0061: goto 005a // -0007
+007b4c: 0d06                                   |0062: move-exception v6
+007b4e: 0754                                   |0063: move-object v4, v5
+007b50: 28f1                                   |0064: goto 0055 // -000f
+007b52: 0d02                                   |0065: move-exception v2
+007b54: 28c9                                   |0066: goto 002f // -0037
+007b56: 0754                                   |0067: move-object v4, v5
+007b58: 28d1                                   |0068: goto 0039 // -002f
+      catches       : 6
+        0x0006 - 0x001e
+          Ljava/io/IOException; -> 0x0065
+          <any> -> 0x0054
+        0x0020 - 0x002c
+          Ljava/io/IOException; -> 0x002d
+          <any> -> 0x0062
+        0x002f - 0x0034
+          <any> -> 0x0054
+        0x0036 - 0x0039
+          Ljava/io/IOException; -> 0x004d
+        0x0040 - 0x0043
+          Ljava/io/IOException; -> 0x0045
+        0x0057 - 0x005a
+          Ljava/io/IOException; -> 0x005b
+      positions     :
+        0x0000 line=256
+        0x0001 line=257
+        0x0006 line=260
+        0x001e line=263
+        0x0022 line=266
+        0x0028 line=267
+        0x002d line=269
+        0x002f line=270
+        0x0034 line=272
+        0x0036 line=274
+        0x0039 line=281
+        0x003e line=272
+        0x0040 line=274
+        0x0044 line=277
+        0x0045 line=275
+        0x0046 line=276
+        0x004c line=277
+        0x004d line=275
+        0x004e line=276
+        0x0054 line=272
+        0x0057 line=274
+        0x005a line=277
+        0x005b line=275
+        0x005c line=276
+        0x0062 line=272
+        0x0065 line=269
+      locals        :
+        0x0001 - 0x001e reg=4 reader Ljava/io/BufferedReader;
+        0x0022 - 0x002d reg=1 data [C
+        0x0026 - 0x002d reg=3 read I
+        0x001e - 0x002f reg=5 reader Ljava/io/BufferedReader;
+        0x002f - 0x0039 reg=2 e Ljava/io/IOException;
+        0x002f - 0x003e reg=4 reader Ljava/io/BufferedReader;
+        0x003e - 0x0044 reg=5 reader Ljava/io/BufferedReader;
+        0x0044 - 0x0045 reg=4 reader Ljava/io/BufferedReader;
+        0x0045 - 0x004c reg=5 reader Ljava/io/BufferedReader;
+        0x003e - 0x004d reg=1 data [C
+        0x003e - 0x004d reg=3 read I
+        0x0046 - 0x0054 reg=2 e Ljava/io/IOException;
+        0x005c - 0x0062 reg=2 e Ljava/io/IOException;
+        0x004c - 0x0062 reg=4 reader Ljava/io/BufferedReader;
+        0x0062 - 0x0064 reg=5 reader Ljava/io/BufferedReader;
+        0x0064 - 0x0067 reg=4 reader Ljava/io/BufferedReader;
+        0x0067 - 0x0068 reg=5 reader Ljava/io/BufferedReader;
+        0x0006 - 0x0069 reg=0 builder Ljava/lang/StringBuilder;
+        0x0067 - 0x0069 reg=1 data [C
+        0x0067 - 0x0069 reg=3 read I
+        0x0068 - 0x0069 reg=4 reader Ljava/io/BufferedReader;
+        0x0000 - 0x0069 reg=9 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;
+        0x0000 - 0x0069 reg=10 params [Ljava/lang/Void;
+
+    #2              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;)
+      name          : 'onPostExecute'
+      type          : '(Ljava/lang/Object;)V'
+      access        : 0x1044 (PROTECTED BRIDGE SYNTHETIC)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 2
+      insns size    : 6 16-bit code units
+007ba8:                                        |[007ba8] com.sonymobile.experienceflow.wallpaper.ExperienceFlowPreferencesActivity$LoadLicenseTask.onPostExecute:(Ljava/lang/Object;)V
+007bb8: 1f01 b800                              |0000: check-cast v1, Ljava/lang/String; // type@00b8
+007bbc: 6e20 3301 1000                         |0002: invoke-virtual {v0, v1}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;.onPostExecute:(Ljava/lang/String;)V // method@0133
+007bc2: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=251
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;
+        0x0000 - 0x0006 reg=1 (null) Ljava/lang/Object;
+
+    #3              : (in Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;)
+      name          : 'onPostExecute'
+      type          : '(Ljava/lang/String;)V'
+      access        : 0x0004 (PROTECTED)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 6 16-bit code units
+007bc4:                                        |[007bc4] com.sonymobile.experienceflow.wallpaper.ExperienceFlowPreferencesActivity$LoadLicenseTask.onPostExecute:(Ljava/lang/String;)V
+007bd4: 5410 6200                              |0000: iget-object v0, v1, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;.this$0:Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity; // field@0062
+007bd8: 7120 3b01 2000                         |0002: invoke-static {v0, v2}, Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;.access$500:(Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity;Ljava/lang/String;)V // method@013b
+007bde: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=286
+        0x0005 line=287
+      locals        :
+        0x0000 - 0x0006 reg=1 this Lcom/sonymobile/experienceflow/wallpaper/ExperienceFlowPreferencesActivity$LoadLicenseTask;
+        0x0000 - 0x0006 reg=2 result Ljava/lang/String;
+
+  source_file_idx   : 85 (ExperienceFlowPreferencesActivity.java)
+

@@ -1,0 +1,139 @@
+Class #53            -
+  Class descriptor  : 'Lcom/sonymobile/experienceflow2/R$string;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'air_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099648
+    #1              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'app_name'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099668
+    #2              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'aqua_blue_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099649
+    #3              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'black_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099650
+    #4              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'copper_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099651
+    #5              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'day_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099652
+    #6              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'earth_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099653
+    #7              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'experienceflow_settings_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099654
+    #8              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'flamingo_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099655
+    #9              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'heat_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099656
+    #10              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'license_dialog_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099657
+    #11              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'license_loading'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099658
+    #12              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'lime_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099659
+    #13              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'mandarin_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099660
+    #14              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'rose_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099661
+    #15              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'sea_green_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099662
+    #16              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'silk_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099663
+    #17              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'silver_green_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099664
+    #18              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'sunny_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099665
+    #19              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'wallpaper_app_name'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099666
+    #20              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'warm_silver_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099667
+    #21              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : 'xperia_title'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+      value         : 2131099669
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/sonymobile/experienceflow2/R$string;)
+      name          : '<init>'
+      type          : '()V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 1
+      outs          : 1
+      insns size    : 4 16-bit code units
+008570:                                        |[008570] com.sonymobile.experienceflow2.R$string.<init>:()V
+008580: 7010 0002 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0200
+008586: 0e00                                   |0003: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=45
+      locals        :
+        0x0000 - 0x0004 reg=0 this Lcom/sonymobile/experienceflow2/R$string;
+
+  Virtual methods   -
+  source_file_idx   : 399 (R.java)
+
