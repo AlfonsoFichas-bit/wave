@@ -4,14 +4,12 @@ plugins {
 }
 
 android {
-    namespace = "com.buga.waves"
-    compileSdk {
-        version = release(37)
-    }
+    namespace = "com.wave.wallpaper"
+    compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.buga.waves"
-        minSdk = 24
+        applicationId = "com.wave.wallpaper"
+        minSdk = 21
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
@@ -30,6 +28,9 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
     }
     buildFeatures {
         compose = true

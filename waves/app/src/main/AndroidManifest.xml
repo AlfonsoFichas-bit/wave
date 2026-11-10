@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk tools:overrideLibrary="androidx.compose.material,androidx.compose.material.ripple,androidx.compose.foundation,androidx.compose.foundation.layout,androidx.compose.animation,androidx.compose.ui.tooling,androidx.compose.ui.tooling.data,androidx.compose.ui.test,androidx.compose.ui.test.manifest,androidx.compose.ui.tooling.preview,androidx.compose.ui.graphics,androidx.compose.ui,androidx.lifecycle.runtime.compose,androidx.compose.runtime.saveable,androidx.compose.runtime,androidx.compose.animation.core,androidx.activity.compose,androidx.activity,androidx.transition,androidx.lifecycle.viewmodel.compose,androidx.lifecycle.viewmodel.savedstate,androidx.lifecycle.viewmodel,androidx.lifecycle.runtime,androidx.savedstate,androidx.core,androidx.annotation.experimental,androidx.compose.ui.unit,androidx.compose.ui.geometry,androidx.compose.ui.text,androidx.compose.ui.util,androidx.navigationevent,androidx.navigationevent.compose,androidx.activity.ktx,androidx.core.ktx,androidx.lifecycle.runtime.ktx,androidx.lifecycle.livedata.core.ktx,androidx.lifecycle.livedata.core,androidx.lifecycle.viewmodel.ktx,androidx.lifecycle.viewmodel,androidx.lifecycle.process,androidx.lifecycle.livedata,androidx.lifecycle.lifecycle.viewmodel.anchor,androidx.lifecycle.lifecycle.runtime.anchor,androidx.lifecycle.lifecycle.process.anchor,androidx.compose.runtime.retain,androidx.arch.core,androidx.compose.runtime.annotation,androidx.savedstate.compose,androidx.savedstate.ktx,androidx.window.core,androidx.window,androidx.lifecycle.ktx" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,15 +15,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Waves">
+        <service
+            android:name=".WaveWallpaperService"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/wallpaper" />
+        </service>
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Waves"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

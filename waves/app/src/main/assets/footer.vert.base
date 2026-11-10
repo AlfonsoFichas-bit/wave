@@ -1,0 +1,5 @@
+
+  //Resolution wrapping. - not relevant for LWP-only case
+  //gl_Position.xy = gl_Position.xy + vec2(-2.0,2.0)*lsA.zw / vec2(lsB.x,lsB.y) + (lsA.xy-vec2(lsB.x,lsB.y))/vec2(lsB.x,lsB.y);
+  //gl_Position.xy *= vec2(lsB.x/lsA.x, lsB.y/lsA.y);
+}

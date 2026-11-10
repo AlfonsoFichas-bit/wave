@@ -1,0 +1,47 @@
+precision lowp float;
+
+uniform float force;
+uniform float ra;
+uniform vec4 lsA;
+uniform vec4 lsB;
+uniform float lsByx;
+uniform vec2 l1;
+uniform vec2 l1m;
+uniform vec2 l2;
+uniform vec2 l3;
+uniform vec2 l4;
+
+uniform vec2  curveWidthRange;
+uniform vec2  curveAmplitudeRange;
+uniform vec2  curveFrequencyRange;
+uniform vec2  curveSpeedRange;
+
+uniform vec2  curveBendRange;
+uniform float curveBendFactor;
+uniform float curveBendSpeed;
+
+uniform vec2  curveOffsetRange;
+uniform float curveOffsetSpeed;
+
+uniform vec4 bgc1;
+uniform vec4 bgc2;
+uniform vec4 bgc3;
+uniform vec4 bgc4;
+
+uniform vec4 lc1;
+uniform vec4 lc2;
+uniform vec4 lc3;
+
+uniform vec4 lc4;
+uniform vec4 lc5;
+uniform vec4 lc6;
+
+uniform sampler2D noise;
+uniform vec2 noiseTextureScale;
+uniform sampler2D bg;
+
+uniform float precalc_radlc;
+uniform vec4  precalc_randval;
+uniform vec3  precalc_curveParams;
+uniform float precalc_ratio;
+uniform vec2 precalc_car;
