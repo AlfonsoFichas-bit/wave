@@ -20,7 +20,10 @@ class CosmicMatrixState {
 
         // Scale the model so the edges extend way past the screen boundaries
         // This ensures the ribbons go from extreme edge to extreme edge.
-        Matrix.scaleM(modelMatrix, 0, 3.5f, 3.5f, 1.0f)
+        Matrix.scaleM(modelMatrix, 0, 4.5f, 4.5f, 1.0f)
+
+        // Move it down slightly so the bottom is completely covered
+        Matrix.translateM(modelMatrix, 0, 0f, -0.2f, 0f)
 
         // Tilt the model slightly to simulate flying perspective
         Matrix.rotateM(modelMatrix, 0, 15f, 1f, 0f, 0f)
