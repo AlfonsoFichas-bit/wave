@@ -2,14 +2,14 @@
 
 ## 1. Asset & Shader Integration
 
-- [ ] 1.1 Copy extracted Cosmic Flow shaders and textures (`flow_vertex.glsl`, `flow_fragment.glsl`, `flow_vertex_lookup.glsl`, `flow_fragment_lookup.glsl`, `background_vertex.glsl`, `background_fragment.glsl`, `flow_greyscale.png`, `noise.png`) into the app assets directory and verify file availability.
-- [ ] 1.2 Implement `CosmicShaderUtil` to load, compile, and link the background and flow programs, verifying that shader compilation logs report no errors.
+- [x] 1.1 Copy extracted Cosmic Flow shaders and textures (`flow_vertex.glsl`, `flow_fragment.glsl`, `flow_vertex_lookup.glsl`, `flow_fragment_lookup.glsl`, `background_vertex.glsl`, `background_fragment.glsl`, `flow_greyscale.png`, `noise.png`) into the app assets directory and verify file availability.
+- [x] 1.2 Implement `CosmicShaderUtil` to load, compile, and link the background and flow programs, verifying that shader compilation logs report no errors.
 
 ## 2. 3D Grid & Perspective Engine
 
-- [ ] 2.1 Implement `CosmicMesh` generating the 3D grid vertex buffer and index buffer, verifying buffer sizes and vertex coordinate ranges.
-- [ ] 2.2 Implement `CosmicMatrixState` computing the 3D Model-View-Projection matrix (`uMVPMatrix`) with camera perspective, pitch tilt, and rotation.
-- [ ] 2.3 Implement `CosmicFlowRenderer` executing the background gradient pass and the deformed 3D cosmic mesh pass, verifying that frames render without OpenGL errors.
+- [x] 2.1 Implement `CosmicMesh` generating the 3D grid vertex buffer and index buffer, verifying buffer sizes and vertex coordinate ranges.
+- [x] 2.2 Implement `CosmicMatrixState` computing the 3D Model-View-Projection matrix (`uMVPMatrix`) with camera perspective, pitch tilt, and rotation.
+- [x] 2.3 Implement `CosmicFlowRenderer` executing the background gradient pass and the deformed 3D cosmic mesh pass, verifying that frames render without OpenGL errors.
 
 ## 3. Theme & Color Palette System
 
