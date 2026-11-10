@@ -22,7 +22,6 @@ fun WallpaperPreview(theme: WaveTheme, modifier: Modifier = Modifier) {
             setEGLContextClientVersion(2)
             setEGLConfigChooser(8, 8, 8, 8, 16, 0)
             holder.setFormat(PixelFormat.TRANSLUCENT)
-            setZOrderOnTop(true)
         }
     }
 
@@ -34,7 +33,6 @@ fun WallpaperPreview(theme: WaveTheme, modifier: Modifier = Modifier) {
 
     DisposableEffect(theme) {
         renderer.theme = theme
-        glSurfaceView.requestRender()
         onDispose { }
     }
 
@@ -42,7 +40,7 @@ fun WallpaperPreview(theme: WaveTheme, modifier: Modifier = Modifier) {
         factory = {
             glSurfaceView.apply {
                 setRenderer(renderer)
-                renderMode = GLSurfaceView.RENDERMODE_WHEN_DIRTY
+                renderMode = GLSurfaceView.RENDERMODE_CONTINUOUSLY
 
                 setOnTouchListener { _, event ->
                     when (event.actionMasked) {

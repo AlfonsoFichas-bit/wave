@@ -8,7 +8,7 @@ android {
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.wave.wallpaper"
+        applicationId = "com.buga.waves"
         minSdk = 21
         targetSdk = 37
         versionCode = 1
